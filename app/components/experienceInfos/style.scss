@@ -1,0 +1,34 @@
+.list-none {
+    list-style: none !important;
+}
+
+.color-primary {
+    background: #0d6efd;
+    border-radius: 50%;
+}
+
+.p-panel-header-actions button {
+    margin-bottom: 0;
+}
+
+.favorited {
+    &.p-panel {
+        background: linear-gradient(300deg, rgba(255, 217, 0, 0) 75%,  rgb(255 217 0 / 11%) 100%);
+        border-color:rgba(255, 217, 0, 0.253)
+    }
+
+    .favorite-button {
+        color: gold;
+        background-color: rgba(255, 217, 0, 0.115);
+        border: none;
+
+        .pi::before{
+            color:gold;
+        }
+    }
+}
+
+.favorite-button {
+    color: rgba(255, 217, 0, 0.265);
+    border-color: currentColor;
+}

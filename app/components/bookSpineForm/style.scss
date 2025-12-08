@@ -1,0 +1,36 @@
+.sideway-title-icon {
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+}
+
+.sideway-title {
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.upside-title {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.gradian-separator {
+    width: 2px;
+    margin-right: 0.5em;
+    opacity: 0.8;
+    background: #00b7ff;
+    background: linear-gradient(160deg, rgba(0, 183, 255, 0) 0%, rgba(69, 216, 217, 1) 21%, rgba(134, 247, 181, 1) 41%, rgba(206, 132, 220, 1) 82%, rgba(237, 83, 237, 0) 100%);
+}
+
+.upside-gradian-separator {
+    height: 2px;
+    opacity: 0.8;
+    background: #00b7ff;
+    background: linear-gradient(160deg, rgba(0, 183, 255, 0) 0%, rgba(69, 216, 217, 1) 21%, rgba(134, 247, 181, 1) 41%, rgba(206, 132, 220, 1) 82%, rgba(237, 83, 237, 0) 100%);
+}
+
+.container {
+    max-width: unset;
+}

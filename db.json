@@ -1,0 +1,574 @@
+{
+    "banner": "",
+    "personal_information": {
+        "name": "Jean Luc V.",
+        "title": "Fullstack Web Polyvalent",
+        "experience_years": 6,
+        "profile_traits": [
+            "Team Player",
+            "Solution Oriented",
+            "Flexible",
+            "Autodidact",
+            "Autonome",
+            "Visionary",
+            "Determined",
+            "Persevering",
+            "Stubborn"
+        ]
+    },
+    "hard_skills": {
+        "skills": {
+            "programming_languages": {
+                "img": "translator_4839667.png",
+                "skills": [
+                    {
+                        "img": "js-svgrepo-com.svg",
+                        "name": "Javascript",
+                        "level": 3
+                    },
+                    {
+                        "img": "128px-Typescript_logo_2020.svg.png",
+                        "name": "Typescript",
+                        "level": 4
+                    },
+                    {
+                        "img": "html-svgrepo-com.svg",
+                        "name": "HTML / CSS",
+                        "level": 3
+                    },
+                    {
+                        "img": "java-svgrepo-com.svg",
+                        "name": "Java",
+                        "level": 3
+                    },
+                    {
+                        "img": "sql-database-generic-svgrepo-com.svg",
+                        "name": "PL/SQL",
+                        "level": 3
+                    },
+                    {
+                        "img": "sql-database-generic-svgrepo-com.svg",
+                        "name": "SQL",
+                        "level": 3
+                    },
+                    {
+                        "img": "bash-icon-svgrepo-com.svg",
+                        "name": "Bash",
+                        "level": 2
+                    },
+                    {
+                        "img": "Logo_C_sharp.svg",
+                        "name": "C#",
+                        "level": 2
+                    },
+                    {
+                        "img": "php-svgrepo-com.svg",
+                        "name": "PHP",
+                        "level": 2
+                    },
+                    {
+                        "img": "powershell2-svgrepo-com.svg",
+                        "name": "PowerShell",
+                        "level": 2
+                    },
+                    {
+                        "img": "shell-svgrepo-com.svg",
+                        "name": "Shell",
+                        "level": 2
+                    },
+                    {
+                        "img": "python-svgrepo-com.svg",
+                        "name": "Python",
+                        "level": 1
+                    },
+                    {
+                        "img": "scala-svgrepo-com.svg",
+                        "name": "Scala",
+                        "level": 1
+                    }
+                ]
+            },
+            "software_architecture_and_methods": {
+                "img": "structure_9377481.png",
+                "skills": [
+                    {
+                        "name": "MVC",
+                        "level": 4
+                    },
+                    {
+                        "name": "Agile",
+                        "level": 3
+                    },
+                    {
+                        "name": "Design Pattern",
+                        "level": 3
+                    },
+                    {
+                        "name": "MERISE",
+                        "level": 2
+                    },
+                    {
+                        "img": "Unified Modelling Language (UML).svg",
+                        "name": "UML",
+                        "level": 2
+                    }
+                ]
+            },
+            "NodeJS_and_Javascript_APIS": {
+                "img": "digital-connectivity_18311368.png",
+                "skills": [
+                    {
+                        "img": "npm-svgrepo-com.svg",
+                        "name": "NPM packages",
+                        "level": 2
+                    }
+                ]
+            },
+            "frameworks_and_libraries_1": {
+                "img": "book_12626845.png",
+                "skills": [
+                    {
+                        "img": "nodejs-icon-svgrepo-com.svg",
+                        "name": "NodeJS",
+                        "level": 4
+                    },
+                    {
+                        "img": "angular-svgrepo-com.svg",
+                        "name": "Angular",
+                        "level": 3
+                    },
+                    {
+                        "img": "jquery-svgrepo-com.svg",
+                        "name": "jQuery",
+                        "level": 3
+                    },
+                    {
+                        "img": "JUnit.svg",
+                        "name": "Junit",
+                        "level": 4
+                    },
+                    {
+                        "img": "Express.svg",
+                        "name": "express.js",
+                        "level": 2
+                    },
+                    {
+                        "img": "Gulp.js.svg",
+                        "name": "gulp",
+                        "level": 1
+                    },
+                    {
+                        "img": "Google Cloud.svg",
+                        "name": "MAPS API",
+                        "level": 0.3
+                    },
+                    {
+                        "name": "commander.js",
+                        "level": 1
+                    },
+                    {
+                        "name": "canvas API",
+                        "level": 1
+                    },
+                    {
+                        "img": "Material UI.svg",
+                        "name": "Material UI",
+                        "level": 3
+                    },
+                    {
+                        "name": "REST",
+                        "level": 3
+                    },
+                    {
+                        "name": "RxJS",
+                        "level": 3
+                    }
+                ]
+            },
+            "frameworks_and_libraries_2": {
+                "img": "book_12626845.png",
+                "skills": [
+                    {
+                        "img": "Spring.svg",
+                        "name": "Spring",
+                        "level": 3
+                    },
+                    {
+                        "img": "NET core.svg",
+                        "name": ".Net core",
+                        "level": 2
+                    },
+                    {
+                        "name": "AJAX",
+                        "level": 2
+                    },
+                    {
+                        "name": "Entity Framework",
+                        "level": 2
+                    },
+                    {
+                        "img": "Express.svg",
+                        "name": "Express",
+                        "level": 2
+                    },
+                    {
+                        "img": "Jest.svg",
+                        "name": "Jest",
+                        "level": 2
+                    },
+                    {
+                        "img": "Laravel.svg",
+                        "name": "Laravel",
+                        "level": 2
+                    },
+                    {
+                        "name": "Mockito",
+                        "level": 2
+                    },
+                    {
+                        "img": "Nest.js.svg",
+                        "name": "NestJS",
+                        "level": 2
+                    },
+                    {
+                        "img": "Next.js.svg",
+                        "name": "Next.JS",
+                        "level": 2
+                    },
+                    {
+                        "img": "Nuxt JS.svg",
+                        "name": "Nuxt",
+                        "level": 1
+                    },
+                    {
+                        "img": "React.svg",
+                        "name": "React",
+                        "level": 2
+                    },
+                    {
+                        "img": "Vue.js.svg",
+                        "name": "Vue.JS",
+                        "level": 2
+                    }
+                ]
+            },
+            "databases": {
+                "img": "unstructured-information_17544135.png",
+                "skills": [
+                    {
+                        "img": "PostgresSQL.svg",
+                        "name": "PostgreSQL",
+                        "level": 2
+                    },
+                    {
+                        "img": "Microsoft SQL Server.svg",
+                        "name": "SQL Server",
+                        "level": 2
+                    }
+                ]
+            },
+            "devops_and_cloud": {
+                "img": "devops_10934039.png",
+                "skills": [
+                    {
+                        "img": "Docker.svg",
+                        "name": "Docker",
+                        "level": 2
+                    },
+                    {
+                        "img": "Jenkins.svg",
+                        "name": "Jenkins",
+                        "level": 2
+                    }
+                ]
+            },
+            "testing_and_quality": {
+                "img": "testing_1875584.png",
+                "skills": [
+                    {
+                        "img": "Cypress.svg",
+                        "name": "Cypress",
+                        "level": 3
+                    },
+                    {
+                        "name": "MStest",
+                        "level": 1
+                    }
+                ]
+            },
+            "devops_and_CI/CD": {
+                "img": "devops_10934039.png",
+                "skills": [
+                    {
+                        "img": "Git.svg",
+                        "name": "GIT",
+                        "level": 4
+                    },
+                    {
+                        "name": "OpenShift",
+                        "level": 1
+                    },
+                    {
+                        "img": "Travis CI.svg",
+                        "name": "Travis-CI",
+                        "level": 1
+                    },
+                    {
+                        "img": "Jira.svg",
+                        "name": "Jira",
+                        "level": 3
+                    },
+                    {
+                        "img": "Confluence.svg",
+                        "name": "Confluence",
+                        "level": 2
+                    }
+                ]
+            },
+            "tools_and_utilities": {
+                "img": "repair-tools_3048308.png",
+                "skills": [
+                    {
+                        "img": "Postman.svg",
+                        "name": "Postman",
+                        "level": 2
+                    },
+                    {
+                        "img": "sparx.png",
+                        "name": "Enterprise Architect",
+                        "level": 2
+                    }
+                ]
+            },
+            "application_servers": {
+                "img": "mobile-storage_9415337.png",
+                "skills": [
+                    {
+                        "img": "Apache Tomcat.svg",
+                        "name": "Apache Tomcat",
+                        "level": 2
+                    },
+                    {
+                        "name": "GlassFish",
+                        "level": 1
+                    }
+                ]
+            }
+        },
+        "legend": {
+            "1": "Knowledge, basics",
+            "2": "Ability to implement in part",
+            "3": "Ability to implement in total autonomy",
+            "4": "Expertise, Ability to transmit"
+        }
+    },
+    "education": [
+        {
+            "year": 2020,
+            "degree": "Bachelier (mention Assez bien)",
+            "institution": "HELMo CG"
+        }
+    ],
+    "languages": [
+        {
+            "language": "Français",
+            "level": "C2 - expérimenté - maîtrise"
+        },
+        {
+            "language": "Anglais",
+            "level": "B2 - indépendant - avancé"
+        },
+        {
+            "language": "Néerlandais",
+            "level": "A1 - élémentaire - introductif"
+        },
+        {
+            "language": "Japonais",
+            "level": "A1 - élémentaire - introductif"
+        }
+    ],
+    "certifications": [
+        {
+            "year": 2020,
+            "name": "M001 : MongoDB Basics"
+        }
+    ],
+    "experience": [
+        {
+            "role": "Consultant Fullstack",
+            "period": "2023 - 2023 (3 mois)",
+            "client": "NSI",
+            "project": "Suite de projet Business Unit GIG",
+            "description": "Projets autour des informations cartographiques pour les communes.",
+            "tasks": [
+                "Modifier les layouts et proposer des solutions en Angular",
+                "Composer des vues avec PrimeNG",
+                "Réaliser des tests fonctionnels",
+                "Utiliser SASS pour personnalisation branding",
+                "Adapter le backend Java Spring"
+            ],
+            "technologies": [
+                "Spring Boot",
+                "Java 16",
+                "Angular 15",
+                "PrimeNG",
+                "SASS",
+                "Oracle",
+                "Liquibase"
+            ]
+        },
+        {
+            "role": "Consultant Fullstack",
+            "period": "2022 - 2023 (8 mois)",
+            "client": "PARADIGM",
+            "project": "Nova",
+            "description": "Application web de digitalisation des permis de bâtir pour la région bruxelloise.",
+            "tasks": [
+                "Retravailler le code",
+                "Effectuer des tests unitaires Mockito",
+                "Assurer la qualité via Sonarqube et Sonarlint",
+                "Mettre en production et déployer les API",
+                "Ajouter des fonctionnalités au Front End JSF",
+                "Gestion d'incidents",
+                "Migration de données avec Liquibase"
+            ],
+            "technologies": [
+                "Maven",
+                "Spring Boot",
+                "Junit 5",
+                "Java 8+",
+                "Hibernate",
+                "Kafka",
+                "JSF",
+                "Primefaces 10",
+                "PostgreSQL",
+                "Liquibase",
+                "Jenkins",
+                "Jira",
+                "Confluence",
+                "BitBucket"
+            ]
+        },
+        {
+            "role": "Consultant Fullstack",
+            "period": "2021 - 2022 (10 mois)",
+            "client": "PROFECTUS IT",
+            "project": "Pro HR",
+            "description": "Plateforme HR sur mesure pour gestion des congés.",
+            "tasks": [
+                "Exposer des endpoints REST en Java Spring Boot",
+                "Créer des composants Angular Material",
+                "Collaborer sur projets internes",
+                "Documentation via Jira et Confluence"
+            ],
+            "technologies": [
+                "Spring Boot",
+                "Hibernate",
+                "Spring Data JPA",
+                "NodeJS",
+                "Angular 12",
+                "PostgreSQL",
+                "Jira",
+                "Confluence",
+                "Bitbucket"
+            ]
+        },
+        {
+            "role": "Consultant Fullstack",
+            "period": "2020 - 2021 (10 mois)",
+            "client": "DNA SOLUTIONS",
+            "project": "I/O Balance Tracker, Billing App",
+            "description": "Projets bancaires et de facturation pour convois de marchandises.",
+            "tasks": [
+                "Utiliser API Fortis Banque",
+                "CRUD avec MongoDB",
+                "Créer un composant React drag-and-drop",
+                "Développement d’un outil Cypress pour tests E2E",
+                "Endpoints REST pour front-back Spring Boot"
+            ],
+            "technologies": [
+                "NodeJS",
+                "MongoDB",
+                "Express",
+                "React",
+                "Spring REST API",
+                "Spring Data JPA",
+                "JUnit",
+                "Cypress",
+                "PostgreSQL",
+                "Splunk"
+            ]
+        },
+        {
+            "role": "Webmaster",
+            "period": "2019 - 2020 (8 mois)",
+            "client": "RADIOSQ",
+            "project": "Web radio",
+            "description": "Mise en place et gestion d'un site de radio en ligne.",
+            "tasks": [
+                "Déploiement sur LWS",
+                "SEO et optimisation",
+                "Analyse des besoins"
+            ],
+            "technologies": [
+                "PHP Laravel",
+                "Vue.js"
+            ]
+        },
+        {
+            "role": "Développeur web",
+            "period": "2018 - 2019 (6 mois)",
+            "client": "JAG2SOLUTIONS",
+            "project": "iXpole",
+            "description": "Portail VIP de tickets pour événements.",
+            "tasks": [
+                "Backend Laravel et frontend Vue.js",
+                "Internationalisation via API",
+                "Design emails avec Affinity",
+                "Modification tickets en PHP",
+                "Frontend ticket generator"
+            ],
+            "technologies": [
+                "PHP Laravel",
+                "Vue.js",
+                "REST",
+                "Affinity suite",
+                "API",
+                ".htaccess",
+                "CSS"
+            ]
+        }
+    ],
+    "personal_projects": [
+        {
+            "name": "Translation Book Platform",
+            "description": "Application d'apprentissage participatif de langues (NL-FR).",
+            "tasks": [
+                "Angular back office et front office",
+                "Composants Material UI",
+                "Filtres et dialogues dynamiques",
+                "Implémentation EventBus RxJS",
+                "Connexion Google via Firebase",
+                "Flashcards",
+                "Intégration DeepL",
+                "CSV management",
+                "Déploiement via CPanel"
+            ],
+            "technologies": [
+                "NestJS",
+                "Angular",
+                "Tailwind CSS",
+                "SCSS",
+                "Material UI",
+                "GIT",
+                "PostgreSQL",
+                "Express.js",
+                "Node scripts",
+                "Jest",
+                "CPanel",
+                "Prisma",
+                "TypeORM"
+            ]
+        }
+    ]
+}

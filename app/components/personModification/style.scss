@@ -1,0 +1,15 @@
+.button-container {
+    display: flex;
+    justify-content: end;
+}
+
+.save-button {
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+
+.icon-only {
+    span {
+        display: none;
+    }
+}

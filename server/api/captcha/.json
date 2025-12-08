@@ -1,0 +1,24 @@
+{
+    "bad": {
+        "tokenProperties": {
+            "valid": false,
+            "invalidReason": "EXPIRED",
+            "hostname": "",
+            "androidPackageName": "",
+            "iosBundleId": "",
+            "action": "",
+            "createTime": "2025-12-07T22:39:36.413Z"
+        }
+    },
+    "good": {
+        "tokenProperties": {
+            "valid": true,
+            "invalidReason": "INVALID_REASON_UNSPECIFIED",
+            "hostname": "localhost",
+            "androidPackageName": "",
+            "iosBundleId": "",
+            "action": "",
+            "createTime": "2025-12-07T22:42:32.787Z"
+        }
+    }
+}

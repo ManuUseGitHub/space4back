@@ -1,0 +1,13 @@
+DELETE FROM public.system WHERE true;
+DELETE FROM public.preferences WHERE true;
+DELETE FROM public.userskills WHERE true;
+DELETE FROM public.experience WHERE true;
+DELETE FROM public.user WHERE true;
+DELETE FROM public.skills WHERE true;
+DELETE FROM public.skillsector WHERE true;
+DELETE FROM public.profession WHERE true;
+DELETE FROM public.sector WHERE true;
+ALTER SEQUENCE public.skills_id_seq RESTART WITH 1;
+ALTER SEQUENCE public.skillsector_id_seq RESTART WITH 1;
+ALTER SEQUENCE public.profession_id_seq RESTART WITH 1;
+ALTER SEQUENCE public.sector_id_seq RESTART WITH 1;

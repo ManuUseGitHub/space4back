@@ -1,0 +1,42 @@
+.no-flex {
+    flex: unset;
+    width: fit-content;
+    border: 1px solid grey;
+    border-radius: 14px;
+    max-height: 8em;
+    max-width: 8em;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    z-index: 5;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: unset;
+    }
+}
+
+.p-fileupload {
+    width: fit-content;
+}
+
+.send-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    button {
+        border: 1px solid white;
+        background-color: #33333377;
+        margin: 0;
+    }
+}
+
+.profile-picture {
+    img {
+        border-radius: 11px;
+    }
+}

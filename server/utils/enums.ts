@@ -1,0 +1,16 @@
+export enum FIELDS {
+	PASSWORD = "password",
+	HASHED_PASSWORD = "hashedPassword",
+	FIRST_NAME = "firstName",
+	LAST_NAME = "lastName",
+	BIRTH_DATE = "birthDate",
+	PHONE = "phone",
+	MAIL_ADDRESS = "mailAddress",
+	GENDER = "gender",
+	TITLE = "title",
+	ENTERPRISE = "enterprise",
+	INTRODUCTION = "introduction",
+	PROFESSIONAL_GOAL = "professionalGoal",
+	REPEAT_PASS = "repeatPass",
+	RE_CAPTCHA = "reCaptcha",
+}

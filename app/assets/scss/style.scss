@@ -1,0 +1,392 @@
+@use 'bootstrap/scss/bootstrap';
+@use "prismjs/themes/prism-tomorrow.css";
+@use "flag-icons/css/flag-icons.min.css";
+@use "./themes.scss";
+
+#banner {
+    background: black;
+    overflow: hidden;
+
+}
+
+.edit-button,
+.upload-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0.5);
+
+    &:hover {
+        transform: unset;
+    }
+}
+
+.upload-button button.p-fileupload-choose-button,
+.edit-button {
+    border: 1px solid white;
+    background-color: #33333377;
+    margin: 0;
+}
+
+.edit-button {
+    color: white;
+    right: 0.3em;
+    top: 0.3em;
+    bottom: unset !important;
+}
+
+.info-pane {
+    background-color: var(--back-color);
+}
+
+.icon-button {
+    content: "";
+    display: block important;
+    margin: auto;
+    background-color: inherit;
+    line-height: 50px !important;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.toggleErrorButton .p-button-icon {
+    color: red !important;
+}
+
+.errored,
+.errored.p-panel {
+
+    background: linear-gradient(300deg, rgba(255, 0, 0, 0) 75%, rgba(255, 0, 0, 0.11) 100%);
+    border-color: rgba(255, 0, 0, 0.253);
+}
+
+.p-panel {
+    .p-panel-header .pi {
+        color: inherit;
+    }
+
+    span.p-panel-title {
+        color: rgb(246, 246, 246);
+    }
+
+    &[severity="info"] {
+        color: #eeeeee;
+        font-weight: 300;
+        background: #0091FF;
+        background: linear-gradient(31deg, rgba(0, 145, 255, 1) 0%, rgb(0, 36, 155) 100%);
+    }
+
+    &[severity="danger"] {
+
+        color: #eeeeee;
+        font-weight: 300;
+        background: #e3534c;
+        background: linear-gradient(31deg, #e3534c 0%, #9f2822 100%);
+    }
+}
+
+.error {
+    color: red;
+}
+
+.p-panel {
+    background: inherit;
+}
+
+.p-panel[severity="danger"] {
+    .pannel-content {
+        transition: opacity 0.3s cubic-bezier(0.58, 0.58, 0, 1);
+        overflow: auto;
+        opacity: 0;
+    }
+
+    right: 0;
+    height: 0%;
+
+    transition: width 0.3s cubic-bezier(0.58, 0.58, 0, 1),
+    height 0.3s cubic-bezier(0.58, 0.58, 0, 1);
+
+    &.expended {
+        .pannel-content {
+            overflow: auto;
+            //transition: opacity 3s cubic-bezier(0.58, 0.58, 0, 1);
+            opacity: .95;
+        }
+
+        width: 100% !important;
+        height: 100%;
+    }
+}
+
+.p-dialog>.p-dialog-content {
+    padding: 0;
+}
+
+.error-item {
+
+    .p-inputgroupaddon,
+    .pi {
+        background: #a02f2a;
+        border-color: white;
+        color: white;
+    }
+
+    .col {
+        justify-content: flex-start;
+    }
+}
+
+.card {
+    label {
+        color: #adadad;
+    }
+
+    .p-inputgroup .p-inputgroupaddon {
+        color: rgb(63, 98, 203);
+    }
+
+    .incard,
+    input,
+    .p-inputgroup,
+    .p-inputgroupaddon,
+    .p-inputtext,
+    .p-textarea,
+    .p-password *,
+    .p-datepicker * {
+        background: inherit;
+    }
+
+    .p-floatlabel {
+
+        .p-inputwrapper-filled,
+        .p-inputwrapper-focus,
+        .p-filled,
+        .p-focused,
+        .p-inputtext.p-component,
+        .p-password-input {
+            ~label {
+                padding: 2px .5em;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    .p-inputgroup input,
+    .p-inputgroupaddon,
+    .p-password *,
+    .p-datepicker *,
+    .p-inputgroup [role='field'],
+    .p-inputgroup [role='bloc-field'],
+    #social-field-group {
+        font-size: 1.2em;
+        border-color: var(--field-border-color) !important;
+    }
+
+    .p-inputgroup input,
+    .p-inputgroupaddon,
+    .p-inputgroup [role='field'],
+    .p-inputgroup [role='bloc-field'] {
+        background: transparent
+    }
+
+    hr {
+        border-color: var(--hr-border-color) !important;
+    }
+
+    .p-divider-solid.p-divider-vertical:before {
+        border-inline-start-color: var(--hr-border-color);
+        opacity:.3;
+    }
+
+    .incard {
+        display: inline-block;
+    }
+
+    .p-inputgroup,
+    #social-field-group {
+        border-radius: 5px;
+        background: var(--field-background-color);
+    }
+
+    .invalid {
+
+        .p-inputgroup input,
+        .p-inputgroup [role='bloc-field'],
+        .p-inputgroup .p-inputgroupaddon {
+            color: red;
+            border-color: #ffcdcd !important;
+        }
+
+        .p-inputgroup {
+            background: #ff959521;
+        }
+
+        .p-inputgroup label {
+            color: red;
+        }
+    }
+}
+
+ul.list-none {
+    padding-left: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+/* Remove Select's border & padding so it behaves like InputGroupAddon */
+.phone-addon .phone-select .p-select-label {
+    padding: 0;
+}
+
+.phone-addon span.p-select-label {
+    overflow: visible !important;
+    padding: 0 !important;
+}
+
+.phone-addon .phone-select {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+.stretched-h {
+    height: 100% !important;
+}
+
+button[data-p-severity="danger"] .p-button-icon {
+    color: #9f2822;
+    cursor: not-allowed;
+}
+
+svg.gender-icon {
+    fill: currentColor;
+
+    path {
+        fill: inherit
+    }
+}
+
+.gender-picker .p-component.p-selectbutton {
+    width: 100%;
+
+    .p-togglebutton {
+        flex: 1;
+        padding: 0;
+        background: transparent;
+        border-color: rgba(170, 170, 170, 0.4666666667);
+
+        &.p-togglebutton-checked {
+            .p-togglebutton-content {
+                background: var(--p-togglebutton-checked-background);
+                color: black;
+            }
+        }
+
+        .p-togglebutton-content {
+            border-radius: 0;
+        }
+    }
+}
+
+.gender-picker.male-style .p-component.p-selectbutton {
+    .p-togglebutton.p-togglebutton-checked {
+        color: dodgerblue;
+
+        span {
+            color: inherit
+        }
+
+        .p-togglebutton-content {
+            background: #d8e8ff42;
+
+        }
+    }
+}
+
+.gender-picker.female-style .p-component.p-selectbutton {
+    .p-togglebutton.p-togglebutton-checked {
+        color: #ff00c4;
+
+        span {
+            color: inherit
+        }
+
+        .p-togglebutton-content {
+            background: #ffdff842;
+
+        }
+    }
+}
+
+.gender-picker.special-style .p-component.p-selectbutton {
+    .p-togglebutton.p-togglebutton-checked {
+        color: rgb(255, 204, 0);
+
+        span {
+            color: inherit
+        }
+
+        .p-togglebutton-content {
+            background: #fff7de42;
+        }
+    }
+}
+
+.border {
+    border: .2px solid #b4b4b477 !important;
+    border-radius: .5em;
+}
+
+.social-button {
+    span {
+        font-size: inherit;
+    }
+}
+
+.no-flex {
+    flex: unset;
+    width: fit-content;
+    max-height: 8em;
+    max-width: 8em;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: unset;
+
+
+    }
+
+    .profile-picture {
+        margin: 0 !important;
+        padding: 0;
+
+        img {
+
+            width: unset !important;
+            height: 100%;
+        }
+    }
+}
+
+.cicle-image {
+    border-radius: 100%;
+
+    img {
+        transform: scale(1.2);
+    }
+}
+
+.popuplike-main {
+    border-left: thin dotted;
+    padding: 0 1em;
+}
