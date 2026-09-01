@@ -1,0 +1,100 @@
+// ----------------------------------------
+// Configurable triangle shape generator
+// ----------------------------------------
+@mixin triangle-shape($direction, $height: 50px) {
+  // ----------------------------------------
+  // Core layout styles
+  // ----------------------------------------
+  .content {
+    position: relative;
+    //padding-top: $height;
+    //padding-bottom: $height;
+  }
+
+  .mz-sep {
+    position: absolute !important;
+    overflow: hidden;
+    width: 100%;
+    height: $height;
+    border: none;
+
+    --color: transparent;
+
+    &.mz-light {
+      --color: var(--color-background);
+    }
+
+    &.mz-dark {
+      --color: var(--color-background-dark);
+    }
+
+    &.mz-inherit {
+      --color: currentColor;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+      border-style: solid;
+
+      // Debug border colors
+      border-top-color: red;
+      border-right-color: orange;
+      border-bottom-color: green;
+      border-left-color: dodgerblue;
+
+      border-color: transparent;
+      border-width: $height 100vw $height 0;
+    }
+
+    &.animated.gewy::before {
+      transition: border-width 0.5s cubic-bezier(0.86, -0.18, 0.29, 1.36);
+    }
+
+    &.animated.smooth-cream::before {
+      transition:
+        border-width 2.5s cubic-bezier(0.31, 0, 0.37, 1.21),
+        top 0.5s cubic-bezier(0, 0.97, 0.96, 1.02),
+        bottom 0.5s cubic-bezier(0, 0.97, 0.96, 1.02);
+    }
+
+    &.in-top {
+      top: 0;
+    }
+
+    &.in-down {
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  @for $i from 0 through 100 {
+    $left: #{$i}vw;
+    $right: #{100 - $i}vw;
+
+    // BANG (angled sides)
+    .#{"in-" + $direction}.bang-#{$i}::before {
+      top: if($direction == "top", -$height, 0);
+      border-width: #{$height} $right #{$height} $left;
+      border-left-color: var(--color);
+      border-right-color: var(--color);
+    }
+
+    // CRUNCH (angled middle)
+    .#{"in-" + $direction}.crunch-#{$i}::before {
+      top: if($direction == "top", 0, -$height);
+      border-width: #{$height} $right #{$height} $left;
+      border-#{if($direction == 'top', 'top', 'bottom')}-color: var(--color);
+    }
+  }
+}
+
+// ----------------------------------------
+// Generate all bang/crunch variants
+// ----------------------------------------
+@include triangle-shape("top", 50px);
+@include triangle-shape("down", 50px);

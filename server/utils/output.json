@@ -1,0 +1,4881 @@
+{
+  "10": {
+    "label": "XQuery Error",
+    "errorSet": [
+      {
+        "code": "10501",
+        "key": "xquery_expression_missing_assignment_static_or_dynamic_context_component",
+        "ibm": true,
+        "reason": "An XQuery expression is missing the assignment of a static or dynamic context component."
+      },
+      {
+        "code": "10502",
+        "key": "error_encountered_in_prolog_of_an_xquery_expression",
+        "ibm": true,
+        "reason": "An error was encountered in the prolog of an XQuery expression."
+      },
+      {
+        "code": "10503",
+        "key": "duplicate_name_defined_in_an_xquery_or_xpath_expression",
+        "ibm": true,
+        "reason": "A duplicate name was defined in an XQuery or XPath expression."
+      },
+      {
+        "code": "10504",
+        "key": "xquery_namespace_declaration_specified_an_invalid_uri",
+        "ibm": true,
+        "reason": "An XQuery namespace declaration specified an invalid URI."
+      },
+      {
+        "code": "10505",
+        "key": "character_token_or_clause_missing_or_invalid_in_an_xquery_expression",
+        "ibm": true,
+        "reason": "A character, token or clause is missing or invalid in an XQuery expression."
+      },
+      {
+        "code": "10506",
+        "key": "xquery_expression_references_name_that_not_defined",
+        "ibm": true,
+        "reason": "An XQuery expression references a name that is not defined."
+      },
+      {
+        "code": "10507",
+        "key": "type_error_encountered_processing_an_xpath_or_xquery_expression",
+        "ibm": true,
+        "reason": "A type error was encountered processing an XPath or XQuery expression."
+      },
+      {
+        "code": "10509",
+        "key": "unsupported_xquery_language_feature_specified",
+        "ibm": true,
+        "reason": "An unsupported XQuery language feature is specified."
+      },
+      {
+        "code": "10601",
+        "key": "arithmetic_error_encountered_processing_an_xquery_function_or_operator",
+        "ibm": true,
+        "reason": "An arithmetic error was encountered processing an XQuery function or operator."
+      },
+      {
+        "code": "10602",
+        "key": "casting_error_encountered_processing_an_xquery_function_or_operator",
+        "ibm": true,
+        "reason": "A casting error was encountered processing an XQuery function or operator."
+      },
+      {
+        "code": "10605",
+        "key": "datetime_error_encountered_processing_an_xquery_function_or_operator",
+        "ibm": true,
+        "reason": "A datetime error was encountered processing an XQuery function or operator."
+      },
+      {
+        "code": "10608",
+        "key": "invalid_argument_for_xquery",
+        "ibm": true,
+        "reason": "An error was encountered in the argument of an XQuery function or operator."
+      },
+      {
+        "code": "10609",
+        "key": "regular_expression_error_encountered_processing_an_xquery_function_or_operator",
+        "ibm": true,
+        "reason": "A regular expression error was encountered processing an XQuery function or operator."
+      }
+    ]
+  },
+  "20": {
+    "label": "Case Not Found for Case Statement",
+    "errorSet": [
+      {
+        "code": "20000",
+        "key": "case_not_found",
+        "ibm": true,
+        "reason": "The case was not found for the CASE statement."
+      }
+    ]
+  },
+  "21": {
+    "label": "Cardinality Violation",
+    "errorSet": [
+      {
+        "code": "21000",
+        "key": "cardinality_violation",
+        "ibm": true,
+        "reason": "The result of a SELECT INTO, scalar fullselect, or subquery of a basic predicate is more than one value."
+      },
+      {
+        "code": "21506",
+        "key": "same_row_of_target_table_identified_more_than_once_for_an_update_delete_or_insert_operation_of_merge_statement",
+        "ibm": true,
+        "reason": "The same row of the target table was identified more than once for an update, delete, or insert operation of the MERGE statement."
+      }
+    ]
+  },
+  "22": {
+    "label": "Data Exception",
+    "errorSet": [
+      {
+        "code": "22000",
+        "key": "data_exception",
+        "ibm": true,
+        "reason": "Data exception"
+      },
+      {
+        "code": "22001",
+        "key": "character_data_right_truncation",
+        "ibm": true,
+        "reason": "Character data, right truncation occurred"
+      },
+      {
+        "code": "22021",
+        "key": "character_not_in_repertoire",
+        "ibm": true,
+        "reason": "Character not in repertoire"
+      },
+      {
+        "code": "22002",
+        "key": "null_value_no_indicator_parameter",
+        "ibm": true,
+        "reason": "A null value, or the absence of an indicator parameter was detected"
+      },
+      {
+        "code": "22026",
+        "key": "string_data_length_mismatch",
+        "ibm": true,
+        "reason": "String data length mismatch"
+      },
+      {
+        "code": "2202E",
+        "key": "array_subscript_error",
+        "ibm": true,
+        "reason": "Array subscript error"
+      },
+      {
+        "code": "22003",
+        "key": "numeric_value_out_of_range",
+        "ibm": true,
+        "reason": "A numeric value is out of range."
+      },
+      {
+        "code": "22004",
+        "key": "null_value_not_allowed",
+        "ibm": true,
+        "reason": "A null value is not allowed."
+      },
+      {
+        "code": "22005",
+        "key": "error_in_assignment",
+        "ibm": true,
+        "reason": "An error occurred on assignment."
+      },
+      {
+        "code": "22006",
+        "key": "fetch_orientation_invalid",
+        "ibm": true,
+        "reason": "The fetch orientation is invalid."
+      },
+      {
+        "code": "22007",
+        "key": "invalid_datetime_format",
+        "ibm": true,
+        "reason": "An invalid datetime format was detected"
+      },
+      {
+        "code": "22008",
+        "key": "datetime_field_overflow",
+        "ibm": true,
+        "reason": "Datetime field overflow occurred"
+      },
+      {
+        "code": "22009",
+        "key": "invalid_time_zone_displacement_value",
+        "ibm": true,
+        "reason": "Invalid time zone displacement value"
+      },
+      {
+        "code": "2200B",
+        "key": "escape_character_conflict",
+        "ibm": true,
+        "reason": "Escape character conflict"
+      },
+      {
+        "code": "2200C",
+        "key": "invalid_use_of_escape_character",
+        "ibm": true,
+        "reason": "Invalid use of escape character"
+      },
+      {
+        "code": "2200D",
+        "key": "invalid_escape_octet",
+        "ibm": true,
+        "reason": "Invalid escape octet"
+      },
+      {
+        "code": "2200E",
+        "key": "null_value_in_array_target",
+        "ibm": true,
+        "reason": "Null value in array target."
+      },
+      {
+        "code": "2200F",
+        "key": "zero_length_character_string",
+        "ibm": true,
+        "reason": "Zero-length character string"
+      },
+      {
+        "code": "2200G",
+        "key": "most_specific_type_mismatch",
+        "ibm": true,
+        "reason": "Most specific type mismatch"
+      },
+      {
+        "code": "2200H",
+        "key": "sequence_generator_limit_exceeded",
+        "ibm": true,
+        "reason": "Sequence generator limit exceeded"
+      },
+      {
+        "code": "2200L",
+        "key": "xml_value_not_well_formed_document_with_single_root_element",
+        "ibm": true,
+        "reason": "The XML value is not a well-formed document with a single root element."
+      },
+      {
+        "code": "2200S",
+        "key": "invalid_xml_comment",
+        "ibm": true,
+        "reason": "The XML comment is not valid."
+      },
+      {
+        "code": "2200L",
+        "key": "not_an_xml_document",
+        "ibm": true,
+        "reason": "The XML value is not a well-formed document with a single root element."
+      },
+      {
+        "code": "2200M",
+        "key": "invalid_xml_document",
+        "ibm": true,
+        "reason": "The XML document is not valid."
+      },
+      {
+        "code": "2200N",
+        "key": "invalid_xml_content",
+        "ibm": false,
+        "reason": "The XML content is not valid."
+      },
+      {
+        "code": "2200T",
+        "key": "xml_processing_instruction_not_valid",
+        "ibm": true,
+        "reason": "The XML processing instruction is not valid."
+      },
+      {
+        "code": "2200W",
+        "key": "xml_value_contained_data_that_could_not_be_serialized",
+        "ibm": true,
+        "reason": "An XML value contained data that could not be serialized."
+      },
+      {
+        "code": "22010",
+        "key": "invalid_indicator_parameter_value",
+        "ibm": true,
+        "reason": "Invalid indicator parameter value."
+      },
+      {
+        "code": "22011",
+        "key": "substring_error",
+        "ibm": true,
+        "reason": "A substring error occurred"
+      },
+      {
+        "code": "22012",
+        "key": "division_by_zero",
+        "ibm": true,
+        "reason": "Division by zero is invalid."
+      },
+      {
+        "code": "22013",
+        "key": "invalid_preceding_or_following_size",
+        "ibm": true,
+        "reason": "Invalid preceding or following size"
+      },
+      {
+        "code": "22014",
+        "key": "invalid_argument_for_ntile_function",
+        "ibm": true,
+        "reason": "Invalid argument for NTILE function."
+      },
+      {
+        "code": "22015",
+        "key": "interval_field_overflow",
+        "ibm": true,
+        "reason": "Invalid XQuery regular expression."
+      },
+      {
+        "code": "22016",
+        "key": "invalid_argument_for_nth_value_function",
+        "ibm": true,
+        "reason": "Invalid argument for NTH_VALUE function."
+      },
+      {
+        "code": "22018",
+        "key": "invalid_character_value_for_cast",
+        "ibm": true,
+        "reason": "The character value for a CAST specification or cast scalar function is invalid."
+      },
+      {
+        "code": "22019",
+        "key": "invalid_escape_character",
+        "ibm": true,
+        "reason": "The LIKE predicate has an invalid escape character."
+      },
+      {
+        "code": "2201B",
+        "key": "invalid_regular_expression",
+        "ibm": true,
+        "reason": "Invalid regular expression"
+      },
+      {
+        "code": "2202G",
+        "key": "invalid_tablesample_repeat",
+        "ibm": true,
+        "reason": "Invalid TABLESAMPLE REPEAT"
+      },
+      {
+        "code": "2202H",
+        "key": "invalid_tablesample_argument",
+        "ibm": true,
+        "reason": "Invalid TABLESAMPLE argument"
+      },
+      {
+        "code": "2201R",
+        "key": "xml_document_not_valid",
+        "ibm": true,
+        "reason": "The XML document is not valid."
+      },
+      {
+        "code": "2201S",
+        "key": "interval_field_overflow",
+        "ibm": true,
+        "reason": "Invalid XQuery regular expression."
+      },
+      {
+        "code": "2201T",
+        "key": "invalid_option_flag_associated_with_regular_expression",
+        "ibm": true,
+        "reason": "Invalid option flag associated with regular expression."
+      },
+      {
+        "code": "2201V",
+        "key": "invalid_replacement_string_for_matched_regular_expression",
+        "ibm": true,
+        "reason": "Invalid replacement string for matched regular expression."
+      },
+      {
+        "code": "2201W",
+        "key": "invalid_row_count_in_limit_clause",
+        "ibm": true,
+        "reason": "The row count in the FETCH FIRST clause or LIMIT clause is invalid."
+      },
+      {
+        "code": "2201X",
+        "key": "invalid_row_count_in_result_offset_clause",
+        "ibm": true,
+        "reason": "The row count in the result OFFSET clause is invalid."
+      },
+      {
+        "code": "22021",
+        "key": "character_not_in_repertoire",
+        "ibm": true,
+        "reason": "A character is not in the coded character set or the conversion is not supported."
+      },
+      {
+        "code": "22022",
+        "key": "indicator_overflow",
+        "ibm": true,
+        "reason": "Indicator overflow"
+      },
+      {
+        "code": "22023",
+        "key": "invalid_parameter_value",
+        "ibm": true,
+        "reason": "A parameter or variable value is invalid."
+      },
+      {
+        "code": "22024",
+        "key": "unterminated_c_string",
+        "ibm": true,
+        "reason": "A NUL-terminated input host variable or parameter did not contain a NUL."
+      },
+      {
+        "code": "22027",
+        "key": "trim_error",
+        "ibm": true,
+        "reason": "Trim error"
+      },
+      {
+        "code": "22025",
+        "key": "invalid_escape_sequence",
+        "ibm": true,
+        "reason": "The LIKE predicate string pattern contains an invalid occurrence of an escape character."
+      },
+      {
+        "code": "2201E",
+        "key": "invalid_argument_for_logarithm",
+        "ibm": true,
+        "reason": "Invalid argument for logarithm"
+      },
+      {
+        "code": "2202E",
+        "key": "array_element_error",
+        "ibm": true,
+        "reason": "Array element error."
+      },
+      {
+        "code": "2201F",
+        "key": "invalid_argument_for_power_function",
+        "ibm": true,
+        "reason": "Invalid argument for POWER"
+      },
+      {
+        "code": "2202F",
+        "key": "array_data_right_truncation",
+        "ibm": true,
+        "reason": "Array data, right truncation."
+      },
+      {
+        "code": "2201G",
+        "key": "invalid_argument_for_width_bucket_function",
+        "ibm": true,
+        "reason": "Invalid argument for WIDTH_BUCKET"
+      },
+      {
+        "code": "22030",
+        "key": "duplicate_json_object_key_value",
+        "ibm": true,
+        "reason": "Duplicate JSON object key value."
+      },
+      {
+        "code": "22032",
+        "key": "invalid_json_text",
+        "ibm": true,
+        "reason": "Invalid JSON text."
+      },
+      {
+        "code": "22033",
+        "key": "invalid_sql_json_subscript",
+        "ibm": true,
+        "reason": "Invalid SQL/JSON subscript."
+      },
+      {
+        "code": "22034",
+        "key": "more_than_one_sql_json_item",
+        "ibm": true,
+        "reason": "More than one SQL/JSON item."
+      },
+      {
+        "code": "22035",
+        "key": "no_sql_json_item",
+        "ibm": true,
+        "reason": "No SQL/JSON item."
+      },
+      {
+        "code": "22037",
+        "key": "non_unique_keys_in_json_object",
+        "ibm": true,
+        "reason": "Non-unique keys in a JSON object."
+      },
+      {
+        "code": "22039",
+        "key": "sql_json_array_not_found",
+        "ibm": true,
+        "reason": "SQL/JSON array not found."
+      },
+      {
+        "code": "2203A",
+        "key": "sql_json_member_not_found",
+        "ibm": true,
+        "reason": "SQL/JSON member not found."
+      },
+      {
+        "code": "2203F",
+        "key": "sql_json_scalar_required",
+        "ibm": true,
+        "reason": "SQL/JSON scalar required."
+      },
+      {
+        "code": "22501",
+        "key": "length_control_field_variable_length_string_negative_or_greater_than_maximum",
+        "ibm": true,
+        "reason": "The length control field of a variable length string is negative or greater than the maximum."
+      },
+      {
+        "code": "22502",
+        "key": "signaling_nan_encountered",
+        "ibm": true,
+        "reason": "Signaling NaN was encountered."
+      },
+      {
+        "code": "22503",
+        "key": "string_representation_name_invalid",
+        "ibm": true,
+        "reason": "The string representation of a name is invalid."
+      },
+      {
+        "code": "22504",
+        "key": "mixed_data_value_invalid",
+        "ibm": true,
+        "reason": "A mixed data value is invalid."
+      },
+      {
+        "code": "22511",
+        "key": "value_for_rowid_or_reference_column_not_valid",
+        "ibm": true,
+        "reason": "The value for a ROWID or reference column is not valid."
+      },
+      {
+        "code": "22522",
+        "key": "ccsid_value_not_valid_at_all_not_valid_for_data_type_or_subtype_or_not_valid_for_encoding_scheme",
+        "ibm": true,
+        "reason": "A CCSID value is not valid at all, not valid for the data type or subtype, or not valid for the encoding scheme."
+      },
+      {
+        "code": "22524",
+        "key": "character_conversion_resulted_in_truncation",
+        "ibm": true,
+        "reason": "Character conversion resulted in truncation"
+      },
+      {
+        "code": "22525",
+        "key": "partitioning_key_value_not_valid",
+        "ibm": true,
+        "reason": "Partitioning key value is not valid."
+      },
+      {
+        "code": "22527",
+        "key": "invalid_input_data_detected_for_multiple_row_insert",
+        "ibm": true,
+        "reason": "Invalid input data detected for a multiple-row insert."
+      },
+      {
+        "code": "22528",
+        "key": "binary_data_invalid_for_decrypt_char_and_decyrypt_db",
+        "ibm": true,
+        "reason": "Binary data is invalid for DECRYPT_CHAR and DECYRYPT_DB."
+      },
+      {
+        "code": "22534",
+        "key": "xml_schema_document_not_connected_to_other_xml_schema_documents_using_an_include_or_redefine",
+        "ibm": true,
+        "reason": "An XML schema document is not connected to the other XML schema documents using an include or redefine."
+      },
+      {
+        "code": "22535",
+        "key": "xml_schema_does_not_declare_specified_global_element",
+        "ibm": true,
+        "reason": "The XML schema does not declare the specified global element."
+      },
+      {
+        "code": "22536",
+        "key": "xml_value_does_not_contain_required_root_element",
+        "ibm": true,
+        "reason": "The XML value does not contain the required root element."
+      },
+      {
+        "code": "22539",
+        "key": "invalid_use_of_extended_indicator_parameter_value",
+        "ibm": true,
+        "reason": "Invalid use of extended indicator parameter value."
+      },
+      {
+        "code": "22540",
+        "key": "update_operation_cannot_have_all_columns_set_to_be_unassigned",
+        "ibm": true,
+        "reason": "An update operation cannot have all columns set to be unassigned."
+      },
+      {
+        "code": "22542",
+        "key": "insert_or_update_in_not_allowed_because_resulting_row_does_not_satisfy_row_permissions",
+        "ibm": true,
+        "reason": "The INSERT or UPDATE in not allowed because a resulting row does not satisfy row permissions."
+      },
+      {
+        "code": "22546",
+        "key": "value_for_routine_argument_not_valid",
+        "ibm": true,
+        "reason": "The value for a routine argument is not valid."
+      },
+      {
+        "code": "22547",
+        "key": "multiple_result_values_cannot_be_returned_from_scalar_function",
+        "ibm": true,
+        "reason": "Multiple result values cannot be returned from the scalar function."
+      },
+      {
+        "code": "225D1",
+        "key": "specified_xml_schema_not_enabled_for_decomposition",
+        "ibm": true,
+        "reason": "The specified XML schema is not enabled for decomposition."
+      },
+      {
+        "code": "225D2",
+        "key": "sql_error_occurred_during_decomposition_of_an_xml_document",
+        "ibm": true,
+        "reason": "An SQL Error occurred during decomposition of an XML document."
+      },
+      {
+        "code": "225DE",
+        "key": "xml_schema_cannot_be_enabled_for_decomposition",
+        "ibm": true,
+        "reason": "An XML schema cannot be enabled for decomposition."
+      },
+      {
+        "code": "22P01",
+        "key": "floating_point_exception",
+        "ibm": false,
+        "reason": "Floating-point exception"
+      },
+      {
+        "code": "22P02",
+        "key": "invalid_text_representation",
+        "ibm": false,
+        "reason": "Invalid text representation"
+      },
+      {
+        "code": "22P03",
+        "key": "invalid_binary_representation",
+        "ibm": false,
+        "reason": "Invalid binary representation"
+      },
+      {
+        "code": "22P04",
+        "key": "bad_copy_file_format",
+        "ibm": false,
+        "reason": "Bad COPY file format"
+      },
+      {
+        "code": "22P05",
+        "key": "untranslatable_character",
+        "ibm": false,
+        "reason": "Untranslatable character"
+      },
+      {
+        "code": "22P06",
+        "key": "nonstandard_use_of_escape_character",
+        "ibm": false,
+        "reason": "Nonstandard use of escape character"
+      },
+      {
+        "code": "225X0",
+        "key": "xslt_processor_error",
+        "ibm": true,
+        "reason": "XSLT processor error."
+      }
+    ]
+  },
+  "23": {
+    "label": "Constraint Violation",
+    "errorSet": [
+      {
+        "code": "23000",
+        "key": "integrity_constraint_violation",
+        "ibm": true,
+        "reason": "Integrity constraint violation"
+      },
+      {
+        "code": "23001",
+        "key": "restrict_violation",
+        "ibm": true,
+        "reason": "The update or delete of a parent key is prevented by a RESTRICT update or delete rule."
+      },
+      {
+        "code": "23502",
+        "key": "not_null_violation",
+        "ibm": true,
+        "reason": "An insert or update value is null, but the column cannot contain null values."
+      },
+      {
+        "code": "23503",
+        "key": "foreign_key_violation",
+        "ibm": true,
+        "reason": "The insert or update value of a foreign key is invalid."
+      },
+      {
+        "code": "23504",
+        "key": "update_or_delete_parent_key_prevented_by_no_action_update_or_delete_rule",
+        "ibm": true,
+        "reason": "The update or delete of a parent key is prevented by a NO ACTION update or delete rule."
+      },
+      {
+        "code": "23505",
+        "key": "unique_violation",
+        "ibm": true,
+        "reason": "A violation of the constraint imposed by a unique index or a unique constraint occurred."
+      },
+      {
+        "code": "23507",
+        "key": "violation_constraint_imposed_by_field_procedure_occurred",
+        "ibm": true,
+        "reason": "A violation of a constraint imposed by a field procedure occurred."
+      },
+      {
+        "code": "23511",
+        "key": "parent_row_cannot_be_deleted_because_check_constraint_restricts_deletion",
+        "ibm": true,
+        "reason": "A parent row cannot be deleted, because the check constraint restricts the deletion."
+      },
+      {
+        "code": "23512",
+        "key": "check_constraint_cannot_be_added_because_table_contains_rows_that_do_not_satisfy_constraint_definition",
+        "ibm": true,
+        "reason": "The check constraint cannot be added, because the table contains rows that do not satisfy the constraint definition."
+      },
+      {
+        "code": "23513",
+        "key": "resulting_row_of_insert_or_update_does_not_conform_to_check_constraint_definition",
+        "ibm": true,
+        "reason": "The resulting row of the INSERT or UPDATE does not conform to the check constraint definition."
+      },
+      {
+        "code": "23514",
+        "key": "check_violation",
+        "ibm": true,
+        "reason": "Check violation"
+      },
+      {
+        "code": "23515",
+        "key": "unique_index_could_not_be_created_or_unique_constraint_added_because_table_contains_duplicate_values_of_specified_key",
+        "ibm": true,
+        "reason": "The unique index could not be created or unique constraint added, because the table contains duplicate values of the specified key."
+      },
+      {
+        "code": "23520",
+        "key": "foreign_key_cannot_be_defined_because_all_of_its_values_are_not_equal_to_parent_key_of_parent_table",
+        "ibm": true,
+        "reason": "The foreign key cannot be defined, because all of its values are not equal to a parent key of the parent table."
+      },
+      {
+        "code": "23522",
+        "key": "range_of_values_for_identity_column_or_sequence_exhausted",
+        "ibm": true,
+        "reason": "The range of values for the identity column or sequence is exhausted."
+      },
+      {
+        "code": "23P01",
+        "key": "exclusion_violation",
+        "ibm": false,
+        "reason": "Exclusion constraint violation"
+      }
+    ]
+  },
+  "24": {
+    "label": "Invalid Cursor State",
+    "errorSet": [
+      {
+        "code": "24000",
+        "key": "invalid_cursor_state",
+        "ibm": true,
+        "reason": "Invalid cursor state"
+      },
+      {
+        "code": "24501",
+        "key": "identified_cursor_not_open",
+        "ibm": true,
+        "reason": "The identified cursor is not open."
+      },
+      {
+        "code": "24502",
+        "key": "cursor_identified_in_an_open_statement_already_open",
+        "ibm": true,
+        "reason": "The cursor identified in an OPEN statement is already open."
+      },
+      {
+        "code": "24504",
+        "key": "cursor_identified_in_update_delete_set_or_get_statement_not_positioned_on_row",
+        "ibm": true,
+        "reason": "The cursor identified in the UPDATE, DELETE, SET, or GET statement is not positioned on a row."
+      },
+      {
+        "code": "24506",
+        "key": "statement_identified_in_prepare_statement_of_an_open_cursor",
+        "ibm": true,
+        "reason": "The statement identified in the PREPARE is the statement of an open cursor."
+      },
+      {
+        "code": "24507",
+        "key": "fetch_current_specified_but_current_row_deleted_or_value_of_an_order_by_column_of_current_row_has_changed",
+        "ibm": true,
+        "reason": "FETCH CURRENT was specified, but the current row is deleted, or a value of an ORDER BY column of the current row has changed."
+      },
+      {
+        "code": "24513",
+        "key": "fetch_next_prior_current_or_relative_not_allowed_because_cursor_position_not_known",
+        "ibm": true,
+        "reason": "FETCH NEXT, PRIOR, CURRENT, or RELATIVE is not allowed, because the cursor position is not known."
+      },
+      {
+        "code": "24514",
+        "key": "previous_error_has_disabled_this_cursor",
+        "ibm": true,
+        "reason": "A previous error has disabled this cursor."
+      },
+      {
+        "code": "24516",
+        "key": "cursor_has_already_been_assigned_to_result_set",
+        "ibm": true,
+        "reason": "A cursor has already been assigned to a result set."
+      }
+    ]
+  },
+  "25": {
+    "label": "Invalid Transaction State",
+    "errorSet": [
+      {
+        "code": "25000",
+        "key": "invalid_transaction_state",
+        "ibm": true,
+        "reason": "An insert, update, or delete operation or procedure call is invalid in the context where it is specified."
+      },
+      {
+        "code": "25001",
+        "key": "active_sql_transaction",
+        "ibm": true,
+        "reason": "The statement is only allowed as the first statement in a unit of work."
+      },
+      {
+        "code": "25002",
+        "key": "branch_transaction_already_active",
+        "ibm": true,
+        "reason": "Branch transaction already active"
+      },
+      {
+        "code": "25003",
+        "key": "inappropriate_access_mode_for_branch_transaction",
+        "ibm": true,
+        "reason": "Inappropriate access mode for branch transaction"
+      },
+      {
+        "code": "25004",
+        "key": "inappropriate_isolation_level_for_branch_transaction",
+        "ibm": true,
+        "reason": "Inappropriate isolation level for branch transaction"
+      },
+      {
+        "code": "25005",
+        "key": "no_active_sql_transaction_for_branch_transaction",
+        "ibm": true,
+        "reason": "No active SQL transaction for branch transaction"
+      },
+      {
+        "code": "25006",
+        "key": "read_only_sql_transaction",
+        "ibm": true,
+        "reason": "An update operation is not valid because the transaction is read only."
+      },
+      {
+        "code": "25008",
+        "key": "held_cursor_requires_same_isolation_level",
+        "ibm": true,
+        "reason": "Held cursor requires same isolation level"
+      },
+      {
+        "code": "25007",
+        "key": "schema_and_data_statement_mixing_not_supported",
+        "ibm": true,
+        "reason": "Schema and data statement mixing not supported"
+      },
+      {
+        "code": "25P01",
+        "key": "no_active_sql_transaction",
+        "ibm": false,
+        "reason": "No active SQL transaction"
+      },
+      {
+        "code": "25P02",
+        "key": "in_failed_sql_transaction",
+        "ibm": false,
+        "reason": "In failed SQL transaction"
+      },
+      {
+        "code": "25P03",
+        "key": "idle_in_transaction_session_timeout",
+        "ibm": false,
+        "reason": "Idle-in-transaction session timeout"
+      },
+      {
+        "code": "25P04",
+        "key": "transaction_timeout",
+        "ibm": false,
+        "reason": "Transaction timeout"
+      }
+    ]
+  },
+  "26": {
+    "label": "Invalid SQL Statement Name",
+    "errorSet": [
+      {
+        "code": "26000",
+        "key": "invalid_sql_statement_name",
+        "ibm": true,
+        "reason": "Invalid SQL statement name"
+      },
+      {
+        "code": "26501",
+        "key": "statement_identified_does_not_exist",
+        "ibm": true,
+        "reason": "The statement identified does not exist."
+      },
+      {
+        "code": "26510",
+        "key": "statement_name_specified_in_declare_cursor_already_has_cursor_allocated_to_it",
+        "ibm": true,
+        "reason": "The statement name specified in a DECLARE CURSOR already has a cursor allocated to it."
+      }
+    ]
+  },
+  "27": {
+    "label": "Triggered Data Change Violation",
+    "errorSet": [
+      {
+        "code": "27000",
+        "key": "triggered_data_change_violation",
+        "ibm": true,
+        "reason": "An attempt was made to change the same row in the same table in the same SQL statement more than once."
+      }
+    ]
+  },
+  "28": {
+    "label": "Invalid Authorization Specification",
+    "errorSet": [
+      {
+        "code": "28000",
+        "key": "invalid_authorization_specification",
+        "ibm": true,
+        "reason": "Authorization name is invalid."
+      },
+      {
+        "code": "28P01",
+        "key": "invalid_password",
+        "ibm": false,
+        "reason": "Invalid password"
+      },
+      {
+        "code": "2B000",
+        "key": "dependent_privilege_descriptors_still_exist",
+        "ibm": true,
+        "reason": "Dependent privilege descriptors still exist"
+      },
+      {
+        "code": "2BP01",
+        "key": "dependent_objects_still_exist",
+        "ibm": false,
+        "reason": "Dependent objects still exist"
+      }
+    ]
+  },
+  "33": {
+    "label": "Invalid SQL Descriptor Name",
+    "errorSet": [
+      {
+        "code": "33000",
+        "key": "sql_descriptor_name_invalid",
+        "ibm": true,
+        "reason": "SQL descriptor name is invalid."
+      }
+    ]
+  },
+  "34": {
+    "label": "Invalid Cursor Name",
+    "errorSet": [
+      {
+        "code": "34000",
+        "key": "invalid_cursor_name",
+        "ibm": true,
+        "reason": "Cursor name is invalid."
+      }
+    ]
+  },
+  "35": {
+    "label": "Invalid Condition Number",
+    "errorSet": [
+      {
+        "code": "35000",
+        "key": "condition_number_invalid",
+        "ibm": true,
+        "reason": "Condition number is invalid."
+      }
+    ]
+  },
+  "36": {
+    "label": "Cursor Sensitivity Exception",
+    "errorSet": [
+      {
+        "code": "36001",
+        "key": "sensitive_cursor_cannot_be_defined_for_specified_select_statement",
+        "ibm": true,
+        "reason": "A SENSITIVE cursor cannot be defined for the specified select-statement."
+      }
+    ]
+  },
+  "38": {
+    "label": "External Function Exception",
+    "errorSet": [
+      {
+        "code": "38000",
+        "key": "external_routine_exception",
+        "ibm": true,
+        "reason": "Valid error SQLSTATEs returned by an external routine or trigger."
+      },
+      {
+        "code": "38000",
+        "key": "java_routine_has_exited_with_an_exception",
+        "ibm": true,
+        "reason": "A Java™ routine has exited with an exception."
+      },
+      {
+        "code": "38001",
+        "key": "containing_sql_not_permitted",
+        "ibm": true,
+        "reason": "The external routine is not allowed to execute SQL statements."
+      },
+      {
+        "code": "38002",
+        "key": "modifying_sql_data_not_permitted",
+        "ibm": true,
+        "reason": "The external routine attempted to modify data, but the routine was not defined as MODIFIES SQL DATA."
+      },
+      {
+        "code": "38003",
+        "key": "prohibited_sql_statement_attempted",
+        "ibm": true,
+        "reason": "The statement is not allowed in a routine."
+      },
+      {
+        "code": "38004",
+        "key": "reading_sql_data_not_permitted",
+        "ibm": true,
+        "reason": "The external routine attempted to read data, but the routine was not defined as READS SQL DATA."
+      },
+      {
+        "code": "38501",
+        "key": "error_occurred_while_calling_user_defined_function_procedure_or_trigger_using_simple_call_or_simple_call_with_nulls_calling_convention",
+        "ibm": true,
+        "reason": "Error occurred while calling a user-defined function, procedure, or trigger (using the SIMPLE CALL or SIMPLE CALL WITH NULLS calling convention)."
+      },
+      {
+        "code": "38H10",
+        "key": "error_occurred_during_text_search_processing",
+        "ibm": true,
+        "reason": "Error occurred during text search processing."
+      },
+      {
+        "code": "38H11",
+        "key": "text_search_support_not_available",
+        "ibm": true,
+        "reason": "Text search support is not available."
+      },
+      {
+        "code": "38H12",
+        "key": "text_search_not_allowed_on_column_because_text_search_index_does_not_exist_on_column",
+        "ibm": true,
+        "reason": "Text search is not allowed on a column because a text search index does not exist on the column."
+      },
+      {
+        "code": "38H13",
+        "key": "conflicting_search_administration_procedure_or_command_running_on_same_text_search_index",
+        "ibm": true,
+        "reason": "A conflicting search administration procedure or command is running on the same text search index."
+      },
+      {
+        "code": "38H14",
+        "key": "text_search_administration_procedure_error",
+        "ibm": true,
+        "reason": "Text search administration procedure error."
+      }
+    ]
+  },
+  "39": {
+    "label": "External Function Call Exception",
+    "errorSet": [
+      {
+        "code": "39000",
+        "key": "external_routine_invocation_exception",
+        "ibm": true,
+        "reason": "External routine invocation exception"
+      },
+      {
+        "code": "39001",
+        "key": "invalid_sqlstate_returned",
+        "ibm": true,
+        "reason": "Invalid SQLSTATE returned"
+      },
+      {
+        "code": "39004",
+        "key": "null_value_not_allowed",
+        "ibm": true,
+        "reason": "A null value is not allowed for an IN or INOUT argument when using PARAMETER STYLE GENERAL or an argument that is a Java primitive type."
+      },
+      {
+        "code": "39P01",
+        "key": "trigger_protocol_violated",
+        "ibm": false,
+        "reason": "Trigger protocol violated"
+      },
+      {
+        "code": "39P02",
+        "key": "srf_protocol_violated",
+        "ibm": false,
+        "reason": "Set-returning function protocol violated"
+      },
+      {
+        "code": "39P03",
+        "key": "event_trigger_protocol_violated",
+        "ibm": false,
+        "reason": "Event trigger protocol violated"
+      }
+    ]
+  },
+  "40": {
+    "label": "Transaction Rollback",
+    "errorSet": [
+      {
+        "code": "40000",
+        "key": "transaction_rollback",
+        "ibm": true,
+        "reason": "Transaction rollback"
+      },
+      {
+        "code": "40002",
+        "key": "transaction_integrity_constraint_violation",
+        "ibm": true,
+        "reason": "Transaction integrity constraint violation"
+      },
+      {
+        "code": "40001",
+        "key": "serialization_failure",
+        "ibm": true,
+        "reason": "Serialization failure"
+      },
+      {
+        "code": "40003",
+        "key": "statement_completion_unknown",
+        "ibm": true,
+        "reason": "Statement completion unknown"
+      },
+      {
+        "code": "40P01",
+        "key": "deadlock_detected",
+        "ibm": false,
+        "reason": "Deadlock detected"
+      }
+    ]
+  },
+  "42": {
+    "label": "Syntax Error or Access Rule Violation",
+    "errorSet": [
+      {
+        "code": "42000",
+        "key": "syntax_error_or_access_rule_violation",
+        "ibm": true,
+        "reason": "Syntax error or access rule violation"
+      },
+      {
+        "code": "42501",
+        "key": "insufficient_privilege",
+        "ibm": true,
+        "reason": "The authorization ID does not have the privilege to perform the specified operation on the identified object."
+      },
+      {
+        "code": "42502",
+        "key": "authorization_id_does_not_have_privilege_to_perform_operation_as_specified",
+        "ibm": true,
+        "reason": "The authorization ID does not have the privilege to perform the operation as specified."
+      },
+      {
+        "code": "42504",
+        "key": "specified_privilege_security_label_or_exemption_cannot_be_revoked_from_specified_authorization_name",
+        "ibm": true,
+        "reason": "A specified privilege, security label, or exemption cannot be revoked from a specified authorization-name."
+      },
+      {
+        "code": "42506",
+        "key": "owner_authorization_failure_occurred",
+        "ibm": true,
+        "reason": "Owner authorization failure occurred."
+      },
+      {
+        "code": "42601",
+        "key": "syntax_error",
+        "ibm": true,
+        "reason": "A character, token, or clause is invalid or missing."
+      },
+      {
+        "code": "42602",
+        "key": "invalid_name",
+        "ibm": true,
+        "reason": "A character that is invalid in a name has been detected."
+      },
+      {
+        "code": "42603",
+        "key": "unterminated_string_constant_has_been_detected",
+        "ibm": true,
+        "reason": "An unterminated string constant has been detected."
+      },
+      {
+        "code": "42604",
+        "key": "invalid_numeric_or_string_constant_has_been_detected",
+        "ibm": true,
+        "reason": "An invalid numeric or string constant has been detected."
+      },
+      {
+        "code": "42605",
+        "key": "arguments_specified_for_scalar_function_invalid",
+        "ibm": true,
+        "reason": "The number of arguments specified for a scalar function is invalid."
+      },
+      {
+        "code": "42606",
+        "key": "invalid_hexadecimal_constant_has_been_detected",
+        "ibm": true,
+        "reason": "An invalid hexadecimal constant has been detected."
+      },
+      {
+        "code": "42607",
+        "key": "operand_of_an_aggregate_function_or_concat_operator_invalid",
+        "ibm": true,
+        "reason": "An operand of an aggregate function or CONCAT operator is invalid."
+      },
+      {
+        "code": "42608",
+        "key": "use_of_null_or_default_in_values_or_an_assignment_statement_invalid",
+        "ibm": true,
+        "reason": "The use of NULL or DEFAULT in VALUES or an assignment statement is invalid."
+      },
+      {
+        "code": "42609",
+        "key": "all_operands_of_an_operator_or_predicate_are_parameter_markers",
+        "ibm": true,
+        "reason": "All operands of an operator or predicate are parameter markers."
+      },
+      {
+        "code": "42610",
+        "key": "parameter_marker_or_null_value_not_allowed",
+        "ibm": true,
+        "reason": "A parameter marker or the null value is not allowed."
+      },
+      {
+        "code": "42611",
+        "key": "invalid_column_definition",
+        "ibm": true,
+        "reason": "The column, argument, parameter, or global variable definition is invalid."
+      },
+      {
+        "code": "42612",
+        "key": "statement_string_an_sql_statement_that_not_acceptable_in_context_in_which_it_presented",
+        "ibm": true,
+        "reason": "The statement string is an SQL statement that is not acceptable in the context in which it is presented."
+      },
+      {
+        "code": "42613",
+        "key": "clauses_are_mutually_exclusive",
+        "ibm": true,
+        "reason": "Clauses are mutually exclusive."
+      },
+      {
+        "code": "42614",
+        "key": "duplicate_keyword_or_clause_invalid",
+        "ibm": true,
+        "reason": "A duplicate keyword or clause is invalid."
+      },
+      {
+        "code": "42615",
+        "key": "invalid_alternative_detected",
+        "ibm": true,
+        "reason": "An invalid alternative was detected."
+      },
+      {
+        "code": "42616",
+        "key": "invalid_options_are_specified",
+        "ibm": true,
+        "reason": "Invalid options are specified."
+      },
+      {
+        "code": "42617",
+        "key": "statement_string_blank_or_empty",
+        "ibm": true,
+        "reason": "The statement string is blank or empty."
+      },
+      {
+        "code": "42618",
+        "key": "variable_not_allowed",
+        "ibm": true,
+        "reason": "A variable is not allowed."
+      },
+      {
+        "code": "42620",
+        "key": "read_only_scroll_specified_with_update_clause",
+        "ibm": true,
+        "reason": "Read-only SCROLL was specified with the UPDATE clause."
+      },
+      {
+        "code": "42621",
+        "key": "check_constraint_or_generated_column_expression_invalid",
+        "ibm": true,
+        "reason": "The check constraint or generated column expression is invalid."
+      },
+      {
+        "code": "42622",
+        "key": "name_too_long",
+        "ibm": true,
+        "reason": "A name or label is too long."
+      },
+      {
+        "code": "42623",
+        "key": "default_clause_cannot_be_specified",
+        "ibm": true,
+        "reason": "A DEFAULT clause cannot be specified."
+      },
+      {
+        "code": "42625",
+        "key": "case_expression_invalid",
+        "ibm": true,
+        "reason": "A CASE expression is invalid."
+      },
+      {
+        "code": "42629",
+        "key": "parameter_names_must_be_specified_for_sql_routines",
+        "ibm": true,
+        "reason": "Parameter names must be specified for SQL routines."
+      },
+      {
+        "code": "42631",
+        "key": "expression_must_be_specified_on_return_statement_in_an_sql_function",
+        "ibm": true,
+        "reason": "An expression must be specified on a RETURN statement in an SQL function."
+      },
+      {
+        "code": "42633",
+        "key": "as_clause_required_for_an_argument_of_xmlattributes_or_xmlforest",
+        "ibm": true,
+        "reason": "An AS clause is required for an argument of XMLATTRIBUTES or XMLFOREST."
+      },
+      {
+        "code": "42634",
+        "key": "xml_name_not_valid",
+        "ibm": true,
+        "reason": "The XML name is not valid."
+      },
+      {
+        "code": "42635",
+        "key": "xml_namespace_prefix_not_valid",
+        "ibm": true,
+        "reason": "The XML namespace prefix is not valid."
+      },
+      {
+        "code": "42636",
+        "key": "by_ref_or_by_value_clause_missing_or_used_incorrectly",
+        "ibm": true,
+        "reason": "The BY REF or BY VALUE clause is missing or used incorrectly."
+      },
+      {
+        "code": "42638",
+        "key": "obfuscated_statement_not_valid",
+        "ibm": true,
+        "reason": "An obfuscated statement is not valid."
+      },
+      {
+        "code": "42701",
+        "key": "duplicate_column",
+        "ibm": true,
+        "reason": "The same target is specified more than once for assignment in the same SQL statement."
+      },
+      {
+        "code": "42702",
+        "key": "ambiguous_column",
+        "ibm": true,
+        "reason": "A column reference is ambiguous, because of duplicate names."
+      },
+      {
+        "code": "42703",
+        "key": "undefined_column",
+        "ibm": true,
+        "reason": "An undefined column or parameter name was detected."
+      },
+      {
+        "code": "42704",
+        "key": "undefined_object",
+        "ibm": true,
+        "reason": "An undefined object or constraint name was detected."
+      },
+      {
+        "code": "42705",
+        "key": "undefined_server_name_detected",
+        "ibm": true,
+        "reason": "An undefined server-name was detected."
+      },
+      {
+        "code": "42707",
+        "key": "column_name_in_order_by_does_not_identify_column_of_result_table",
+        "ibm": true,
+        "reason": "A column name in ORDER BY does not identify a column of the result table."
+      },
+      {
+        "code": "42709",
+        "key": "duplicate_column_name_specified_in_key_column_list",
+        "ibm": true,
+        "reason": "A duplicate column name was specified in a key column list."
+      },
+      {
+        "code": "42710",
+        "key": "duplicate_object",
+        "ibm": true,
+        "reason": "A duplicate object or constraint name was detected."
+      },
+      {
+        "code": "42711",
+        "key": "duplicate_column_name_detected_in_object_definition_or_alter_table_statement",
+        "ibm": true,
+        "reason": "A duplicate column name was detected in the object definition or ALTER TABLE statement."
+      },
+      {
+        "code": "42712",
+        "key": "duplicate_alias",
+        "ibm": true,
+        "reason": "A duplicate table designator was detected in the FROM clause or REFERENCING clause of a CREATE TRIGGER statement."
+      },
+      {
+        "code": "42713",
+        "key": "duplicate_object_detected_in_list_or_same_as_an_existing_object",
+        "ibm": true,
+        "reason": "A duplicate object was detected in a list or is the same as an existing object."
+      },
+      {
+        "code": "42718",
+        "key": "local_server_name_not_defined",
+        "ibm": true,
+        "reason": "The local server name is not defined."
+      },
+      {
+        "code": "42723",
+        "key": "duplicate_function",
+        "ibm": true,
+        "reason": "A routine with the same signature already exists in the schema, module, or compound block where it is defined."
+      },
+      {
+        "code": "42724",
+        "key": "unable_to_access_an_external_program_used_for_user_defined_function_or_procedure",
+        "ibm": true,
+        "reason": "Unable to access an external program used for a user-defined function or a procedure."
+      },
+      {
+        "code": "42725",
+        "key": "ambiguous_function",
+        "ibm": true,
+        "reason": "A routine was referenced directly (not by either signature or by specific instance name) or by both signature and specific instance name, but there is more than one specific instance of that routine."
+      },
+      {
+        "code": "42726",
+        "key": "duplicate_names_for_common_table_expressions_detected",
+        "ibm": true,
+        "reason": "Duplicate names for common table expressions were detected."
+      },
+      {
+        "code": "42732",
+        "key": "duplicate_schema_name_in_special_register_detected",
+        "ibm": true,
+        "reason": "A duplicate schema name in a special register was detected."
+      },
+      {
+        "code": "42733",
+        "key": "procedure_with_specified_name_cannot_be_added_to_schema_because_procedure_overloading_not_allowed_in_this_database_and_there_already_procedure_with_same_name_in_schema",
+        "ibm": true,
+        "reason": "A procedure with the specified name cannot be added to the schema because the procedure overloading is not allowed in this database and there is already a procedure with the same name in the schema."
+      },
+      {
+        "code": "42734",
+        "key": "duplicate_parameter_name_sql_variable_name_label_or_condition_name_detected",
+        "ibm": true,
+        "reason": "A duplicate parameter-name, SQL variable name, label, or condition-name was detected."
+      },
+      {
+        "code": "42736",
+        "key": "label_specified_on_goto_iterate_or_leave_statement_not_found_or_not_valid",
+        "ibm": true,
+        "reason": "The label specified on the GOTO, ITERATE, or LEAVE statement is not found or not valid."
+      },
+      {
+        "code": "42737",
+        "key": "condition_specified_not_defined",
+        "ibm": true,
+        "reason": "The condition specified is not defined."
+      },
+      {
+        "code": "42738",
+        "key": "duplicate_column_name_or_unnamed_column_specified_in_declare_cursor_statement_for_statement",
+        "ibm": true,
+        "reason": "A duplicate column name or unnamed column was specified in a DECLARE CURSOR statement of a FOR statement."
+      },
+      {
+        "code": "42747",
+        "key": "same_descriptor_item_specified_more_than_once_in_same_set_descriptor_statement",
+        "ibm": true,
+        "reason": "The same descriptor item was specified more than once in the same SET DESCRIPTOR statement."
+      },
+      {
+        "code": "42749",
+        "key": "xml_schema_document_with_same_target_namespace_and_schema_location_already_exists_for_xml_schema",
+        "ibm": true,
+        "reason": "An XML schema document with the same target namespace and schema location already exists for the XML schema."
+      },
+      {
+        "code": "4274A",
+        "key": "xsrobject_not_found_in_xml_schema_repository",
+        "ibm": true,
+        "reason": "An XSROBJECT is not found in the XML schema repository."
+      },
+      {
+        "code": "4274B",
+        "key": "unique_xsrobject_could_not_be_found_in_xml_schema_repository",
+        "ibm": true,
+        "reason": "A unique XSROBJECT could not be found in the XML schema repository."
+      },
+      {
+        "code": "4274K",
+        "key": "invalid_use_named_argument_when_invoking_routine",
+        "ibm": true,
+        "reason": "Invalid use of a named argument when invoking a routine."
+      },
+      {
+        "code": "4274M",
+        "key": "undefined_period_name_detected",
+        "ibm": true,
+        "reason": "An undefined period name was detected."
+      },
+      {
+        "code": "4274N",
+        "key": "include_not_found_or_could_not_be_opened",
+        "ibm": true,
+        "reason": "An INCLUDE was not found or could not be opened."
+      },
+      {
+        "code": "4274P",
+        "key": "invalid_use_named_column_in_insert_values_list",
+        "ibm": true,
+        "reason": "Invalid use of a named column in insert values list."
+      },
+      {
+        "code": "42802",
+        "key": "target_values_not_same_as_source_values",
+        "ibm": true,
+        "reason": "The number of target values is not the same as the number of source values."
+      },
+      {
+        "code": "42803",
+        "key": "grouping_error",
+        "ibm": true,
+        "reason": "A column reference in the SELECT or HAVING clause is invalid, because it is not a grouping column"
+      },
+      {
+        "code": "42804",
+        "key": "datatype_mismatch",
+        "ibm": true,
+        "reason": "The result expressions in a CASE expression are not compatible."
+      },
+      {
+        "code": "42805",
+        "key": "integer_in_order_by_clause_does_not_identify_column_of_result_table",
+        "ibm": true,
+        "reason": "An integer in the ORDER BY clause does not identify a column of the result table."
+      },
+      {
+        "code": "42806",
+        "key": "value_cannot_be_assigned_to_variable_because_data_types_are_not_compatible",
+        "ibm": true,
+        "reason": "A value cannot be assigned to a variable, because the data types are not compatible."
+      },
+      {
+        "code": "42807",
+        "key": "data_change_statement_not_permitted_on_this_object",
+        "ibm": true,
+        "reason": "The data-change statement is not permitted on this object."
+      },
+      {
+        "code": "42808",
+        "key": "column_identified_in_insert_or_update_operation_not_updatable",
+        "ibm": true,
+        "reason": "A column identified in the INSERT or UPDATE operation is not updatable."
+      },
+      {
+        "code": "42809",
+        "key": "wrong_object_type",
+        "ibm": true,
+        "reason": "The identified object is not the type of object to which the statement applies."
+      },
+      {
+        "code": "42810",
+        "key": "base_table_not_identified_in_foreign_key_clause",
+        "ibm": true,
+        "reason": "A base table is not identified in a FOREIGN KEY clause."
+      },
+      {
+        "code": "42811",
+        "key": "columns_specified_not_same_as_columns_in_select_clause",
+        "ibm": true,
+        "reason": "The number of columns specified is not the same as the number of columns in the SELECT clause."
+      },
+      {
+        "code": "42812",
+        "key": "library_name_required_in_create_table_in_system_naming_mode",
+        "ibm": true,
+        "reason": "A library name is required in CREATE TABLE in the system naming mode."
+      },
+      {
+        "code": "42813",
+        "key": "with_check_option_cannot_be_used_for_specified_view",
+        "ibm": true,
+        "reason": "WITH CHECK OPTION cannot be used for the specified view."
+      },
+      {
+        "code": "42814",
+        "key": "column_cannot_be_dropped_because_it_only_column_in_table",
+        "ibm": true,
+        "reason": "The column cannot be dropped, because it is the only column in the table."
+      },
+      {
+        "code": "42815",
+        "key": "data_type_length_scale_value_or_ccsid_invalid",
+        "ibm": true,
+        "reason": "The data type, length, scale, value, or CCSID is invalid."
+      },
+      {
+        "code": "42816",
+        "key": "datetime_value_or_duration_in_an_expression_invalid",
+        "ibm": true,
+        "reason": "A datetime value or duration in an expression is invalid."
+      },
+      {
+        "code": "42817",
+        "key": "column_cannot_be_dropped_because_view_or_constraint_dependent_on_column_column_part_partitioning_key_or_column_security_label_column",
+        "ibm": true,
+        "reason": "The column cannot be dropped because a view or constraint is dependent on the column, the column is part of a partitioning key, or the column is a security label column."
+      },
+      {
+        "code": "42818",
+        "key": "operands_of_an_operator_or_function_are_not_compatible_or_comparable",
+        "ibm": true,
+        "reason": "The operands of an operator or function are not compatible or comparable."
+      },
+      {
+        "code": "42819",
+        "key": "operand_of_an_arithmetic_operation_or_an_operand_function_that_requires_number_invalid",
+        "ibm": true,
+        "reason": "An operand of an arithmetic operation or an operand of a function that requires a number is invalid."
+      },
+      {
+        "code": "42820",
+        "key": "numeric_constant_too_long_or_it_has_value_that_not_within_range_of_its_data_type",
+        "ibm": true,
+        "reason": "A numeric constant is too long, or it has a value that is not within the range of its data type."
+      },
+      {
+        "code": "42821",
+        "key": "data_type_for_an_assignment_to_column_or_variable_not_compatible_with_data_type",
+        "ibm": true,
+        "reason": "A data type for an assignment to a column or variable is not compatible with the data type."
+      },
+      {
+        "code": "42822",
+        "key": "expression_in_order_by_clause_or_group_by_clause_not_valid",
+        "ibm": true,
+        "reason": "An expression in the ORDER BY clause or GROUP BY clause is not valid."
+      },
+      {
+        "code": "42823",
+        "key": "multiple_columns_are_returned_from_subquery_that_only_allows_one_column",
+        "ibm": true,
+        "reason": "Multiple columns are returned from a subquery that only allows one column."
+      },
+      {
+        "code": "42824",
+        "key": "operand_of_like_not_string_or_first_operand_not_column",
+        "ibm": true,
+        "reason": "An operand of LIKE is not a string, or the first operand is not a column."
+      },
+      {
+        "code": "42825",
+        "key": "rows_of_union_intersect_except_or_values_do_not_have_compatible_columns",
+        "ibm": true,
+        "reason": "The rows of UNION, INTERSECT, EXCEPT, or VALUES do not have compatible columns."
+      },
+      {
+        "code": "42826",
+        "key": "rows_of_union_intersect_except_or_values_do_not_have_same_columns",
+        "ibm": true,
+        "reason": "The rows of UNION, INTERSECT, EXCEPT, or VALUES do not have the same number of columns."
+      },
+      {
+        "code": "42827",
+        "key": "table_identified_in_update_or_delete_not_same_table_designated_by_cursor",
+        "ibm": true,
+        "reason": "The table identified in the UPDATE or DELETE is not the same table designated by the cursor."
+      },
+      {
+        "code": "42828",
+        "key": "table_designated_by_cursor_of_update_or_delete_statement_cannot_be_modified_or_cursor_read_only",
+        "ibm": true,
+        "reason": "The table designated by the cursor of the UPDATE or DELETE statement cannot be modified, or the cursor is read-only."
+      },
+      {
+        "code": "42829",
+        "key": "for_update_of_invalid_because_result_table_designated_by_cursor_cannot_be_modified",
+        "ibm": true,
+        "reason": "FOR UPDATE OF is invalid, because the result table designated by the cursor cannot be modified."
+      },
+      {
+        "code": "42830",
+        "key": "invalid_foreign_key",
+        "ibm": true,
+        "reason": "The foreign key does not conform to the description of the parent key."
+      },
+      {
+        "code": "42831",
+        "key": "null_values_are_not_allowed_in_column_primary_key_column_unique_key_rowid_column_row_change_timestamp_column_row_begin_column_row_end_column_or_column_of_an_application_period",
+        "ibm": true,
+        "reason": "Null values are not allowed in a column of a primary key, a column of a unique key, a ROWID column, a row change timestamp column, a row-begin column, a row-end column, or a column of an application period."
+      },
+      {
+        "code": "42832",
+        "key": "operation_not_allowed_on_system_objects",
+        "ibm": true,
+        "reason": "The operation is not allowed on system objects."
+      },
+      {
+        "code": "42833",
+        "key": "qualified_object_name_inconsistent_with_naming_option",
+        "ibm": true,
+        "reason": "The qualified object name is inconsistent with the naming option."
+      },
+      {
+        "code": "42834",
+        "key": "set_null_cannot_be_specified_because_no_column_of_foreign_key_can_be_assigned_null_value",
+        "ibm": true,
+        "reason": "SET NULL cannot be specified, because no column of the foreign key can be assigned the null value."
+      },
+      {
+        "code": "42835",
+        "key": "cyclic_references_cannot_be_specified_between_named_derived_tables",
+        "ibm": true,
+        "reason": "Cyclic references cannot be specified between named derived tables."
+      },
+      {
+        "code": "42836",
+        "key": "specification_recursive_named_derived_table_invalid",
+        "ibm": true,
+        "reason": "The specification of a recursive, named derived table is invalid."
+      },
+      {
+        "code": "42837",
+        "key": "column_cannot_be_altered_because_its_attributes_are_not_compatible_with_current_column_attributes",
+        "ibm": true,
+        "reason": "The column cannot be altered, because its attributes are not compatible with the current column attributes."
+      },
+      {
+        "code": "42841",
+        "key": "untyped_expression_cannot_be_user_defined_type_or_reference_type",
+        "ibm": true,
+        "reason": "An untyped expression cannot be a user-defined type or reference type."
+      },
+      {
+        "code": "42842",
+        "key": "column_or_parameter_definition_invalid_because_specified_option_inconsistent_with_column_description",
+        "ibm": true,
+        "reason": "A column or parameter definition is invalid, because a specified option is inconsistent with the column description."
+      },
+      {
+        "code": "42845",
+        "key": "invalid_use_not_deterministic_or_external_action_function_detected",
+        "ibm": true,
+        "reason": "An invalid use of a NOT DETERMINISTIC or EXTERNAL ACTION function was detected."
+      },
+      {
+        "code": "42846",
+        "key": "cannot_coerce",
+        "ibm": true,
+        "reason": "Cast from source type to target type is not supported."
+      },
+      {
+        "code": "42847",
+        "key": "ovrdbf_command_wassued_for_one_of_referenced_files_but_one_of_parameters_not_valid_for_sql",
+        "ibm": true,
+        "reason": "An OVRDBF command was issued for one of the referenced files, but one of the parameters is not valid for SQL."
+      },
+      {
+        "code": "42848",
+        "key": "isolation_level_cs_with_keep_locks_not_allowed",
+        "ibm": true,
+        "reason": "Isolation level CS WITH KEEP LOCKS is not allowed."
+      },
+      {
+        "code": "42849",
+        "key": "specified_option_not_supported_for_routine_type",
+        "ibm": true,
+        "reason": "The specified option is not supported for the routine type."
+      },
+      {
+        "code": "42850",
+        "key": "logical_file_invalid_in_create_view",
+        "ibm": true,
+        "reason": "A logical file is invalid in CREATE VIEW."
+      },
+      {
+        "code": "42851",
+        "key": "referenced_file_not_table_view_or_physical_file",
+        "ibm": true,
+        "reason": "A referenced file is not a table, view, or physical file."
+      },
+      {
+        "code": "42852",
+        "key": "privileges_specified_in_grant_or_revoke_are_invalid_or_inconsistent",
+        "ibm": true,
+        "reason": "The privileges specified in GRANT or REVOKE are invalid or inconsistent. (For example, GRANT ALTER on a view.)"
+      },
+      {
+        "code": "42854",
+        "key": "result_column_data_type_in_select_list_not_compatible_with_defined_type_in_typed_view_or_materialized_query_table_definition",
+        "ibm": true,
+        "reason": "A result column data type in the select list is not compatible with the defined type in a typed view or materialized query table definition."
+      },
+      {
+        "code": "42855",
+        "key": "assignment_of_lob_or_xml_to_this_variable_not_allowed",
+        "ibm": true,
+        "reason": "The assignment of the LOB or XML to this variable is not allowed. The target variable for all fetches of a LOB or XML value for this cursor must be the same for all FETCHes."
+      },
+      {
+        "code": "42857",
+        "key": "referenced_file_has_more_than_one_format_or_data_space",
+        "ibm": true,
+        "reason": "A referenced file has more than one format or data space."
+      },
+      {
+        "code": "42858",
+        "key": "operation_cannot_be_applied_to_specified_object",
+        "ibm": true,
+        "reason": "Operation cannot be applied to the specified object."
+      },
+      {
+        "code": "42860",
+        "key": "constraint_cannot_be_dropped_because_it_enforcing_primary_key_or_rowid",
+        "ibm": true,
+        "reason": "The constraint cannot be dropped because it is enforcing a primary key or ROWID."
+      },
+      {
+        "code": "42862",
+        "key": "extended_dynamic_statement_cannot_be_executed_against_non_extended_dynamic_package",
+        "ibm": true,
+        "reason": "An extended dynamic statement cannot be executed against a non-extended dynamic package."
+      },
+      {
+        "code": "42863",
+        "key": "undefined_host_variable_in_rexx_has_been_detected",
+        "ibm": true,
+        "reason": "An undefined host variable in REXX has been detected."
+      },
+      {
+        "code": "42866",
+        "key": "data_type_in_either_returns_clause_or_cast_from_clause_in_create_function_statement_not_appropriate_for_data_type_returned_from_sourced_function_or_return_statement_in_function_body",
+        "ibm": true,
+        "reason": "The data type in either the RETURNS clause or the CAST FROM clause in the CREATE FUNCTION statement is not appropriate for the data type returned from the sourced function or RETURN statement in the function body."
+      },
+      {
+        "code": "42872",
+        "key": "fetch_statement_clauses_are_incompatible_with_cursor_definition",
+        "ibm": true,
+        "reason": "FETCH statement clauses are incompatible with the cursor definition."
+      },
+      {
+        "code": "42873",
+        "key": "invalid_rows_specified_in_multiple_row_fetch_or_multiple_row_insert",
+        "ibm": true,
+        "reason": "An invalid number of rows was specified in a multiple-row FETCH or multiple-row INSERT."
+      },
+      {
+        "code": "42874",
+        "key": "alwcpydta_no_specified_but_copy_necessary_to_implement_select_statement",
+        "ibm": true,
+        "reason": "ALWCPYDTA(*NO) was specified, but a copy is necessary to implement the select-statement."
+      },
+      {
+        "code": "42875",
+        "key": "schema_name_portion_qualified_name_must_be_same_name_as_schema_name",
+        "ibm": true,
+        "reason": "The schema-name portion of a qualified name must be the same name as the schema name."
+      },
+      {
+        "code": "42876",
+        "key": "different_ccsids_for_keys_in_create_index_are_only_allowed_with_hex_collating_sequence",
+        "ibm": true,
+        "reason": "Different CCSIDs for keys in CREATE INDEX are only allowed with a *HEX collating sequence."
+      },
+      {
+        "code": "42877",
+        "key": "column_name_cannot_be_qualified",
+        "ibm": true,
+        "reason": "The column name cannot be qualified."
+      },
+      {
+        "code": "42878",
+        "key": "invalid_function_or_procedure_name_used_with_external_keyword",
+        "ibm": true,
+        "reason": "An invalid function or procedure name was used with the EXTERNAL keyword."
+      },
+      {
+        "code": "42879",
+        "key": "data_type_of_one_or_more_input_parameters_in_create_function_statement_not_appropriate_for_corresponding_data_type_in_source_function",
+        "ibm": true,
+        "reason": "The data type of one or more input parameters in the CREATE FUNCTION statement is not appropriate for the corresponding data type in the source function."
+      },
+      {
+        "code": "42880",
+        "key": "cast_to_and_cast_from_data_types_are_incompatible_or_would_always_result_in_truncation_fixed_string",
+        "ibm": true,
+        "reason": "The CAST TO and CAST FROM data types are incompatible, or would always result in truncation of a fixed string."
+      },
+      {
+        "code": "42881",
+        "key": "invalid_use_function",
+        "ibm": true,
+        "reason": "Invalid use of a function."
+      },
+      {
+        "code": "42882",
+        "key": "specific_instance_name_qualifier_not_equal_to_function_name_qualifier",
+        "ibm": true,
+        "reason": "The specific instance name qualifier is not equal to the function name qualifier."
+      },
+      {
+        "code": "42883",
+        "key": "undefined_function",
+        "ibm": true,
+        "reason": "No routine was found with a matching signature."
+      },
+      {
+        "code": "42884",
+        "key": "no_routine_found_with_specified_name_and_compatible_arguments",
+        "ibm": true,
+        "reason": "No routine was found with the specified name and compatible arguments."
+      },
+      {
+        "code": "42885",
+        "key": "input_parameters_specified_on_create_function_statement_does_not_match_number_provided_by_function_named_in_source_clause",
+        "ibm": true,
+        "reason": "The number of input parameters specified on a CREATE FUNCTION statement does not match the number provided by the function named in the SOURCE clause."
+      },
+      {
+        "code": "42886",
+        "key": "in_out_or_inout_parameter_attributes_do_not_match",
+        "ibm": true,
+        "reason": "The IN, OUT, or INOUT parameter attributes do not match."
+      },
+      {
+        "code": "42887",
+        "key": "function_or_table_reference_not_valid_in_context_where_it_occurs",
+        "ibm": true,
+        "reason": "The function or table-reference is not valid in the context where it occurs."
+      },
+      {
+        "code": "42888",
+        "key": "table_does_not_have_primary_key",
+        "ibm": true,
+        "reason": "The table does not have a primary key."
+      },
+      {
+        "code": "42889",
+        "key": "table_already_has_primary_key",
+        "ibm": true,
+        "reason": "The table already has a primary key."
+      },
+      {
+        "code": "42890",
+        "key": "column_list_specified_in_references_clause_but_identified_parent_table_does_not_have_unique_constraint_with_specified_column_names",
+        "ibm": true,
+        "reason": "A column list was specified in the references clause, but the identified parent table does not have a unique constraint with the specified column names."
+      },
+      {
+        "code": "42891",
+        "key": "duplicate_constraint_already_exists",
+        "ibm": true,
+        "reason": "A duplicate constraint already exists."
+      },
+      {
+        "code": "42892",
+        "key": "referential_constraint_and_trigger_are_not_allowed_because_delete_rule_and_trigger_event_are_not_compatible",
+        "ibm": true,
+        "reason": "The referential constraint and trigger are not allowed, because the DELETE rule and trigger event are not compatible."
+      },
+      {
+        "code": "42893",
+        "key": "object_or_constraint_cannot_be_dropped_altered_or_transferred_or_authorities_cannot_be_revoked_from_object_because_other_objects_are_dependent_on_it",
+        "ibm": true,
+        "reason": "The object or constraint cannot be dropped, altered, or transferred or authorities cannot be revoked from the object, because other objects are dependent on it."
+      },
+      {
+        "code": "42894",
+        "key": "value_column_or_sequence_attribute_invalid",
+        "ibm": true,
+        "reason": "The value of a column or sequence attribute is invalid."
+      },
+      {
+        "code": "42895",
+        "key": "for_static_sql_an_input_variable_cannot_be_used_because_its_data_type_not_compatible_with_parameter_procedure_or_user_defined_function",
+        "ibm": true,
+        "reason": "For static SQL, an input variable cannot be used, because its data type is not compatible with the parameter of a procedure or user-defined function."
+      },
+      {
+        "code": "42896",
+        "key": "asp_number_invalid",
+        "ibm": true,
+        "reason": "The ASP number is invalid."
+      },
+      {
+        "code": "42898",
+        "key": "invalid_correlated_reference_or_transition_table_detected_in_trigger",
+        "ibm": true,
+        "reason": "An invalid correlated reference or transition table was detected in a trigger."
+      },
+      {
+        "code": "42899",
+        "key": "correlated_references_and_column_names_are_not_allowed_for_triggered_actions_with_for_each_statement_clause",
+        "ibm": true,
+        "reason": "Correlated references and column names are not allowed for triggered actions with the FOR EACH STATEMENT clause."
+      },
+      {
+        "code": "428A1",
+        "key": "unable_to_access_file_referenced_by_file_reference_variable",
+        "ibm": true,
+        "reason": "Unable to access a file referenced by a file reference variable."
+      },
+      {
+        "code": "428B3",
+        "key": "invalid_sqlstate_specified",
+        "ibm": true,
+        "reason": "An invalid SQLSTATE was specified."
+      },
+      {
+        "code": "428B7",
+        "key": "number_specified_in_an_sql_statement_out_of_valid_range",
+        "ibm": true,
+        "reason": "A number specified in an SQL statement is out of the valid range."
+      },
+      {
+        "code": "428B8",
+        "key": "name_specified_on_rename_not_valid",
+        "ibm": true,
+        "reason": "The name specified on a rename is not valid."
+      },
+      {
+        "code": "428BA",
+        "key": "without_return_cursors_must_not_be_specified_in_set_result_sets",
+        "ibm": true,
+        "reason": "WITHOUT RETURN cursors must not be specified in SET RESULT SETS."
+      },
+      {
+        "code": "428C1",
+        "key": "data_type_or_attribute_column_can_only_be_specified_once_for_table",
+        "ibm": true,
+        "reason": "The data type or attribute of a column can only be specified once for a table."
+      },
+      {
+        "code": "428C4",
+        "key": "elements_on_each_side_of_predicate_operator_not_same",
+        "ibm": true,
+        "reason": "The number of elements on each side of the predicate operator is not the same."
+      },
+      {
+        "code": "428C7",
+        "key": "rowid_or_reference_column_specification_not_valid_or_used_in_an_invalid_context",
+        "ibm": true,
+        "reason": "A ROWID or reference column specification is not valid or used in an invalid context."
+      },
+      {
+        "code": "428C9",
+        "key": "generated_always",
+        "ibm": true,
+        "reason": "A column defined as GENERATED ALWAYS cannot be specified as the target column of an insert or update operation."
+      },
+      {
+        "code": "428D1",
+        "key": "unable_to_access_file_referenced_by_datalink_value",
+        "ibm": true,
+        "reason": "Unable to access a file referenced by a DATALINK value."
+      },
+      {
+        "code": "428D2",
+        "key": "as_locator_cannot_be_specified_for_non_lob_parameter",
+        "ibm": true,
+        "reason": "AS LOCATOR cannot be specified for a non-LOB parameter."
+      },
+      {
+        "code": "428D4",
+        "key": "cursor_specified_in_for_statement_cannot_be_referenced_in_an_open_close_or_fetch_statement",
+        "ibm": true,
+        "reason": "A cursor specified in a FOR statement cannot be referenced in an OPEN, CLOSE, or FETCH statement."
+      },
+      {
+        "code": "428D5",
+        "key": "ending_label_does_not_match_beginning_label",
+        "ibm": true,
+        "reason": "The ending label does not match the beginning label."
+      },
+      {
+        "code": "428D6",
+        "key": "undo_not_allowed_for_not_atomic_compound_statements",
+        "ibm": true,
+        "reason": "UNDO is not allowed for NOT ATOMIC compound statements."
+      },
+      {
+        "code": "428D7",
+        "key": "condition_value_not_allowed",
+        "ibm": true,
+        "reason": "The condition value is not allowed."
+      },
+      {
+        "code": "428D8",
+        "key": "sqlcode_or_sqlstate_variable_declaration_not_valid",
+        "ibm": true,
+        "reason": "The sqlcode or sqlstate variable declaration is not valid."
+      },
+      {
+        "code": "428DE",
+        "key": "pagesize_value_not_supported",
+        "ibm": true,
+        "reason": "The PAGESIZE value is not supported."
+      },
+      {
+        "code": "428EC",
+        "key": "fullselect_specified_for_materialized_query_table_not_valid",
+        "ibm": true,
+        "reason": "The fullselect specified for the materialized query table is not valid."
+      },
+      {
+        "code": "428EK",
+        "key": "schema_qualifier_not_valid",
+        "ibm": true,
+        "reason": "The schema qualifier is not valid."
+      },
+      {
+        "code": "428EW",
+        "key": "table_cannot_be_converted_to_or_from_materialized_query_table",
+        "ibm": true,
+        "reason": "The table cannot be converted to or from a materialized query table."
+      },
+      {
+        "code": "428EZ",
+        "key": "window_specification_for_an_olap_function_not_valid",
+        "ibm": true,
+        "reason": "A window specification for an OLAP function is not valid."
+      },
+      {
+        "code": "428F1",
+        "key": "sql_table_function_must_return_table_result",
+        "ibm": true,
+        "reason": "An SQL TABLE function must return a table result."
+      },
+      {
+        "code": "428F2",
+        "key": "integer_expression_must_be_specified_on_return_statement_in_an_sql_procedure",
+        "ibm": true,
+        "reason": "An integer expression must be specified on a RETURN statement in an SQL procedure."
+      },
+      {
+        "code": "428F5",
+        "key": "invocation_routine_ambiguous",
+        "ibm": true,
+        "reason": "The invocation of a routine is ambiguous."
+      },
+      {
+        "code": "428F9",
+        "key": "sequence_expression_cannot_be_specified_in_this_context",
+        "ibm": true,
+        "reason": "A sequence expression cannot be specified in this context."
+      },
+      {
+        "code": "428FA",
+        "key": "scale_of_decimal_number_must_be_zero",
+        "ibm": true,
+        "reason": "The scale of the decimal number must be zero."
+      },
+      {
+        "code": "428FC",
+        "key": "length_of_encryption_password_not_valid",
+        "ibm": true,
+        "reason": "The length of the encryption password is not valid."
+      },
+      {
+        "code": "428FD",
+        "key": "password_used_for_decryption_does_not_match_password_used_to_encrypt_data",
+        "ibm": true,
+        "reason": "The password used for decryption does not match the password used to encrypt the data."
+      },
+      {
+        "code": "428FE",
+        "key": "data_not_result_of_encrypt_function",
+        "ibm": true,
+        "reason": "The data is not a result of the ENCRYPT function."
+      },
+      {
+        "code": "428FI",
+        "key": "order_of_clause_specified_but_referenced_table_designator_not_ordered",
+        "ibm": true,
+        "reason": "The ORDER OF clause was specified, but the referenced table designator is not ordered."
+      },
+      {
+        "code": "428FJ",
+        "key": "order_by_or_fetch_first_not_allowed_in_outer_fullselect_view_or_materialized_query_table",
+        "ibm": true,
+        "reason": "ORDER BY or FETCH FIRST is not allowed in the outer fullselect of a view or materialized query table."
+      },
+      {
+        "code": "428FL",
+        "key": "data_change_statement_not_allowed_in_context_in_which_it_specified",
+        "ibm": true,
+        "reason": "A data change statement is not allowed in the context in which it was specified."
+      },
+      {
+        "code": "428FM",
+        "key": "sql_data_change_statement_within_select_specified_view_which_not_symmetric_view",
+        "ibm": true,
+        "reason": "An SQL data change statement within a SELECT specified a view which is not a symmetric view."
+      },
+      {
+        "code": "428FP",
+        "key": "only_one_instead_of_trigger_allowed_for_each_kind_of_operation_on_view",
+        "ibm": true,
+        "reason": "Only one INSTEAD OF trigger is allowed for each kind of operation on a view."
+      },
+      {
+        "code": "428FQ",
+        "key": "instead_of_trigger_cannot_be_created_because_of_how_view_defined",
+        "ibm": true,
+        "reason": "An INSTEAD OF trigger cannot be created because of how the view is defined."
+      },
+      {
+        "code": "428FR",
+        "key": "column_cannot_be_altered_as_specified",
+        "ibm": true,
+        "reason": "A column cannot be altered as specified."
+      },
+      {
+        "code": "428FT",
+        "key": "partitioning_clause_specified_on_create_or_alter_not_valid",
+        "ibm": true,
+        "reason": "The partitioning clause specified on CREATE or ALTER is not valid."
+      },
+      {
+        "code": "428FY",
+        "key": "column_cannot_be_added_dropped_or_altered_in_materialized_query_table",
+        "ibm": true,
+        "reason": "A column cannot be added, dropped, or altered in a materialized query table."
+      },
+      {
+        "code": "428G0",
+        "key": "logical_file_prevents_alter",
+        "ibm": true,
+        "reason": "A logical file prevents the alter."
+      },
+      {
+        "code": "428G2",
+        "key": "last_data_partition_cannot_be_dropped_or_detached_from_table",
+        "ibm": true,
+        "reason": "The last data partition cannot be dropped or detached from the table."
+      },
+      {
+        "code": "428G3",
+        "key": "final_table_not_valid_when_target_view_of_sql_data_change_statement_in_fullselect_has_an_instead_of_trigger_defined",
+        "ibm": true,
+        "reason": "FINAL TABLE is not valid when the target view of the SQL data change statement in a fullselect has an INSTEAD OF trigger defined."
+      },
+      {
+        "code": "428G4",
+        "key": "invalid_use_of_input_sequence_ordering",
+        "ibm": true,
+        "reason": "Invalid use of INPUT SEQUENCE ordering."
+      },
+      {
+        "code": "428G6",
+        "key": "column_specified_that_cannot_be_selected_from_target_of_data_change_statement_in_from_clause_of_fullselect",
+        "ibm": true,
+        "reason": "A column is specified that cannot be selected from the target of the data change statement in the FROM clause of the fullselect."
+      },
+      {
+        "code": "428GE",
+        "key": "source_table_cannot_be_attached_to_partitioned_target_table",
+        "ibm": true,
+        "reason": "The source table cannot be attached to the partitioned target table."
+      },
+      {
+        "code": "428GI",
+        "key": "xml_schema_not_complete_because_an_xml_schema_document_missing",
+        "ibm": true,
+        "reason": "An XML schema is not complete because an XML schema document is missing."
+      },
+      {
+        "code": "428GJ",
+        "key": "table_cannot_be_truncated_because_delete_triggers_exist_for_table_or_table_parent_table_referential_constraint_that_would_be_affected_by_statement",
+        "ibm": true,
+        "reason": "The table cannot be truncated because DELETE triggers exist for the table or the table is a parent table of a referential constraint that would be affected by the statement."
+      },
+      {
+        "code": "428GU",
+        "key": "table_must_include_at_least_one_column_that_not_implicitly_hidden",
+        "ibm": true,
+        "reason": "A table must include at least one column that is not implicitly hidden."
+      },
+      {
+        "code": "428GX",
+        "key": "global_variable_cannot_be_set_or_referenced_in_this_context",
+        "ibm": true,
+        "reason": "A global variable cannot be set or referenced in this context."
+      },
+      {
+        "code": "428H0",
+        "key": "array_index_cannot_be_applied_to_an_object_whose_type_not_array",
+        "ibm": true,
+        "reason": "The array index cannot be applied to an object whose type is not ARRAY."
+      },
+      {
+        "code": "428H1",
+        "key": "data_type_of_an_array_index_expression_not_valid_for_array",
+        "ibm": true,
+        "reason": "The data type of an array index expression is not valid for the array."
+      },
+      {
+        "code": "428H2",
+        "key": "data_type_not_supported_in_context_where_it_being_used",
+        "ibm": true,
+        "reason": "Data type is not supported in the context where it is being used."
+      },
+      {
+        "code": "428H4",
+        "key": "hierarchical_query_construct_used_out_of_context",
+        "ibm": true,
+        "reason": "A hierarchical query construct is used out of context."
+      },
+      {
+        "code": "428H5",
+        "key": "specified_join_operation_not_valid",
+        "ibm": true,
+        "reason": "The specified join operation is not valid."
+      },
+      {
+        "code": "428H7",
+        "key": "expression_cannot_be_computed_as_single_value_for_query",
+        "ibm": true,
+        "reason": "Expression cannot be computed as a single value for the query."
+      },
+      {
+        "code": "428H8",
+        "key": "object_must_be_defined_as_secure_because_another_object_depends_on_it_for_row_level_or_column_level_access_control",
+        "ibm": true,
+        "reason": "The object must be defined as secure because another object depends on it for row-level or column-level access control."
+      },
+      {
+        "code": "428H9",
+        "key": "permission_or_mask_cannot_be_altered",
+        "ibm": true,
+        "reason": "PERMISSION or MASK cannot be altered."
+      },
+      {
+        "code": "428HA",
+        "key": "argument_user_defined_function_must_not_reference_column_for_which_column_mask_defined",
+        "ibm": true,
+        "reason": "An argument of a user-defined function must not reference a column for which a column mask is defined."
+      },
+      {
+        "code": "428HB",
+        "key": "permission_or_mask_cannot_be_created_on_specified_object",
+        "ibm": true,
+        "reason": "A permission or mask cannot be created on the specified object."
+      },
+      {
+        "code": "428HC",
+        "key": "column_mask_already_defined_for_specified_column",
+        "ibm": true,
+        "reason": "A column mask is already defined for the specified column."
+      },
+      {
+        "code": "428HD",
+        "key": "statement_cannot_be_processed_because_column_mask_cannot_be_applied_or_definition_of_mask_conflicts_with_statement",
+        "ibm": true,
+        "reason": "The statement cannot be processed because a column mask cannot be applied or the definition of the mask conflicts with the statement."
+      },
+      {
+        "code": "428HF",
+        "key": "invocation_of_routine_omits_parameter_which_not_defined_with_default",
+        "ibm": true,
+        "reason": "The invocation of the routine omits a parameter which is not defined with a DEFAULT."
+      },
+      {
+        "code": "428HM",
+        "key": "table_cannot_be_used_as_system_period_temporal_table_or_an_archive_enabled_table",
+        "ibm": true,
+        "reason": "The table cannot be used as a system-period temporal table or an archive-enabled table."
+      },
+      {
+        "code": "428HN",
+        "key": "period_specification_not_valid",
+        "ibm": true,
+        "reason": "The period specification is not valid."
+      },
+      {
+        "code": "428HQ",
+        "key": "invalid_data_type_for_operand_predicate",
+        "ibm": true,
+        "reason": "Invalid data type for the operand of a predicate."
+      },
+      {
+        "code": "428HX",
+        "key": "table_not_valid_for_history_table_or_archive_table",
+        "ibm": true,
+        "reason": "The table is not valid for a history table or archive table."
+      },
+      {
+        "code": "428HY",
+        "key": "period_specification_or_period_condition_not_valid",
+        "ibm": true,
+        "reason": "The period specification or period condition is not valid."
+      },
+      {
+        "code": "428HZ",
+        "key": "temporal_attribute_of_table_not_valid_for_specified_alter_operation",
+        "ibm": true,
+        "reason": "The temporal attribute of the table was not valid for the specified ALTER operation."
+      },
+      {
+        "code": "428I3",
+        "key": "global_variable_identified_as_target_of_an_assignment_read_only_global_variable",
+        "ibm": true,
+        "reason": "A global variable identified as the target of an assignment is a read only global variable."
+      },
+      {
+        "code": "428I9",
+        "key": "argument_of_function_must_not_contain_column_reference",
+        "ibm": true,
+        "reason": "An argument of the function must not contain a column reference."
+      },
+      {
+        "code": "42902",
+        "key": "object_of_insert_update_or_delete_also_identified_possibly_implicitly_through_view_in_from_clause",
+        "ibm": true,
+        "reason": "The object of the INSERT, UPDATE, or DELETE is also identified (possibly implicitly through a view) in a FROM clause."
+      },
+      {
+        "code": "42903",
+        "key": "invalid_use_of_an_aggregate_function_or_olap_function",
+        "ibm": true,
+        "reason": "Invalid use of an aggregate function or OLAP function."
+      },
+      {
+        "code": "42904",
+        "key": "sql_procedure_not_created_because_compile_error",
+        "ibm": true,
+        "reason": "The SQL procedure was not created because of a compile error."
+      },
+      {
+        "code": "42906",
+        "key": "aggregate_function_in_subquery_having_clause_includes_an_expression_that_applies_an_operator_to_correlated_reference",
+        "ibm": true,
+        "reason": "An aggregate function in a subquery of a HAVING clause includes an expression that applies an operator to a correlated reference."
+      },
+      {
+        "code": "42907",
+        "key": "string_too_long_in_context_it_specified",
+        "ibm": true,
+        "reason": "The string is too long in the context it was specified."
+      },
+      {
+        "code": "42908",
+        "key": "column_list_not_valid",
+        "ibm": true,
+        "reason": "Column list not valid."
+      },
+      {
+        "code": "42910",
+        "key": "statement_not_allowed_in_compound_statement",
+        "ibm": true,
+        "reason": "The statement is not allowed in a compound statement."
+      },
+      {
+        "code": "42911",
+        "key": "decimal_divide_operation_invalid_because_result_would_have_negative_scale",
+        "ibm": true,
+        "reason": "A decimal divide operation is invalid, because the result would have a negative scale."
+      },
+      {
+        "code": "42912",
+        "key": "column_cannot_be_updated_because_it_not_identified_in_update_clause_of_select_statement_of_cursor",
+        "ibm": true,
+        "reason": "A column cannot be updated, because it is not identified in the UPDATE clause of the select-statement of the cursor."
+      },
+      {
+        "code": "42914",
+        "key": "delete_invalid_because_table_referenced_in_subquery_can_be_affected_by_operation",
+        "ibm": true,
+        "reason": "The DELETE is invalid, because a table referenced in a subquery can be affected by the operation."
+      },
+      {
+        "code": "42917",
+        "key": "object_cannot_be_explicitly_dropped_altered_or_replaced",
+        "ibm": true,
+        "reason": "The object cannot be explicitly dropped, altered, or replaced."
+      },
+      {
+        "code": "42918",
+        "key": "user_defined_data_type_cannot_be_created_with_system_defined_data_type_name_for_example_integer",
+        "ibm": true,
+        "reason": "A user-defined data type cannot be created with a system-defined data type name (for example, INTEGER)."
+      },
+      {
+        "code": "42922",
+        "key": "drop_schema_cannot_be_executed_under_commitment_control",
+        "ibm": true,
+        "reason": "DROP SCHEMA cannot be executed under commitment control."
+      },
+      {
+        "code": "42923",
+        "key": "program_or_package_must_be_recreated_to_reference_an_alias_name",
+        "ibm": true,
+        "reason": "Program or package must be recreated to reference an alias-name."
+      },
+      {
+        "code": "42924",
+        "key": "alias_resolved_to_another_alias_rather_than_table_or_view_at_remote_location",
+        "ibm": true,
+        "reason": "An alias resolved to another alias rather than a table or view at the remote location."
+      },
+      {
+        "code": "42925",
+        "key": "recursive_named_derived_tables_cannot_specify_select_distinct_and_must_specify_union_all",
+        "ibm": true,
+        "reason": "Recursive named derived tables cannot specify SELECT DISTINCT and must specify UNION ALL."
+      },
+      {
+        "code": "42926",
+        "key": "locators_are_not_allowed_with_commit_none",
+        "ibm": true,
+        "reason": "Locators are not allowed with COMMIT(*NONE)."
+      },
+      {
+        "code": "42927",
+        "key": "function_cannot_be_altered_to_not_deterministic_or_external_action_because_it_referenced_by_one_or_more_existing_views",
+        "ibm": true,
+        "reason": "The function cannot be altered to NOT DETERMINISTIC or EXTERNAL ACTION because it is referenced by one or more existing views."
+      },
+      {
+        "code": "42928",
+        "key": "with_empty_table_cannot_be_specified",
+        "ibm": true,
+        "reason": "WITH EMPTY TABLE cannot be specified."
+      },
+      {
+        "code": "42929",
+        "key": "for_all_partitions_not_allowed_for_an_encoded_vector_index",
+        "ibm": true,
+        "reason": "FOR ALL PARTITIONS is not allowed for an encoded vector index."
+      },
+      {
+        "code": "42930",
+        "key": "same_column_identified_in_for_update_of_and_order_by",
+        "ibm": true,
+        "reason": "The same column was identified in FOR UPDATE OF and ORDER BY."
+      },
+      {
+        "code": "42932",
+        "key": "program_preparation_assumptions_are_incorrect",
+        "ibm": true,
+        "reason": "The program preparation assumptions are incorrect."
+      },
+      {
+        "code": "42937",
+        "key": "parameter_must_not_have_subtype_of_mixed",
+        "ibm": true,
+        "reason": "The parameter must not have a subtype of mixed."
+      },
+      {
+        "code": "42939",
+        "key": "reserved_name",
+        "ibm": true,
+        "reason": "The name cannot be used, because the specified identifier is reserved for system use."
+      },
+      {
+        "code": "42944",
+        "key": "authorization_id_cannot_be_both_an_owner_and_primary_group_owner",
+        "ibm": true,
+        "reason": "The authorization ID cannot be both an owner and primary group owner."
+      },
+      {
+        "code": "42961",
+        "key": "server_name_specified_does_not_match_current_server",
+        "ibm": true,
+        "reason": "The server name specified does not match the current server."
+      },
+      {
+        "code": "42962",
+        "key": "column_type_not_allowed_in_an_index_key_generated_column_or_constraint",
+        "ibm": true,
+        "reason": "The column type is not allowed in an index, a key, generated column, or a constraint."
+      },
+      {
+        "code": "42968",
+        "key": "connection_failed_because_there_no_current_software_license",
+        "ibm": true,
+        "reason": "The connection failed, because there is no current software license."
+      },
+      {
+        "code": "42969",
+        "key": "package_not_created",
+        "ibm": true,
+        "reason": "The package was not created."
+      },
+      {
+        "code": "42970",
+        "key": "commit_hold_or_rollback_hold_only_allowed_to_ibm_i_application_server",
+        "ibm": true,
+        "reason": "COMMIT HOLD or ROLLBACK HOLD is only allowed to a IBM i application server."
+      },
+      {
+        "code": "42971",
+        "key": "sql_statements_cannot_be_executed_under_commitment_control_because_commitment_control_already_active_to_another_relational_database",
+        "ibm": true,
+        "reason": "SQL statements cannot be executed under commitment control, because commitment control is already active to another relational database."
+      },
+      {
+        "code": "42972",
+        "key": "expression_in_join_condition_or_on_clause_merge_statement_references_columns_in_more_than_one_of_operand_tables",
+        "ibm": true,
+        "reason": "An expression in a join-condition or ON clause of a MERGE statement references columns in more than one of the operand tables."
+      },
+      {
+        "code": "42977",
+        "key": "authorization_id_cannot_be_changed_when_connecting_to_local_server",
+        "ibm": true,
+        "reason": "The authorization ID cannot be changed when connecting to the local server."
+      },
+      {
+        "code": "42978",
+        "key": "indicator_variable_not_small_integer",
+        "ibm": true,
+        "reason": "An indicator variable is not a small integer."
+      },
+      {
+        "code": "42981",
+        "key": "create_schema_not_allowed_if_changes_are_pending_in_unit_of_work",
+        "ibm": true,
+        "reason": "CREATE SCHEMA is not allowed if changes are pending in the unit of work."
+      },
+      {
+        "code": "42984",
+        "key": "privilege_cannot_be_granted_to_view_because_objopr_or_objmgt_authority_exists_on_dependent_view_or_table_and_grantee_does_not_have_allobj_or_specified_privilege_on_dependent_table_or_view",
+        "ibm": true,
+        "reason": "The privilege cannot be granted to the view, because *OBJOPR or *OBJMGT authority exists on a dependent view or table, and the grantee does not have *ALLOBJ or the specified privilege on the dependent table or view."
+      },
+      {
+        "code": "42985",
+        "key": "statement_not_allowed_in_routine",
+        "ibm": true,
+        "reason": "The statement is not allowed in a routine."
+      },
+      {
+        "code": "42986",
+        "key": "source_table_rename_operation_referenced_in_context_where_it_not_supported",
+        "ibm": true,
+        "reason": "The source table of a rename operation is referenced in a context where is it not supported."
+      },
+      {
+        "code": "42987",
+        "key": "statement_or_routine_not_allowed_in_trigger",
+        "ibm": true,
+        "reason": "The statement or routine is not allowed in a trigger."
+      },
+      {
+        "code": "42990",
+        "key": "unique_index_or_unique_constraint_not_allowed_because_key_columns_are_not_superset_of_partitioned_key_columns",
+        "ibm": true,
+        "reason": "A unique index or unique constraint is not allowed because the key columns are not a superset of the partitioned key columns."
+      },
+      {
+        "code": "42995",
+        "key": "requested_function_does_not_apply_to_global_temporary_tables",
+        "ibm": true,
+        "reason": "The requested function does not apply to global temporary tables."
+      },
+      {
+        "code": "42996",
+        "key": "specified_column_may_not_be_used_in_partition_key",
+        "ibm": true,
+        "reason": "A specified column may not be used in a partition key.\n42997*  capability_not_supported_by_this_version_of_db2_application_requester_db2_application_server_or_combination_of_two\nCapability is not supported by this version of the Db2 application requester, Db2 application server, or the combination of the two."
+      },
+      {
+        "code": "42998",
+        "key": "referential_constraint_not_allowed_because_foreign_key_columns_are_not_superset_of_partitioned_key_columns_or_node_group_not_same_as_parent_table",
+        "ibm": true,
+        "reason": "A referential constraint is not allowed because the foreign key columns are not a superset of the partitioned key columns or the node group is not the same as the parent table."
+      },
+      {
+        "code": "42999",
+        "key": "function_not_supported_for_query",
+        "ibm": true,
+        "reason": "Function not supported for query."
+      },
+      {
+        "code": "429B6",
+        "key": "rows_from_distributed_table_cannot_be_redistributed_because_table_contains_datalink_column_with_file_link_control",
+        "ibm": true,
+        "reason": "Rows from a distributed table cannot be redistributed because the table contains a datalink column with FILE LINK CONTROL."
+      },
+      {
+        "code": "429B7",
+        "key": "referential_constraint_with_delete_rule_of_cascade_not_allowed_on_table_with_datalink_column_with_file_link_control",
+        "ibm": true,
+        "reason": "A referential constraint with a delete rule of CASCADE is not allowed on a table with a DataLink column with FILE LINK CONTROL."
+      },
+      {
+        "code": "429BB",
+        "key": "data_type_column_parameter_or_sql_variable_not_supported",
+        "ibm": true,
+        "reason": "The data type of a column, parameter, or SQL variable is not supported."
+      },
+      {
+        "code": "429BD",
+        "key": "return_must_be_last_sql_statement_of_atomic_compound_statement_within_an_sql_row_or_table_function",
+        "ibm": true,
+        "reason": "RETURN must be the last SQL statement of the atomic compound statement within an SQL row or table function."
+      },
+      {
+        "code": "429BL",
+        "key": "function_which_modifies_sql_data_invoked_in_an_illegal_context",
+        "ibm": true,
+        "reason": "A function which modifies SQL data is invoked in an illegal context."
+      },
+      {
+        "code": "429BM",
+        "key": "collating_sequence_cannot_be_used_in_this_context",
+        "ibm": true,
+        "reason": "The collating sequence cannot be used in this context."
+      },
+      {
+        "code": "429BV",
+        "key": "invalid_specification_row_change_timestamp_column",
+        "ibm": true,
+        "reason": "Invalid specification of a ROW CHANGE TIMESTAMP column."
+      },
+      {
+        "code": "429BX",
+        "key": "expression_for_an_index_key_not_valid",
+        "ibm": true,
+        "reason": "The expression for an index key is not valid."
+      },
+      {
+        "code": "429C2",
+        "key": "data_type_specified_for_an_array_not_valid_in_context_where_it_specified",
+        "ibm": true,
+        "reason": "The data type specified for an array is not valid in the context where it is specified."
+      },
+      {
+        "code": "429C3",
+        "key": "creation_or_revalidation_of_an_object_would_result_in_an_invalid_direct_or_indirect_self_reference",
+        "ibm": true,
+        "reason": "The creation or revalidation of an object would result in an invalid direct or indirect self-reference."
+      },
+      {
+        "code": "42P01",
+        "key": "undefined_table",
+        "ibm": false,
+        "reason": "Undefined table"
+      },
+      {
+        "code": "42P02",
+        "key": "undefined_parameter",
+        "ibm": false,
+        "reason": "Undefined parameter"
+      },
+      {
+        "code": "42P03",
+        "key": "duplicate_cursor",
+        "ibm": false,
+        "reason": "Duplicate cursor"
+      },
+      {
+        "code": "42P04",
+        "key": "duplicate_database",
+        "ibm": false,
+        "reason": "Duplicate database"
+      },
+      {
+        "code": "42P05",
+        "key": "duplicate_prepared_statement",
+        "ibm": false,
+        "reason": "Duplicate prepared statement"
+      },
+      {
+        "code": "42P06",
+        "key": "duplicate_schema",
+        "ibm": false,
+        "reason": "Duplicate schema"
+      },
+      {
+        "code": "42P07",
+        "key": "duplicate_table",
+        "ibm": false,
+        "reason": "Duplicate table"
+      },
+      {
+        "code": "42P08",
+        "key": "ambiguous_parameter",
+        "ibm": false,
+        "reason": "Ambiguous parameter"
+      },
+      {
+        "code": "42P09",
+        "key": "ambiguous_alias",
+        "ibm": false,
+        "reason": "Ambiguous alias"
+      },
+      {
+        "code": "42P10",
+        "key": "invalid_column_reference",
+        "ibm": false,
+        "reason": "Invalid column reference"
+      },
+      {
+        "code": "42P11",
+        "key": "invalid_cursor_definition",
+        "ibm": false,
+        "reason": "Invalid cursor definition"
+      },
+      {
+        "code": "42P12",
+        "key": "invalid_database_definition",
+        "ibm": false,
+        "reason": "Invalid database definition"
+      },
+      {
+        "code": "42P13",
+        "key": "invalid_function_definition",
+        "ibm": false,
+        "reason": "Invalid function definition"
+      },
+      {
+        "code": "42P14",
+        "key": "invalid_prepared_statement_definition",
+        "ibm": false,
+        "reason": "Invalid prepared statement definition"
+      },
+      {
+        "code": "42P15",
+        "key": "invalid_schema_definition",
+        "ibm": false,
+        "reason": "Invalid schema definition"
+      },
+      {
+        "code": "42P16",
+        "key": "invalid_table_definition",
+        "ibm": false,
+        "reason": "Invalid table definition"
+      },
+      {
+        "code": "42P17",
+        "key": "invalid_object_definition",
+        "ibm": false,
+        "reason": "Invalid object definition"
+      },
+      {
+        "code": "42P18",
+        "key": "indeterminate_datatype",
+        "ibm": false,
+        "reason": "Indeterminate datatype"
+      },
+      {
+        "code": "42P19",
+        "key": "invalid_recursion",
+        "ibm": false,
+        "reason": "Invalid recursion"
+      },
+      {
+        "code": "42P20",
+        "key": "windowing_error",
+        "ibm": false,
+        "reason": "Windowing error"
+      },
+      {
+        "code": "42P21",
+        "key": "collation_mismatch",
+        "ibm": true,
+        "reason": "Collation mismatch"
+      },
+      {
+        "code": "42P22",
+        "key": "indeterminate_collation",
+        "ibm": false,
+        "reason": "Indeterminate collation"
+      }
+    ]
+  },
+  "44": {
+    "label": "WITH CHECK OPTION Violation",
+    "errorSet": [
+      {
+        "code": "44000",
+        "key": "with_check_option_violation",
+        "ibm": true,
+        "reason": "The INSERT or UPDATE is not allowed, because a resulting row does not satisfy the view definition."
+      }
+    ]
+  },
+  "46": {
+    "label": "Java Errors",
+    "errorSet": [
+      {
+        "code": "46001",
+        "key": "url_specified_on_an_install_or_replace_jar_procedure_did_not_identify_valid_jar_file",
+        "ibm": true,
+        "reason": "The URL specified on an install or replace of a jar procedure did not identify a valid jar file."
+      },
+      {
+        "code": "46002",
+        "key": "jar_name_specified_on_install_replace_or_remove_java_procedure_not_valid",
+        "ibm": true,
+        "reason": "The jar name specified on the install, replace, or remove of a Java procedure is not valid."
+      },
+      {
+        "code": "46003",
+        "key": "jar_file_cannot_be_removed_class_in_use_by_procedure",
+        "ibm": true,
+        "reason": "The jar file cannot be removed, a class is in use by a procedure."
+      },
+      {
+        "code": "46007",
+        "key": "java_function_has_java_method_with_an_invalid_signature",
+        "ibm": true,
+        "reason": "A Java function has a Java method with an invalid signature."
+      },
+      {
+        "code": "46008",
+        "key": "java_function_could_not_map_to_single_java_method",
+        "ibm": true,
+        "reason": "A Java function could not map to a single Java method."
+      },
+      {
+        "code": "46501",
+        "key": "install_or_remove_jar_procedure_specified_use_deployment_descriptor",
+        "ibm": true,
+        "reason": "The install or remove jar procedure specified the use of a deployment descriptor."
+      }
+    ]
+  },
+  "51": {
+    "label": "Invalid Application State",
+    "errorSet": [
+      {
+        "code": "51002",
+        "key": "package_corresponding_to_an_sql_statement_execution_request_not_found",
+        "ibm": true,
+        "reason": "The package corresponding to an SQL statement execution request was not found."
+      },
+      {
+        "code": "51003",
+        "key": "consistency_tokens_do_not_match",
+        "ibm": true,
+        "reason": "Consistency tokens do not match."
+      },
+      {
+        "code": "51004",
+        "key": "address_in_sqlda_invalid",
+        "ibm": true,
+        "reason": "An address in the SQLDA is invalid."
+      },
+      {
+        "code": "51009",
+        "key": "commit_or_rollback_not_allowed_because_commitment_control_has_not_been_started",
+        "ibm": true,
+        "reason": "COMMIT or ROLLBACK is not allowed, because commitment control has not been started."
+      },
+      {
+        "code": "51015",
+        "key": "attempt_made_to_execute_section_that_found_to_be_in_error_at_bind_time",
+        "ibm": true,
+        "reason": "An attempt was made to execute a section that was found to be in error at bind time."
+      },
+      {
+        "code": "51021",
+        "key": "sql_statements_cannot_be_executed_until_application_process_executes_rollback_operation",
+        "ibm": true,
+        "reason": "SQL statements cannot be executed until the application process executes a rollback operation."
+      },
+      {
+        "code": "51030",
+        "key": "procedure_referenced_in_describe_procedure_or_associate_locator_statement_has_not_yet_been_called_within_application_process",
+        "ibm": true,
+        "reason": "The procedure referenced in a DESCRIBE PROCEDURE or ASSOCIATE LOCATOR statement has not yet been called within the application process."
+      },
+      {
+        "code": "51035",
+        "key": "previous_value_expression_cannot_be_used_because_value_has_not_been_generated_for_sequence_yet_in_this_session",
+        "ibm": true,
+        "reason": "A PREVIOUS VALUE expression cannot be used because a value has not been generated for the sequence yet in this session."
+      },
+      {
+        "code": "51036",
+        "key": "implicit_connect_to_remote_server_not_allowed_because_savepoint_outstanding",
+        "ibm": true,
+        "reason": "An implicit connect to a remote server is not allowed because a savepoint is outstanding."
+      },
+      {
+        "code": "51037",
+        "key": "operation_not_allowed_because_trigger_has_been_marked_inoperative",
+        "ibm": true,
+        "reason": "The operation is not allowed because a trigger has been marked inoperative."
+      },
+      {
+        "code": "51039",
+        "key": "encryption_password_value_not_set",
+        "ibm": true,
+        "reason": "The ENCRYPTION PASSWORD value is not set."
+      },
+      {
+        "code": "51043",
+        "key": "procedure_cannot_be_called_because_nested_environment_already_called_an_autonomous_procedure",
+        "ibm": true,
+        "reason": "Procedure cannot be called because the nested environment already called an autonomous procedure."
+      },
+      {
+        "code": "51046",
+        "key": "data_change_operation_not_allowed_for_target_object_when_current_temporal_system_time_or_current_temporal_business_time_has_value_other_than_null_value",
+        "ibm": true,
+        "reason": "The data change operation is not allowed for the target object when CURRENT TEMPORAL SYSTEM_TIME or CURRENT TEMPORAL BUSINESS_TIME has a value other than the null value."
+      },
+      {
+        "code": "51047",
+        "key": "activation_group_of_program_or_service_program_referenced_by_an_external_procedure_not_valid",
+        "ibm": true,
+        "reason": "The activation group of the program or service program referenced by an external procedure is not valid."
+      }
+    ]
+  },
+  "53": {
+    "label": "Invalid Operand or Inconsistent Specification",
+    "errorSet": [
+      {
+        "code": "53000",
+        "key": "insufficient_resources",
+        "ibm": true,
+        "reason": "Insufficient resources"
+      },
+      {
+        "code": "53037",
+        "key": "partitioned_index_cannot_be_created_on_table",
+        "ibm": true,
+        "reason": "A partitioned index cannot be created on a table."
+      },
+      {
+        "code": "53038",
+        "key": "key_limit_values_zero_or_greater_than_columns_in_key",
+        "ibm": true,
+        "reason": "The number of key limit values is zero or greater than the number of columns in the key."
+      },
+      {
+        "code": "53039",
+        "key": "partition_clause_of_alter_statement_omitted_or_invalid",
+        "ibm": true,
+        "reason": "The PARTITION clause of the ALTER statement is omitted or invalid."
+      },
+      {
+        "code": "53045",
+        "key": "data_type_of_key_limit_constant_not_same_as_data_type_of_column",
+        "ibm": true,
+        "reason": "The data type of the key limit constant is not the same as the data type of the column."
+      },
+      {
+        "code": "53100",
+        "key": "disk_full",
+        "ibm": true,
+        "reason": "Disk full"
+      },
+      {
+        "code": "53200",
+        "key": "out_of_memory",
+        "ibm": true,
+        "reason": "Out of memory"
+      },
+      {
+        "code": "53300",
+        "key": "too_many_connections",
+        "ibm": true,
+        "reason": "Too many connections"
+      },
+      {
+        "code": "53400",
+        "key": "configuration_limit_exceeded",
+        "ibm": true,
+        "reason": "Configuration limit exceeded"
+      }
+    ]
+  },
+  "54": {
+    "label": "SQL or Product Limit Exceeded",
+    "errorSet": [
+      {
+        "code": "54000",
+        "key": "program_limit_exceeded",
+        "ibm": true,
+        "reason": "Program limit exceeded"
+      },
+      {
+        "code": "54001",
+        "key": "statement_too_complex",
+        "ibm": true,
+        "reason": "The statement is too long or too complex."
+      },
+      {
+        "code": "54002",
+        "key": "string_constant_too_long",
+        "ibm": true,
+        "reason": "A string constant is too long."
+      },
+      {
+        "code": "54004",
+        "key": "statement_has_too_many_table_names_or_too_many_items_in_select_or_insert_list",
+        "ibm": true,
+        "reason": "The statement has too many table names or too many items in a SELECT or INSERT list."
+      },
+      {
+        "code": "54005",
+        "key": "sort_key_too_long_or_has_too_many_columns",
+        "ibm": true,
+        "reason": "The sort key is too long, or has too many columns."
+      },
+      {
+        "code": "54006",
+        "key": "result_string_too_long",
+        "ibm": true,
+        "reason": "The result string is too long."
+      },
+      {
+        "code": "54008",
+        "key": "key_too_long_column_of_key_too_long_or_key_has_too_many_columns",
+        "ibm": true,
+        "reason": "The key is too long, a column of the key is too long, or the key has too many columns."
+      },
+      {
+        "code": "54009",
+        "key": "too_many_users_specified_in_grant_or_revoke",
+        "ibm": true,
+        "reason": "Too many users were specified in GRANT or REVOKE."
+      },
+      {
+        "code": "54010",
+        "key": "record_length_of_table_too_long",
+        "ibm": true,
+        "reason": "The record length of the table is too long."
+      },
+      {
+        "code": "54011",
+        "key": "too_many_columns",
+        "ibm": true,
+        "reason": "Too many columns were specified for a table, view, or table function."
+      },
+      {
+        "code": "54012",
+        "key": "literal_too_long",
+        "ibm": true,
+        "reason": "The literal is too long."
+      },
+      {
+        "code": "54018",
+        "key": "row_too_long",
+        "ibm": true,
+        "reason": "The row is too long."
+      },
+      {
+        "code": "54019",
+        "key": "maximum_late_descriptors_has_been_exceeded_probably_because_too_many_different_ccsids_used",
+        "ibm": true,
+        "reason": "The maximum number of late descriptors has been exceeded, probably because too many different CCSIDs were used."
+      },
+      {
+        "code": "54021",
+        "key": "too_many_constraints_or_size_of_constraint_too_large",
+        "ibm": true,
+        "reason": "Too many constraints, or the size of the constraint is too large."
+      },
+      {
+        "code": "54023",
+        "key": "too_many_arguments",
+        "ibm": true,
+        "reason": "The limit for the number of parameters or arguments for a function or a procedure has been exceeded."
+      },
+      {
+        "code": "54028",
+        "key": "maximum_concurrent_lob_handles_has_been_reached",
+        "ibm": true,
+        "reason": "The maximum number of concurrent LOB handles has been reached."
+      },
+      {
+        "code": "54035",
+        "key": "internal_object_limit_exceeded",
+        "ibm": true,
+        "reason": "An internal object limit exceeded."
+      },
+      {
+        "code": "54038",
+        "key": "maximum_depth_of_nested_routines_or_triggers_exceeded",
+        "ibm": true,
+        "reason": "Maximum depth of nested routines or triggers was exceeded.\n54044*  multiple_byte_ucs_2_collating_sequence_table_cannot_be_supported_in_drda_because_it_too_large\nA multiple-byte (UCS-2) collating sequence table cannot be supported in DRDA because it is too large."
+      },
+      {
+        "code": "54054",
+        "key": "partitions_exceeded",
+        "ibm": true,
+        "reason": "The number of partitions is exceeded."
+      },
+      {
+        "code": "54057",
+        "key": "xml_element_name_attribute_name_namespace_prefix_or_uri_too_long",
+        "ibm": true,
+        "reason": "An XML element name, attribute name, namespace prefix or URI is too long."
+      },
+      {
+        "code": "54058",
+        "key": "internal_representation_of_an_xml_path_too_long",
+        "ibm": true,
+        "reason": "The internal representation of an XML path is too long."
+      }
+    ]
+  },
+  "55": {
+    "label": "Object Not in Prerequisite State",
+    "errorSet": [
+      {
+        "code": "55000",
+        "key": "object_not_in_prerequisite_state",
+        "ibm": true,
+        "reason": "Object not in prerequisite state"
+      },
+      {
+        "code": "55005",
+        "key": "recursion_only_supported_to_ibm_i_application_server",
+        "ibm": true,
+        "reason": "Recursion is only supported to a IBM i application server."
+      },
+      {
+        "code": "55006",
+        "key": "object_in_use",
+        "ibm": true,
+        "reason": "The object cannot be dropped, because it is currently in use by the same application process."
+      },
+      {
+        "code": "55007",
+        "key": "object_cannot_be_altered_because_it_currently_in_use_by_same_application_process",
+        "ibm": true,
+        "reason": "The object cannot be altered, because it is currently in use by the same application process."
+      },
+      {
+        "code": "55018",
+        "key": "schema_cannot_be_dropped_because_it_in_library_list",
+        "ibm": true,
+        "reason": "The schema cannot be dropped, because it is in the library list."
+      },
+      {
+        "code": "55019",
+        "key": "object_in_an_invalid_state_for_operation",
+        "ibm": true,
+        "reason": "The object is in an invalid state for the operation."
+      },
+      {
+        "code": "55029",
+        "key": "local_program_attempted_to_connect_to_remote_database",
+        "ibm": true,
+        "reason": "Local program attempted to connect to a remote database."
+      },
+      {
+        "code": "55035",
+        "key": "object_cannot_be_dropped_because_it_protected",
+        "ibm": true,
+        "reason": "The object cannot be dropped because it is protected."
+      },
+      {
+        "code": "55042",
+        "key": "alias_not_allowed_because_it_identifies_single_member_multiple_member_file",
+        "ibm": true,
+        "reason": "The alias is not allowed because it identifies a single member of a multiple member file."
+      },
+      {
+        "code": "55048",
+        "key": "encrypted_data_cannot_be_encrypted",
+        "ibm": true,
+        "reason": "Encrypted data cannot be encrypted."
+      },
+      {
+        "code": "55050",
+        "key": "object_cannot_be_created_into_protected_schema",
+        "ibm": true,
+        "reason": "An object cannot be created into a protected schema."
+      },
+      {
+        "code": "55058",
+        "key": "debug_mode_cannot_be_changed_for_routine_that_created_with_disable_debug_mode",
+        "ibm": true,
+        "reason": "The DEBUG MODE cannot be changed for a routine that was created with DISABLE DEBUG MODE."
+      },
+      {
+        "code": "55063",
+        "key": "xml_schema_not_in_correct_state_for_operation",
+        "ibm": true,
+        "reason": "The XML schema is not in the correct state for the operation."
+      },
+      {
+        "code": "55068",
+        "key": "row_change_timestamp_expression_cannot_be_used_because_table_does_not_have_row_change_timestamp",
+        "ibm": true,
+        "reason": "A row change timestamp expression cannot be used because the table does not have a row change timestamp."
+      },
+      {
+        "code": "55P02",
+        "key": "cant_change_runtime_param",
+        "ibm": false,
+        "reason": "Cannot change runtime parameter"
+      },
+      {
+        "code": "55P03",
+        "key": "lock_not_available",
+        "ibm": false,
+        "reason": "Lock not available"
+      },
+      {
+        "code": "55P04",
+        "key": "unsafe_new_enum_value_usage",
+        "ibm": false,
+        "reason": "Unsafe new enum value usage"
+      }
+    ]
+  },
+  "56": {
+    "label": "Miscellaneous SQL or Product Error",
+    "errorSet": [
+      {
+        "code": "56016",
+        "key": "ranges_specified_for_data_partitions_are_not_valid",
+        "ibm": true,
+        "reason": "The ranges specified for data partitions are not valid."
+      },
+      {
+        "code": "56023",
+        "key": "invalid_reference_to_remote_object_has_been_detected",
+        "ibm": true,
+        "reason": "An invalid reference to a remote object has been detected."
+      },
+      {
+        "code": "56084",
+        "key": "unsupported_sqltype_encountered_in_select_list_or_input_list",
+        "ibm": true,
+        "reason": "An unsupported SQLTYPE was encountered in a select list or input list."
+      },
+      {
+        "code": "56092",
+        "key": "type_of_authorization_cannot_be_determined_because_authorization_name_both_user_id_and_group_id",
+        "ibm": true,
+        "reason": "The type of authorization cannot be determined, because the authorization name is both a user id and group id."
+      },
+      {
+        "code": "56095",
+        "key": "bind_option_invalid",
+        "ibm": true,
+        "reason": "A bind option is invalid."
+      },
+      {
+        "code": "56098",
+        "key": "error_occurred_during_an_implicit_rebind_recompile_or_revalidation",
+        "ibm": true,
+        "reason": "An error occurred during an implicit rebind, recompile, or revalidation."
+      },
+      {
+        "code": "560BF",
+        "key": "cryptographic_facility_has_not_been_installed",
+        "ibm": true,
+        "reason": "The cryptographic facility has not been installed."
+      },
+      {
+        "code": "560C3",
+        "key": "after_trigger_cannot_modify_row_being_inserted_for_an_insert_statement",
+        "ibm": true,
+        "reason": "An AFTER trigger cannot modify a row being inserted for an INSERT statement."
+      },
+      {
+        "code": "560C4",
+        "key": "option_not_valid_for_ard_interface",
+        "ibm": true,
+        "reason": "The option is not valid for the ARD interface."
+      },
+      {
+        "code": "560C6",
+        "key": "referential_constraint_cannot_modify_row_that_modified_by_an_sql_data_change_statement_within_fullselect",
+        "ibm": true,
+        "reason": "A referential constraint cannot modify a row that was modified by an SQL data change statement within a fullselect."
+      },
+      {
+        "code": "560CO",
+        "key": "cycle_detected_in_hierarchical_query",
+        "ibm": true,
+        "reason": "Cycle detected in a hierarchical query."
+      },
+      {
+        "code": "560CR",
+        "key": "java_jdk_or_jvm_or_pase_not_installed",
+        "ibm": true,
+        "reason": "The Java JDK or JVM, or PASE is not installed."
+      },
+      {
+        "code": "560CX",
+        "key": "table_that_has_trigger_or_parent_referential_constraint_with_delete_rule_of_cascade_set_null_or_set_default_not_allowed_as_target_table_in_merge_statement_that_contains_global_variable_function_or_subselect_in_an_assignment_or_values_clause",
+        "ibm": true,
+        "reason": "A table that has a trigger or is a parent of a referential constraint with a delete rule of CASCADE, SET NULL, or SET DEFAULT is not allowed as the target table in a MERGE statement that contains a global variable, function, or subselect in an assignment or values clause."
+      },
+      {
+        "code": "560D1",
+        "key": "merge_not_allowed_because_operations_performed_in_merge_may_affect_other_operations_in_merge",
+        "ibm": true,
+        "reason": "MERGE not allowed because operations performed in the MERGE may affect other operations in the MERGE."
+      },
+      {
+        "code": "560DD",
+        "key": "nested_include_statements_are_not_supported",
+        "ibm": true,
+        "reason": "Nested INCLUDE statements are not supported."
+      }
+    ]
+  },
+  "57": {
+    "label": "Resource Not Available or Operator Intervention",
+    "errorSet": [
+      {
+        "code": "57000",
+        "key": "operator_intervention",
+        "ibm": true,
+        "reason": "Operator intervention"
+      },
+      {
+        "code": "57005",
+        "key": "statement_cannot_be_executed_because_utility_or_query_limit_or_threshold_exceeded",
+        "ibm": true,
+        "reason": "The statement cannot be executed, because a utility or a query limit or threshold was exceeded."
+      },
+      {
+        "code": "57006",
+        "key": "object_cannot_be_created_because_drop_or_create_pending",
+        "ibm": true,
+        "reason": "The object cannot be created, because a DROP or CREATE is pending."
+      },
+      {
+        "code": "57007",
+        "key": "object_cannot_be_used_because_an_operation_pending",
+        "ibm": true,
+        "reason": "The object cannot be used, because an operation is pending."
+      },
+      {
+        "code": "57010",
+        "key": "field_procedure_could_not_be_loaded",
+        "ibm": true,
+        "reason": "A field procedure could not be loaded."
+      },
+      {
+        "code": "57011",
+        "key": "virtual_storage_or_database_resource_not_available",
+        "ibm": true,
+        "reason": "Virtual storage or database resource is not available."
+      },
+      {
+        "code": "57012",
+        "key": "non_database_resource_not_available",
+        "ibm": true,
+        "reason": "A non-database resource is not available. This will not affect the successful execution of subsequent statements."
+      },
+      {
+        "code": "57013",
+        "key": "non_database_resource_not_available",
+        "ibm": true,
+        "reason": "A non-database resource is not available. This will affect the successful execution of subsequent statements."
+      },
+      {
+        "code": "57014",
+        "key": "query_canceled",
+        "ibm": true,
+        "reason": "Processing was canceled as requested."
+      },
+      {
+        "code": "57017",
+        "key": "character_conversion_not_defined",
+        "ibm": true,
+        "reason": "Character conversion is not defined."
+      },
+      {
+        "code": "57033",
+        "key": "deadlock_or_timeout_occurred_without_automatic_rollback",
+        "ibm": true,
+        "reason": "Deadlock or timeout occurred without automatic rollback."
+      },
+      {
+        "code": "57042",
+        "key": "ddm_recursion_has_occurred",
+        "ibm": true,
+        "reason": "DDM recursion has occurred."
+      },
+      {
+        "code": "57043",
+        "key": "local_sql_application_program_cannot_be_executed_on_an_application_server",
+        "ibm": true,
+        "reason": "A local SQL application program cannot be executed on an application server."
+      },
+      {
+        "code": "57050",
+        "key": "file_server_not_currently_available",
+        "ibm": true,
+        "reason": "The file server is not currently available."
+      },
+      {
+        "code": "57062",
+        "key": "adjustment_not_allowed_for_period_as_result_data_change_operation",
+        "ibm": true,
+        "reason": "Adjustment not allowed for a period as a result of a data change operation."
+      },
+      {
+        "code": "57P01",
+        "key": "admin_shutdown",
+        "ibm": false,
+        "reason": "Admin shutdown"
+      },
+      {
+        "code": "57P02",
+        "key": "crash_shutdown",
+        "ibm": false,
+        "reason": "Crash shutdown"
+      },
+      {
+        "code": "57P03",
+        "key": "cannot_connect_now",
+        "ibm": false,
+        "reason": "Cannot connect now"
+      },
+      {
+        "code": "57P04",
+        "key": "database_dropped",
+        "ibm": false,
+        "reason": "Database dropped"
+      },
+      {
+        "code": "57P05",
+        "key": "idle_session_timeout",
+        "ibm": false,
+        "reason": "Idle session timeout"
+      }
+    ]
+  },
+  "58": {
+    "label": "System Error",
+    "errorSet": [
+      {
+        "code": "58000",
+        "key": "system_error",
+        "ibm": true,
+        "reason": "System error"
+      },
+      {
+        "code": "58002",
+        "key": "exit_has_returned_an_error_or_invalid_data",
+        "ibm": true,
+        "reason": "An exit has returned an error or invalid data."
+      },
+      {
+        "code": "58003",
+        "key": "invalid_section_number_detected",
+        "ibm": true,
+        "reason": "An invalid section number was detected."
+      },
+      {
+        "code": "58004",
+        "key": "system_error_that_does_not_necessarily_preclude_successful_execution_of_subsequent_sql_statements_occurred",
+        "ibm": true,
+        "reason": "A system error (that does not necessarily preclude the successful execution of subsequent SQL statements) occurred."
+      },
+      {
+        "code": "58008",
+        "key": "execution_failed_due_to_distribution_protocol_error_that_will_not_affect_successful_execution_of_subsequent_ddm_commands_or_sql_statements",
+        "ibm": true,
+        "reason": "Execution failed due to a distribution protocol error that will not affect the successful execution of subsequent DDM commands or SQL statements."
+      },
+      {
+        "code": "58009",
+        "key": "execution_failed_due_to_distribution_protocol_error_that_caused_deallocation_of_conversation",
+        "ibm": true,
+        "reason": "Execution failed due to a distribution protocol error that caused deallocation of the conversation."
+      },
+      {
+        "code": "58010",
+        "key": "execution_failed_due_to_distribution_protocol_error_that_will_affect_successful_execution_of_subsequent_ddm_commands_or_sql_statements",
+        "ibm": true,
+        "reason": "Execution failed due to a distribution protocol error that will affect the successful execution of subsequent DDM commands or SQL statements."
+      },
+      {
+        "code": "58011",
+        "key": "ddm_command_invalid_while_bind_process_in_progress",
+        "ibm": true,
+        "reason": "The DDM command is invalid while the bind process in progress."
+      },
+      {
+        "code": "58012",
+        "key": "bind_process_with_specified_package_name_and_consistency_token_not_active",
+        "ibm": true,
+        "reason": "The bind process with the specified package name and consistency token is not active."
+      },
+      {
+        "code": "58014",
+        "key": "ddm_command_not_supported",
+        "ibm": true,
+        "reason": "The DDM command is not supported."
+      },
+      {
+        "code": "58015",
+        "key": "ddm_object_not_supported",
+        "ibm": true,
+        "reason": "The DDM object is not supported."
+      },
+      {
+        "code": "58016",
+        "key": "ddm_parameter_not_supported",
+        "ibm": true,
+        "reason": "The DDM parameter is not supported."
+      },
+      {
+        "code": "58017",
+        "key": "ddm_parameter_value_not_supported",
+        "ibm": true,
+        "reason": "The DDM parameter value is not supported."
+      },
+      {
+        "code": "58018",
+        "key": "ddm_reply_message_not_supported",
+        "ibm": true,
+        "reason": "The DDM reply message is not supported."
+      },
+      {
+        "code": "58028",
+        "key": "commit_operation_failed_because_resource_in_unit_of_work_not_able_to_commit_its_resources",
+        "ibm": true,
+        "reason": "The commit operation failed, because a resource in the unit of work was not able to commit its resources."
+      },
+      {
+        "code": "58030",
+        "key": "io_error",
+        "ibm": true,
+        "reason": "I/O error"
+      },
+      {
+        "code": "58033",
+        "key": "unexpected_error_occurred_while_attempting_to_access_client_driver",
+        "ibm": true,
+        "reason": "An unexpected error occurred while attempting to access a client driver."
+      },
+      {
+        "code": "58P01",
+        "key": "undefined_file",
+        "ibm": false,
+        "reason": "Undefined file"
+      },
+      {
+        "code": "58P02",
+        "key": "duplicate_file",
+        "ibm": false,
+        "reason": "Duplicate file"
+      },
+      {
+        "code": "58P03",
+        "key": "file_name_too_long",
+        "ibm": false,
+        "reason": "File name too long"
+      }
+    ]
+  },
+  "72": {
+    "label": "Snapshot Failure",
+    "errorSet": [
+      {
+        "code": "72000",
+        "key": "snapshot_too_old",
+        "ibm": false,
+        "reason": "If a transaction takes a long time to complete, it may read data that has been updated by another transaction, causing the \"snapshot too old\" error. One other possible scenario where this issue could happen is a corner case bug as described in the Github Issue - GHI-15761. The default value of `ysql_enable_read_request_caching` is false"
+      }
+    ]
+  },
+  "00": {
+    "label": "Successful Completion",
+    "errorSet": [
+      {
+        "code": "00000",
+        "key": "successful_completion",
+        "ibm": true,
+        "reason": "Execution of the operation was successful and did not result in any type of warning or exception condition."
+      }
+    ],
+    "reason": "The operation succeeded with a positive outcome"
+  },
+  "01": {
+    "label": "Warning",
+    "errorSet": [
+      {
+        "code": "01000",
+        "key": "warning",
+        "ibm": true,
+        "reason": "Valid warning SQLSTATEs returned by an SQL routine or user application. Also used for RAISE_ERROR and SIGNAL."
+      },
+      {
+        "code": "01002",
+        "key": "disconnect_error_occurred",
+        "ibm": true,
+        "reason": "A DISCONNECT error occurred."
+      },
+      {
+        "code": "01003",
+        "key": "null_value_eliminated_in_set_function",
+        "ibm": true,
+        "reason": "Null values were eliminated from the argument of an aggregate function."
+      },
+      {
+        "code": "01004",
+        "key": "string_data_right_truncation",
+        "ibm": true,
+        "reason": "The value of a string was truncated when assigned to another string data type with a shorter length."
+      },
+      {
+        "code": "01005",
+        "key": "insufficient_entries_sqlda",
+        "ibm": true,
+        "reason": "Insufficient number of entries in an SQLDA."
+      },
+      {
+        "code": "01006",
+        "key": "privilege_not_revoked",
+        "ibm": true,
+        "reason": "Requested privilege was not revoked."
+      },
+      {
+        "code": "01007",
+        "key": "privilege_not_granted",
+        "ibm": true,
+        "reason": "Requested privilege was not granted"
+      },
+      {
+        "code": "01008",
+        "key": "implicit_zero_bit_padding",
+        "ibm": true
+      },
+      {
+        "code": "01009",
+        "key": "search_condition_too_long",
+        "ibm": true,
+        "reason": "The search condition is too long for the information schema.\nZero bits were padded implicitly"
+      },
+      {
+        "code": "0100A",
+        "key": "view_expression_too_long",
+        "ibm": true,
+        "reason": "The query expression of the view is too long for the information schema."
+      },
+      {
+        "code": "0100C",
+        "key": "dynamic_result_sets_returned",
+        "ibm": true,
+        "reason": "One or more ad hoc result sets were returned from the procedure."
+      },
+      {
+        "code": "0100D",
+        "key": "closed_cursor_reopen",
+        "ibm": true,
+        "reason": "The cursor that was closed has been reopened on the next result set within the chain."
+      },
+      {
+        "code": "0100E",
+        "key": "too_many_result_sets",
+        "ibm": true,
+        "reason": "The procedure returned too many result sets.\nThe cursor that was closed has been reopened on the next result set within the chain.\nA dynamic result set was returned.\nOne or more ad hoc result sets were returned from the procedure."
+      },
+      {
+        "code": "01P01",
+        "key": "deprecated_feature",
+        "ibm": false,
+        "reason": "Feature used is deprecated"
+      },
+      {
+        "code": "01503",
+        "key": "result_columns_larger_than_variables_provided",
+        "ibm": true,
+        "reason": "The number of result columns is larger than the number of variables provided."
+      },
+      {
+        "code": "01504",
+        "key": "update_or_delete_statement_does_not_include_where_clause",
+        "ibm": true,
+        "reason": "The UPDATE or DELETE statement does not include a WHERE clause."
+      },
+      {
+        "code": "01505",
+        "key": "statement_not_executed_because_it_unacceptable_in_this_environment",
+        "ibm": true,
+        "reason": "The statement was not executed because it is unacceptable in this environment."
+      },
+      {
+        "code": "01506",
+        "key": "adjustment_made_to_date_or_timestamp_value_to_correct_an_invalid_date_resulting_from_an_arithmetic_operation",
+        "ibm": true,
+        "reason": "An adjustment was made to a DATE or TIMESTAMP value to correct an invalid date resulting from an arithmetic operation."
+      },
+      {
+        "code": "01515",
+        "key": "null_value_has_been_assigned_to_variable_because_non_null_value_of_column_not_within_range_of_variable",
+        "ibm": true,
+        "reason": "The null value has been assigned to a variable, because the non-null value of the column is not within the range of the variable."
+      },
+      {
+        "code": "01517",
+        "key": "character_that_could_not_be_converted_replaced_with_substitute_character",
+        "ibm": true,
+        "reason": "A character that could not be converted was replaced with a substitute character."
+      },
+      {
+        "code": "01519",
+        "key": "null_value_has_been_assigned_to_variable_because_numeric_value_out_of_range",
+        "ibm": true,
+        "reason": "The null value has been assigned to a variable, because a numeric value is out of range."
+      },
+      {
+        "code": "01520",
+        "key": "null_value_has_been_assigned_to_variable_because_characters_cannot_be_converted",
+        "ibm": true,
+        "reason": "The null value has been assigned to a variable, because the characters cannot be converted."
+      },
+      {
+        "code": "01522",
+        "key": "local_table_or_view_name_used_in_create_alias_statement_undefined",
+        "ibm": true,
+        "reason": "The local table or view name used in the CREATE ALIAS statement is undefined."
+      },
+      {
+        "code": "01526",
+        "key": "isolation_level_has_been_escalated",
+        "ibm": true,
+        "reason": "Isolation level has been escalated."
+      },
+      {
+        "code": "01527",
+        "key": "set_statement_references_special_register_that_does_not_exist_at_as",
+        "ibm": true,
+        "reason": "A SET statement references a special register that does not exist at the AS."
+      },
+      {
+        "code": "01528",
+        "key": "where_not_null_ignored_because_index_key_cannot_contain_null_values",
+        "ibm": true,
+        "reason": "WHERE NOT NULL is ignored, because the index key cannot contain null values."
+      },
+      {
+        "code": "01532",
+        "key": "undefined_object_name_detected",
+        "ibm": true,
+        "reason": "An undefined object name was detected."
+      },
+      {
+        "code": "01534",
+        "key": "string_representation_datetime_value_invalid",
+        "ibm": true,
+        "reason": "The string representation of a datetime value is invalid."
+      },
+      {
+        "code": "01535",
+        "key": "arithmetic_operation_on_date_or_timestamp_has_result_that_not_within_valid_range_of_dates",
+        "ibm": true,
+        "reason": "An arithmetic operation on a date or timestamp has a result that is not within the valid range of dates."
+      },
+      {
+        "code": "01536",
+        "key": "during_remote_bind_where_existence_checking_deferred_server_name_specified_does_not_match_current_server",
+        "ibm": true,
+        "reason": "During remote bind where existence checking is deferred, the server-name specified does not match the current server."
+      },
+      {
+        "code": "01539",
+        "key": "connection_successful_but_only_sbcs_characters_should_be_used",
+        "ibm": true,
+        "reason": "Connection is successful but only SBCS characters should be used."
+      },
+      {
+        "code": "01542",
+        "key": "authorization_id_does_not_have_privilege_to_perform_operation_as_specified",
+        "ibm": true,
+        "reason": "Authorization ID does not have the privilege to perform the operation as specified."
+      },
+      {
+        "code": "01544",
+        "key": "null_value_has_been_assigned_to_variable_because_substring_error_occurred",
+        "ibm": true,
+        "reason": "The null value has been assigned to a variable, because a substring error occurred"
+      },
+      {
+        "code": "01545",
+        "key": "unqualified_column_name_has_been_interpreted_as_correlated_reference",
+        "ibm": true,
+        "reason": "An unqualified column name has been interpreted as a correlated reference."
+      },
+      {
+        "code": "01547",
+        "key": "mixed_data_value_improperly_formed",
+        "ibm": true,
+        "reason": "A mixed data value is improperly formed."
+      },
+      {
+        "code": "01548",
+        "key": "authorization_id_does_not_have_privilege_to_perform_specified_operation_on_identified_object",
+        "ibm": true,
+        "reason": "The authorization ID does not have the privilege to perform the specified operation on the identified object."
+      },
+      {
+        "code": "01557",
+        "key": "too_many_variables_have_been_specified_on_select_into_or_fetch",
+        "ibm": true,
+        "reason": "Too many variables have been specified on SELECT INTO or FETCH."
+      },
+      {
+        "code": "01564",
+        "key": "null_value_has_been_assigned_to_variable_because_division_by_zero_occurred",
+        "ibm": true,
+        "reason": "The null value has been assigned to a variable, because division by zero occurred."
+      },
+      {
+        "code": "01565",
+        "key": "null_value_has_been_assigned_to_variable_because_miscellaneous_data_exception_occurred",
+        "ibm": true,
+        "reason": "The null value has been assigned to a variable, because a miscellaneous data exception occurred. For example, the character value for the CAST, DECIMAL, FLOAT, or INTEGER scalar function is invalid"
+      },
+      {
+        "code": "01567",
+        "key": "table_created_but_not_journaled",
+        "ibm": true,
+        "reason": "The table was created but not journaled."
+      },
+      {
+        "code": "01587",
+        "key": "unit_of_work_committed_or_rolled_back_but_outcome_not_fully_known_at_all_sites",
+        "ibm": true,
+        "reason": "The unit of work was committed or rolled back, but the outcome is not fully known at all sites."
+      },
+      {
+        "code": "01593",
+        "key": "alter_table_may_cause_data_truncation",
+        "ibm": true,
+        "reason": "An ALTER TABLE may cause data truncation."
+      },
+      {
+        "code": "01594",
+        "key": "insufficient_entries_in_an_sqlda_for_all_information_i",
+        "ibm": true,
+        "reason": "Insufficient number of entries in an SQLDA for ALL information (i.e. not enough descriptors to return the distinct name)."
+      },
+      {
+        "code": "01614",
+        "key": "there_are_fewer_locators_than_result_sets",
+        "ibm": true,
+        "reason": "There are fewer locators than the number of result sets."
+      },
+      {
+        "code": "01623",
+        "key": "value_of_degree_ignored",
+        "ibm": true,
+        "reason": "The value of DEGREE is ignored."
+      },
+      {
+        "code": "01627",
+        "key": "datalink_value_may_not_be_valid_because_table_in_reconcile_pending_or_reconcile_not_possible_state",
+        "ibm": true,
+        "reason": "The DATALINK value may not be valid because the table is in reconcile pending or reconcile is not a possible state."
+      },
+      {
+        "code": "01634",
+        "key": "distinct_data_type_name_too_long_and_cannot_be_returned_in_sqlda",
+        "ibm": true,
+        "reason": "The distinct data type name is too long and cannot be returned in the SQLDA. The short name is returned instead."
+      },
+      {
+        "code": "01643",
+        "key": "assignment_to_sqlcode_or_sqlstate_variable_does_not_signal_warning_or_error",
+        "ibm": true,
+        "reason": "Assignment to SQLCODE or SQLSTATE variable does not signal a warning or error."
+      },
+      {
+        "code": "01646",
+        "key": "result_sets_could_not_be_returned_because_cursor_closed",
+        "ibm": true,
+        "reason": "A result sets could not be returned because the cursor was closed.\n01647*  db2sql_before_trigger_changed_to_db2row\nA Db2SQL BEFORE trigger changed to Db2ROW."
+      },
+      {
+        "code": "01652",
+        "key": "theolation_clause_ignored_because_of_statement_context",
+        "ibm": true,
+        "reason": "The isolation clause was ignored because of the statement context."
+      },
+      {
+        "code": "01658",
+        "key": "binary_data_invalid_for_decrypt_char_and_decyrypt_db",
+        "ibm": true,
+        "reason": "Binary data is invalid for DECRYPT_CHAR and DECYRYPT_DB."
+      },
+      {
+        "code": "01660",
+        "key": "routine_created_but_restore_will_not_update_catalog",
+        "ibm": true,
+        "reason": "The routine was created but a restore will not update the catalog."
+      },
+      {
+        "code": "01662",
+        "key": "release_record_option_ignored_on_close",
+        "ibm": true,
+        "reason": "Release record option ignored on CLOSE."
+      },
+      {
+        "code": "01676",
+        "key": "transfer_operation_ignored_since_authorization_id_already_owner_of_database_object",
+        "ibm": true,
+        "reason": "Transfer operation ignored since the authorization ID is already the owner of the database object."
+      },
+      {
+        "code": "01680",
+        "key": "option_not_supported_in_context_in_which_it_specified",
+        "ibm": true,
+        "reason": "The option is not supported in the context in which it was specified."
+      },
+      {
+        "code": "01685",
+        "key": "invalid_use_not_deterministic_or_external_action_function_detected",
+        "ibm": true,
+        "reason": "An invalid use of a NOT DETERMINISTIC or EXTERNAL ACTION function was detected."
+      },
+      {
+        "code": "01687",
+        "key": "database_resource_not_available",
+        "ibm": true,
+        "reason": "A database resource was not available. Processing continues."
+      },
+      {
+        "code": "0168C",
+        "key": "decimal_float_operation_produced_an_inexact_result",
+        "ibm": true,
+        "reason": "A decimal float operation produced an inexact result."
+      },
+      {
+        "code": "0168D",
+        "key": "decimal_floating_point_operation_invalid",
+        "ibm": true,
+        "reason": "A decimal floating point operation was invalid."
+      },
+      {
+        "code": "0168E",
+        "key": "decimal_float_operation_produced_an_overflow_or_underflow",
+        "ibm": true,
+        "reason": "A decimal float operation produced an overflow or underflow."
+      },
+      {
+        "code": "0168F",
+        "key": "decimal_float_operation_produced_division_by_zero",
+        "ibm": true,
+        "reason": "A decimal float operation produced division by zero."
+      },
+      {
+        "code": "0168G",
+        "key": "decimal_float_operation_produced_subnormal_number",
+        "ibm": true,
+        "reason": "A decimal float operation produced a subnormal number."
+      },
+      {
+        "code": "0168I",
+        "key": "sql_statement_does_conform_to_specified_flagging_level",
+        "ibm": true,
+        "reason": "The SQL statement does conform to the specified flagging level."
+      },
+      {
+        "code": "0168P",
+        "key": "associated_mixed_or_graphic_ccsid_does_not_exist_for_default_job_ccsid",
+        "ibm": true,
+        "reason": "An associated mixed or graphic CCSID does not exist for the default job CCSID."
+      },
+      {
+        "code": "0168R",
+        "key": "text_index_may_be_out_of_date",
+        "ibm": true,
+        "reason": "The text index may be out of date."
+      },
+      {
+        "code": "0168U",
+        "key": "result_sets_will_not_be_returned_to_client_because_procedure_called_directly_or_indirectly_from_function_or_trigger",
+        "ibm": true,
+        "reason": "Result sets will not be returned to the client because the procedure was called directly or indirectly from a function or trigger."
+      },
+      {
+        "code": "01693",
+        "key": "program_type_sub_changed_to_program_type_main",
+        "ibm": true,
+        "reason": "PROGRAM TYPE SUB changed to PROGRAM TYPE MAIN."
+      },
+      {
+        "code": "01695",
+        "key": "adjustment_made_to_value_for_period_as_result_data_change_operation",
+        "ibm": true,
+        "reason": "Adjustment made to a value for a period as a result of a data change operation."
+      },
+      {
+        "code": "01698",
+        "key": "permissions_or_masks_materialized_query_table_or_history_table_might_require_changes_as_result_of_changes_to_permissions_or_masks_of_table_on_which_it_based",
+        "ibm": true,
+        "reason": "Permissions or masks of a materialized query table or history table might require changes as a result of changes to permissions or masks of the table on which it is based."
+      },
+      {
+        "code": "0169F",
+        "key": "invalid_json_data",
+        "ibm": true,
+        "reason": "Invalid JSON data."
+      },
+      {
+        "code": "0169G",
+        "key": "operation_will_only_be_performed_on_source_system",
+        "ibm": true,
+        "reason": "The operation will only be performed on the source system.\n01Hxx*  valid_warning_sqlstates_returned_by_user_defined_function_external_procedure_call_or_command_invocation\nValid warning SQLSTATEs returned by a user-defined function, external procedure CALL, or command invocation."
+      }
+    ]
+  },
+  "02": {
+    "label": "No Data (Warning class)",
+    "errorSet": [
+      {
+        "code": "02000",
+        "key": "no_data",
+        "ibm": true,
+        "reason": "One of the following exceptions occurred:\n- result_of_select_into_statement_or_subselect_of_insert_statement_an_empty_table\nThe result of the SELECT INTO statement or the subselect of the INSERT statement was an empty table.\n- If this is an UPDATE, INSERT, DELETE, or MERGE statement, no rows satisfy the subselect, WHERE clause, or MERGE criteria. No rows were updated, inserted, or deleted.\n- position_of_cursor_referenced_in_fetch_statement_after_last_row_of_result_table\nThe position of the cursor referenced in the FETCH statement was after the last row of the result table.\n- The fetch orientation is invalid."
+      },
+      {
+        "code": "02001",
+        "key": "no_additional_dynamic_result_sets_returned",
+        "ibm": true,
+        "reason": "No additional result sets returned."
+      },
+      {
+        "code": "02503",
+        "key": "procedure_identified_in_an_allocate_cursor_statement_did_not_return_hoc_result_sets",
+        "ibm": true,
+        "reason": "The procedure identified in an ALLOCATE CURSOR statement did not return hoc result sets."
+      },
+      {
+        "code": "02505",
+        "key": "get_descriptor_value_greater_than_count",
+        "ibm": true,
+        "reason": "The GET DESCRIPTOR VALUE is greater than COUNT."
+      }
+    ]
+  },
+  "07": {
+    "label": "Dynamic SQL Error",
+    "errorSet": [
+      {
+        "code": "07001",
+        "key": "variables_not_correct_for_parameter_markers",
+        "ibm": true,
+        "reason": "The number of variables is not correct for the number of parameter markers."
+      },
+      {
+        "code": "07002",
+        "key": "call_parameter_list_or_control_block_invalid",
+        "ibm": true,
+        "reason": "The call parameter list or control block is invalid."
+      },
+      {
+        "code": "07003",
+        "key": "statement_identified_in_execute_statement_select_statement_or_not_in_prepared_state",
+        "ibm": true,
+        "reason": "The statement identified in the EXECUTE statement is a select-statement, or is not in a prepared state."
+      },
+      {
+        "code": "07004",
+        "key": "using_clause_or_into_clause_required_for_dynamic_parameters",
+        "ibm": true,
+        "reason": "The USING clause or INTO clause is required for dynamic parameters."
+      },
+      {
+        "code": "07005",
+        "key": "statement_name_of_cursor_identifies_prepared_statement_that_cannot_be_associated_with_cursor",
+        "ibm": true,
+        "reason": "The statement name of the cursor identifies a prepared statement that cannot be associated with a cursor."
+      },
+      {
+        "code": "07006",
+        "key": "input_variable_transition_variable_or_parameter_marker_cannot_be_used_because_of_its_data_type",
+        "ibm": true,
+        "reason": "An input variable, transition variable, or parameter marker cannot be used, because of its data type."
+      },
+      {
+        "code": "07008",
+        "key": "descriptor_count_invalid",
+        "ibm": true,
+        "reason": "The descriptor count is invalid."
+      },
+      {
+        "code": "07009",
+        "key": "descriptor_index_invalid",
+        "ibm": true,
+        "reason": "The descriptor index is invalid."
+      },
+      {
+        "code": "0700C",
+        "key": "undefined_data_value",
+        "ibm": true,
+        "reason": "Undefined DATA value."
+      },
+      {
+        "code": "0700E",
+        "key": "invalid_level_specified_in_set_descriptor_statement",
+        "ibm": true,
+        "reason": "Invalid LEVEL specified in SET DESCRIPTOR statement."
+      },
+      {
+        "code": "0700F",
+        "key": "invalid_datetime_interval_code_specified_in_set_descriptor_statement",
+        "ibm": true,
+        "reason": "Invalid DATETIME_INTERVAL_CODE specified in SET DESCRIPTOR statement."
+      }
+    ]
+  },
+  "03": {
+    "label": "SQL Statement Not Yet Complete",
+    "errorSet": [
+      {
+        "code": "03000",
+        "key": "sql_statement_not_yet_complete",
+        "ibm": true,
+        "reason": "SQL statement not yet complete"
+      }
+    ]
+  },
+  "08": {
+    "label": "Connection Exception",
+    "errorSet": [
+      {
+        "code": "08000",
+        "key": "connection_exception",
+        "ibm": true,
+        "reason": "Connection exception"
+      },
+      {
+        "code": "08001",
+        "key": "sqlclient_unable_to_establish_sqlconnection",
+        "ibm": true,
+        "reason": "The connection was unable to be established to the application server or other server."
+      },
+      {
+        "code": "08002",
+        "key": "connection_already_exists",
+        "ibm": true,
+        "reason": "The connection already exists."
+      },
+      {
+        "code": "08003",
+        "key": "connection_does_not_exist",
+        "ibm": true,
+        "reason": "The connection does not exist."
+      },
+      {
+        "code": "08004",
+        "key": "sqlserver_rejected_establishment_of_sqlconnection",
+        "ibm": true,
+        "reason": "The application server rejected establishment of the connection."
+      },
+      {
+        "code": "08006",
+        "key": "connection_failure",
+        "ibm": true,
+        "reason": "Connection failure"
+      },
+      {
+        "code": "08007",
+        "key": "transaction_resolution_unknown",
+        "ibm": true,
+        "reason": "Transaction resolution unknown"
+      },
+      {
+        "code": "08P01",
+        "key": "protocol_violation",
+        "ibm": false,
+        "reason": "Client/server protocol violation\n08501*  disconnect_not_allowed_when_connection_uses_an_lu6\nA DISCONNECT is not allowed when the connection uses an LU6.2 protected conversation."
+      }
+    ]
+  },
+  "09": {
+    "label": "Triggered Action Exception",
+    "errorSet": [
+      {
+        "code": "09000",
+        "key": "triggered_action_exception",
+        "ibm": true,
+        "reason": "A triggered SQL statement failed."
+      }
+    ]
+  },
+  "0A": {
+    "label": "Feature Not Supported",
+    "errorSet": [
+      {
+        "code": "0A000",
+        "key": "feature_not_supported",
+        "ibm": true,
+        "reason": "Feature not supported"
+      }
+    ]
+  },
+  "0B": {
+    "label": "Invalid Transaction Initiation",
+    "errorSet": [
+      {
+        "code": "0B000",
+        "key": "invalid_transaction_initiation",
+        "ibm": true,
+        "reason": "Invalid transaction initiation"
+      },
+      {
+        "code": "0A001",
+        "key": "connect_statement_invalid_because_process_not_in_connectable_state",
+        "ibm": true,
+        "reason": "The CONNECT statement is invalid, because the process is not in the connectable state."
+      }
+    ]
+  },
+  "0E": {
+    "label": "Invalid Schema Name List Specification",
+    "errorSet": [
+      {
+        "code": "00E00",
+        "key": "path_name_list_not_valid",
+        "ibm": true,
+        "reason": "The path name list is not valid."
+      }
+    ]
+  },
+  "0F": {
+    "label": "Invalid Token",
+    "errorSet": [
+      {
+        "code": "0F000",
+        "key": "locator_exception",
+        "ibm": true,
+        "reason": "Locator exception"
+      },
+      {
+        "code": "0F001",
+        "key": "invalid_locator_specification",
+        "ibm": true,
+        "reason": "The locator value does not currently represent any value."
+      }
+    ]
+  },
+  "0K": {
+    "label": "Resignal When Handler Not Active",
+    "errorSet": [
+      {
+        "code": "0K000",
+        "key": "resignal_wassued_but_handler_not_active",
+        "ibm": true,
+        "reason": "A RESIGNAL was issued but a handler is not active."
+      }
+    ]
+  },
+  "0L": {
+    "label": "Invalid Grantor",
+    "errorSet": [
+      {
+        "code": "0L000",
+        "key": "invalid_grantor",
+        "ibm": true,
+        "reason": "Invalid grantor"
+      },
+      {
+        "code": "0LP01",
+        "key": "invalid_grant_operation",
+        "ibm": false,
+        "reason": "Invalid grant operation"
+      }
+    ]
+  },
+  "0N": {
+    "label": "SQL/XML Mapping Error",
+    "errorSet": [
+      {
+        "code": "0N002",
+        "key": "character_cannot_be_mapped_to_valid_xml_character",
+        "ibm": true,
+        "reason": "A character cannot be mapped to a valid XML character."
+      }
+    ]
+  },
+  "0P": {
+    "label": "Invalid Role Specification",
+    "errorSet": [
+      {
+        "code": "0P000",
+        "key": "invalid_role_specification",
+        "ibm": true,
+        "reason": "Invalid role specification"
+      }
+    ]
+  },
+  "0W": {
+    "label": "Prohibited Statement Encountered During Trigger",
+    "errorSet": [
+      {
+        "code": "0W000",
+        "key": "statement_not_allowed_in_trigger",
+        "ibm": true,
+        "reason": "The statement is not allowed in a trigger."
+      }
+    ]
+  },
+  "0Z": {
+    "label": "Diagnostics Exception",
+    "errorSet": [
+      {
+        "code": "0Z000",
+        "key": "diagnostics_exception",
+        "ibm": true,
+        "reason": "Diagnostics exception"
+      },
+      {
+        "code": "0Z001",
+        "key": "maximum_stacked_diagnostics_areas_exceeded",
+        "ibm": true,
+        "reason": "Maximum number of stacked diagnostics areas exceeded."
+      },
+      {
+        "code": "0Z002",
+        "key": "stacked_diagnostics_accessed_without_active_handler",
+        "ibm": true,
+        "reason": "Stacked diagnostics accessed without and active handler."
+      }
+    ]
+  },
+  "2D": {
+    "label": "Invalid Transaction Termination",
+    "errorSet": [
+      {
+        "code": "2D000",
+        "key": "invalid_transaction_termination",
+        "ibm": true,
+        "reason": "Invalid transaction termination"
+      },
+      {
+        "code": "2D522",
+        "key": "commit_and_rollback_are_not_allowed_in_an_atomic_compound_statement",
+        "ibm": true,
+        "reason": "COMMIT and ROLLBACK are not allowed in an ATOMIC compound statement."
+      },
+      {
+        "code": "2D528",
+        "key": "dynamic_commit_or_commit_on_return_procedure_invalid_for_application_execution_environment",
+        "ibm": true,
+        "reason": "Dynamic COMMIT or COMMIT ON RETURN procedure is invalid for the application execution environment"
+      },
+      {
+        "code": "2D529",
+        "key": "dynamic_rollback_invalid_for_application_execution_environment",
+        "ibm": true,
+        "reason": "Dynamic ROLLBACK is invalid for the application execution environment."
+      }
+    ]
+  },
+  "2E": {
+    "label": "Invalid Connection Name",
+    "errorSet": [
+      {
+        "code": "2E000",
+        "key": "connection_name_invalid",
+        "ibm": true,
+        "reason": "Connection name is invalid."
+      }
+    ]
+  },
+  "2F": {
+    "label": "SQL Function Exception",
+    "errorSet": [
+      {
+        "code": "2F000",
+        "key": "sql_routine_exception",
+        "ibm": true,
+        "reason": "SQL routine exception"
+      },
+      {
+        "code": "2F002",
+        "key": "modifying_sql_data_not_permitted",
+        "ibm": true,
+        "reason": "The SQL function attempted to modify data, but the function was not defined as MODIFIES SQL DATA."
+      },
+      {
+        "code": "2F003",
+        "key": "prohibited_sql_statement_attempted",
+        "ibm": true,
+        "reason": "The statement is not allowed in a function, procedure, or dynamic compound statement."
+      },
+      {
+        "code": "2F004",
+        "key": "reading_sql_data_not_permitted",
+        "ibm": true,
+        "reason": "The SQL function attempted to read data, but the function was not defined as READS SQL DATA."
+      },
+      {
+        "code": "2F005",
+        "key": "function_executed_no_return_statement",
+        "ibm": true,
+        "reason": "The function did not execute a RETURN statement."
+      }
+    ]
+  },
+  "3B": {
+    "label": "Savepoint Exception",
+    "errorSet": [
+      {
+        "code": "3B000",
+        "key": "savepoint_exception",
+        "ibm": true,
+        "reason": "Savepoint exception"
+      },
+      {
+        "code": "3B001",
+        "key": "invalid_savepoint_specification",
+        "ibm": true,
+        "reason": "The savepoint is not valid."
+      },
+      {
+        "code": "3B002",
+        "key": "maximum_savepoints_has_been_reached",
+        "ibm": true,
+        "reason": "The maximum number of savepoints has been reached."
+      },
+      {
+        "code": "3B501",
+        "key": "duplicate_savepoint_name_detected",
+        "ibm": true,
+        "reason": "A duplicate savepoint name was detected."
+      },
+      {
+        "code": "3B502",
+        "key": "release_or_rollback_to_savepoint_specified_but_savepoint_does_not_exist",
+        "ibm": true,
+        "reason": "A RELEASE or ROLLBACK TO SAVEPOINT was specified, but a savepoint does not exist."
+      },
+      {
+        "code": "3B504",
+        "key": "savepoint_not_allowed_because_resource_registered_that_does_not_support_savepoints",
+        "ibm": true,
+        "reason": "A SAVEPOINT is not allowed because a resource is registered that does not support savepoints."
+      }
+    ]
+  },
+  "3C": {
+    "label": "Ambiguous Cursor Name",
+    "errorSet": [
+      {
+        "code": "3C000",
+        "key": "cursor_name_ambiguous",
+        "ibm": true,
+        "reason": "The cursor name is ambiguous."
+      }
+    ]
+  },
+  "3D": {
+    "label": "Invalid Catalog Name",
+    "errorSet": [
+      {
+        "code": "3D000",
+        "key": "invalid_catalog_name",
+        "ibm": true,
+        "reason": "Invalid catalog name"
+      }
+    ]
+  },
+  "3F": {
+    "label": "Invalid Schema Name",
+    "errorSet": [
+      {
+        "code": "3F000",
+        "key": "invalid_schema_name",
+        "ibm": true,
+        "reason": "The schema name is invalid."
+      }
+    ]
+  },
+  "5U": {
+    "label": "Common Utilities and Tools",
+    "errorSet": [
+      {
+        "code": "5UA0O",
+        "key": "argument_to_wrap_function_or_to_create_wrapped_procedure_not_valid",
+        "ibm": true,
+        "reason": "The argument to the WRAP function or to the CREATE_WRAPPED procedure is not valid."
+      }
+    ]
+  },
+  "F0": {
+    "label": "Configuration File Error",
+    "errorSet": [
+      {
+        "code": "F0000",
+        "key": "config_file_error",
+        "ibm": false,
+        "reason": "Configuration file error"
+      },
+      {
+        "code": "F0001",
+        "key": "lock_file_exists",
+        "ibm": false,
+        "reason": "Lock file exists"
+      }
+    ]
+  },
+  "HV": {
+    "label": "Foreign Data Wrapper Error",
+    "errorSet": [
+      {
+        "code": "HV000",
+        "key": "fdw_error",
+        "ibm": false,
+        "reason": "Foreign data wrapper error"
+      },
+      {
+        "code": "HV005",
+        "key": "fdw_column_name_not_found",
+        "ibm": false,
+        "reason": "FDW column name not found"
+      },
+      {
+        "code": "HV002",
+        "key": "fdw_dynamic_parameter_value_needed",
+        "ibm": false,
+        "reason": "FDW dynamic parameter value needed"
+      },
+      {
+        "code": "HV010",
+        "key": "fdw_function_sequence_error",
+        "ibm": false,
+        "reason": "FDW function sequence error"
+      },
+      {
+        "code": "HV021",
+        "key": "fdw_inconsistent_descriptor_information",
+        "ibm": false,
+        "reason": "FDW inconsistent descriptor information"
+      },
+      {
+        "code": "HV024",
+        "key": "fdw_invalid_attribute_value",
+        "ibm": false,
+        "reason": "FDW invalid attribute value"
+      },
+      {
+        "code": "HV007",
+        "key": "fdw_invalid_column_name",
+        "ibm": false,
+        "reason": "FDW invalid column name"
+      },
+      {
+        "code": "HV008",
+        "key": "fdw_invalid_column_number",
+        "ibm": false,
+        "reason": "FDW invalid column number"
+      },
+      {
+        "code": "HV004",
+        "key": "fdw_invalid_data_type",
+        "ibm": false,
+        "reason": "FDW invalid data type"
+      },
+      {
+        "code": "HV006",
+        "key": "fdw_invalid_data_type_descriptors",
+        "ibm": false,
+        "reason": "FDW invalid data type descriptors"
+      },
+      {
+        "code": "HV091",
+        "key": "fdw_invalid_descriptor_field_identifier",
+        "ibm": false,
+        "reason": "FDW invalid descriptor field identifier"
+      },
+      {
+        "code": "HV00B",
+        "key": "fdw_invalid_handle",
+        "ibm": false,
+        "reason": "FDW invalid handle"
+      },
+      {
+        "code": "HV00C",
+        "key": "fdw_invalid_option_index",
+        "ibm": false,
+        "reason": "FDW invalid option index"
+      },
+      {
+        "code": "HV00D",
+        "key": "fdw_invalid_option_name",
+        "ibm": false,
+        "reason": "FDW invalid option name"
+      },
+      {
+        "code": "HV090",
+        "key": "fdw_invalid_string_length_or_buffer_length",
+        "ibm": false,
+        "reason": "FDW invalid string length or buffer length"
+      },
+      {
+        "code": "HV00A",
+        "key": "fdw_invalid_string_format",
+        "ibm": false,
+        "reason": "FDW invalid string format"
+      },
+      {
+        "code": "HV009",
+        "key": "fdw_invalid_use_of_null_pointer",
+        "ibm": false,
+        "reason": "FDW invalid use of null pointer"
+      },
+      {
+        "code": "HV014",
+        "key": "fdw_too_many_handles",
+        "ibm": false,
+        "reason": "FDW too many handles"
+      },
+      {
+        "code": "HV001",
+        "key": "fdw_out_of_memory",
+        "ibm": false,
+        "reason": "FDW out of memory"
+      },
+      {
+        "code": "HV00P",
+        "key": "fdw_no_schemas",
+        "ibm": false,
+        "reason": "FDW no schemas"
+      },
+      {
+        "code": "HV00J",
+        "key": "fdw_option_name_not_found",
+        "ibm": false,
+        "reason": "FDW option name not found"
+      },
+      {
+        "code": "HV00K",
+        "key": "fdw_reply_handle",
+        "ibm": false,
+        "reason": "FDW reply handle error"
+      },
+      {
+        "code": "HV00Q",
+        "key": "fdw_schema_not_found",
+        "ibm": false,
+        "reason": "FDW schema not found"
+      },
+      {
+        "code": "HV00R",
+        "key": "fdw_table_not_found",
+        "ibm": false,
+        "reason": "FDW table not found"
+      },
+      {
+        "code": "HV00L",
+        "key": "fdw_unable_to_create_execution",
+        "ibm": false,
+        "reason": "FDW unable to create execution"
+      },
+      {
+        "code": "HV00M",
+        "key": "fdw_unable_to_create_reply",
+        "ibm": false,
+        "reason": "FDW unable to create reply"
+      },
+      {
+        "code": "HV00N",
+        "key": "fdw_unable_to_establish_connection",
+        "ibm": false,
+        "reason": "FDW unable to establish connection"
+      }
+    ]
+  },
+  "P0": {
+    "label": "PL/pgSQL Error",
+    "errorSet": [
+      {
+        "code": "P0000",
+        "key": "plpgsql_error",
+        "ibm": false,
+        "reason": "PL/pgSQL error"
+      },
+      {
+        "code": "P0001",
+        "key": "raise_exception",
+        "ibm": false
+      },
+      {
+        "code": "RAISE",
+        "key": "exception",
+        "ibm": false
+      },
+      {
+        "code": "P0002",
+        "key": "no_data_found",
+        "ibm": false,
+        "reason": "No data found"
+      },
+      {
+        "code": "P0003",
+        "key": "too_many_rows",
+        "ibm": false,
+        "reason": "Too many rows"
+      },
+      {
+        "code": "P0004",
+        "key": "assert_failure",
+        "ibm": false,
+        "reason": "Assertion failure"
+      }
+    ]
+  },
+  "XX": {
+    "label": "Internal Error",
+    "errorSet": [
+      {
+        "code": "XX000",
+        "key": "internal_error",
+        "ibm": false,
+        "reason": "Internal error"
+      },
+      {
+        "code": "XX001",
+        "key": "data_corrupted",
+        "ibm": false,
+        "reason": "Data corrupted"
+      },
+      {
+        "code": "XX002",
+        "key": "index_corrupted",
+        "ibm": false,
+        "reason": "Index corrupted"
+      }
+    ]
+  }
+}

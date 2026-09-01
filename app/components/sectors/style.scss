@@ -1,0 +1,187 @@
+.vertical-text {
+    writing-mode: sideways-lr;
+    text-transform: uppercase;
+}
+
+.vignette {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        filter: grayscale(1);
+
+        height: 100%;
+        max-width: unset;
+
+        transform: translate(-50%, -50%) scale(1);
+        transform-origin: center;
+        transition: all 1s ease;
+    }
+}
+
+.sep-before {
+    top: -50px !important;
+    bottom: unset;
+}
+
+.sep-after {
+    top: unset !important;
+    bottom: -50px;
+}
+
+.sector-article {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .mz-sep {
+        color: transparent;
+    }
+
+    .mz-sep {
+        transition: all 1s ease;
+    }
+
+    transition: background-color 1s ease;
+}
+
+.sector-article:first-child {
+    margin-top: 0px;
+}
+
+.sector-article:last-child {
+    margin-bottom: 0px;
+}
+
+.sector-article:hover {
+    .mz-sep {
+        transition: all 1s cubic-bezier(0.95, -0.01, 0.26, 1.65);
+    }
+
+    transition: background-color 1s cubic-bezier(0.95, -0.01, 0.26, 1.65);
+}
+
+.sector-article {
+    &:nth-child(odd) {
+        background-color: var(--odd-back-color);
+
+        .mz-sep {
+            color: var(--odd-back-color);
+        }
+    }
+
+    &:nth-child(even) {
+        background-color: var(--back-color);
+
+        .mz-sep {
+            color: var(--back-color);
+        }
+    }
+
+
+
+
+
+
+    &.th-green-crop:hover {
+        .mz-sep {
+            color: rgb(177, 226, 104);
+        }
+
+        background-color: rgb(177, 226, 104);
+    }
+
+    &.th-blue-motor:hover {
+        .mz-sep {
+            color: rgb(72, 129, 189);
+        }
+
+        background-color: rgb(72, 129, 189);
+    }
+
+    &.th-gold-success:hover {
+        .mz-sep {
+            color: rgb(249, 199, 74);
+        }
+
+        background-color: rgb(249, 199, 74);
+    }
+
+    &.th-purple-business:hover {
+        .mz-sep {
+            color: rgb(154, 19, 109);
+        }
+
+        background-color: rgb(154, 19, 109);
+    }
+
+    &.th-green-pistachios:hover {
+        .mz-sep {
+            color: rgb(169, 247, 168);
+        }
+
+        background-color: rgb(169, 247, 168);
+    }
+
+    &.th-orange-rust:hover {
+        .mz-sep {
+            color: rgb(158, 8, 8);
+        }
+
+        background-color: rgb(158, 8, 8);
+    }
+}
+
+.sector-article {
+    .sector-tag {
+        background-color: black;
+        transition: background-color 1s ease;
+    }
+
+    &:hover {
+        .thumb {
+            background: black;
+            color: white;
+            transition: color 1s ease;
+            transition: background-color 1s ease;
+        }
+
+        .sector-tag {
+            transition: background-color 2s cubic-bezier(0.95, -0.01, 0.26, 1.65);
+
+            &.t-0 {
+                background-color: rgb(177, 226, 104) !important;
+                color: black;
+            }
+
+            &.t-1 {
+                background-color: rgb(72, 129, 189) !important;
+            }
+
+            &.t-2 {
+                background-color: rgb(249, 199, 74) !important;
+                color: black;
+            }
+
+            &.t-3 {
+                background-color: rgb(154, 19, 109) !important;
+            }
+
+            &.t-4 {
+                background-color: rgb(169, 247, 168) !important;
+            }
+
+            &.t-5 {
+                background-color: rgb(158, 8, 8) !important;
+            }
+        }
+
+        .vignette img {
+            filter: grayscale(0);
+            transition: all 2s cubic-bezier(0.95, -0.01, 0.26, 1.65);
+            transform: translate(-50%, -50%) scale(1.1) rotate(5deg);
+        }
+    }
+}

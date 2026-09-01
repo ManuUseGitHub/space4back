@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'typo-round';
+    src: url('../typo-round/Typo_Round_Regular_Demo.otf') format('woff2'),
+        url('../typo-round/Typo_Round_Regular_Demo.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'typo-round-bold';
+    src: url('../typo-round/Typo_Round_Bold_Demo.otf') format('woff2'),
+        url('../typo-round/Typo_Round_Bold_Demo.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'typo-round-italic';
+    src: url('../typo-round/Typo_Round_Italic_Demo.otf') format('woff2'),
+        url('../typo-round/Typo_Round_Italic_Demo.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'typo-round-bold-italic';
+    src: url('../typo-round/Typo_Round_Bold_Italic_Demo.otf') format('woff2'),
+        url('../typo-round/Typo_Round_Bold_Italic_Demo.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'typo-round-thin';
+    src: url('../typo-round/Typo_Round_Thin_Demo.otf') format('woff2'),
+        url('../typo-round/Typo_Round_Thin_Demo.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'typo-round-thin-italic';
+    src: url('../typo-round/Typo_Round_Thin_Italic Demo.otf') format('woff2'),
+        url('../typo-round/Typo_Round_Thin_Italic Demo.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'typo-round-light';
+    src: url('../typo-round/Typo_Round_Light_Demo.otf') format('woff2'),
+        url('../typo-round/Typo_Round_Light_Demo.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'typo-round-light-italic';
+    src: url('../typo-round/Typo_Round_Light_Italic_Demo.otf') format('woff2'),
+        url('../typo-round/Typo_Round_Light_Italic_Demo.otf') format('woff');
+}
+
+body {
+    .fnt-typo-round {
+        font-family: 'typo-round';
+    }
+
+    .fnt-typo-round-bold {
+        font-family: 'typo-round-bold';
+    }
+
+    .fnt-typo-round-italic {
+        font-family: 'typo-round-italic';
+    }
+
+    .fnt-typo-round-bold-italic {
+        font-family: 'typo-round-bold-italic';
+    }
+
+    .fnt-typo-round-thin {
+        font-family: 'typo-round-thin';
+    }
+
+    .fnt-typo-round-thin-italic {
+        font-family: 'typo-round-thin-italic';
+    }
+
+    .fnt-typo-round-light {
+        font-family: 'typo-round-light';
+    }
+
+    .fnt-typo-round-light-italic {
+        font-family: 'typo-round-light-italic';
+    }
+}

@@ -1,0 +1,15 @@
+.p-picklist-controls.p-picklist-transfer-controls button:nth-child(even) {
+    display: none;
+}
+
+.roles-picker {
+    .p-picklist .p-listbox {
+        height: 100%;
+        background: transparent;
+        border: none;
+    }
+}
+
+.for-remove {
+    text-decoration: line-through;
+}
