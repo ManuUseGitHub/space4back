@@ -26,3 +26,5 @@ logs
 
 deploy-cpanel.*
 .cpanel-dist
+
+dist.zip
