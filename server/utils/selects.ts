@@ -17,6 +17,7 @@ export const SELECT_EXPERIENCES_OF_USER = [
 ];
 
 export const SELECT_USER_INFOS_FOR_EXPERIENCES = ["u.firstName", "u.lastName"];
+export const SELECT_USER_MAIL_ADDRESS = ["u.mailAddress"];
 
 export const SELECT_USER_WITH_PREFERENCES = [
 	"u.id",
@@ -28,6 +29,7 @@ export const SELECT_USER_WITH_PREFERENCES = [
 	"p.thPrefered",
 	"p.thLight",
 	"p.thDark",
+	"u.role",
 	"u.firstName",
 	"u.lastName",
 	"u.gender",
@@ -47,9 +49,10 @@ export const SELECT_SESSION_USER_WITH_PREFERENCES = [
 	"p.thPrefered",
 	"p.thLight",
 	"p.thDark",
+	"u.role",
 	"u.firstName",
 	"u.lastName",
-	"u.mailAddress"
+	"u.mailAddress",
 ];
 
 export const SELECT_USER_WITH_CREDENTIALS = [
@@ -58,17 +61,21 @@ export const SELECT_USER_WITH_CREDENTIALS = [
 	"u.hashedPassword",
 ];
 
-export const SELECT_USER_SECTOR_WITH_SECTOR = [
-	"sk.id",
+export const SELECT_SKILL_SECTOR_WITH_SECTOR = [
 	"s.id",
-	"sk.name",
-	"sk.description",
-	"sk.professions",
+	"s.name",
+	"s.description"
+];
+
+export const SELECT_SECTOR = [
+	"s.id",
+	"s.name",
+	"s.description",
+	"s.comment",
 ];
 
 export const SELECT_PROFESSIONS = [
 	"p.id",
 	"p.name",
-	"p.description",
-	"p.sectorId",
+	"p.description"
 ];

@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { setSessionCookie } from "~~/server/utils/auth";
+import { setSessionCookie } from "~~/server/utils/session";
 import { searchUsers } from "~~/server/utils/dsource";
 import { validateCredentials } from "./validation";
 

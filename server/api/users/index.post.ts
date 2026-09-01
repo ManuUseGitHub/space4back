@@ -9,35 +9,36 @@ import {
 	initializeDataSourceValid,
 } from "../../utils/request.helper";
 
-export default defineEventHandler(async (event) => {
-	const result = await initializeDataSourceValid(event, zRegisterUser);
-	let { success, error } = result;
-	if (!success) {
-		return { error: JSON.parse(error!.message), success };
-	}
+export default defineEventHandler(
+	withDbHandler(async (event) => {
+		const result = await initializeDataSourceValid(event, zRegisterUser);
+		let { success, error } = result;
+		if (!success) {
+			return { error: JSON.parse(error!.message), success };
+		}
 
-	const newUser: UserEntity = newUserWithPreferences({
-		...result.data,
-		verified: false,
-		role: "user",
-		id: uuidv4(),
-	});
+		const newUser: UserEntity = newUserWithPreferences({
+			...result.data,
+			verified: false,
+			role: "user",
+			id: uuidv4(),
+		});
 
-	const validated = await validateUser(newUser, result);
-	console.log(validated);
-	if (validated.success) {
-		return {
-			success: await conclude(
-				AppDataSource.getRepository(User).save(newUser),
-				(data) => {
-					return data;
-				},
-				dataBaseError
-			),
-		};
-	}
-	return validated;
-});
+		const validated = await validateUser(newUser, result);
+		if (validated.success) {
+			return {
+				success: await conclude(
+					AppDataSource.getRepository(User).save(newUser),
+					(data) => {
+						return data;
+					},
+					dataBaseError
+				),
+			};
+		}
+		return validated;
+	})
+);
 
 const DEFAULT_THEME_PREFERENCES = {
 	theme: "system",

@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z, ZodString } from "zod";
 import { MAIL_ADDRESS_REGEX } from "../../regexes";
 
 export const zRegisterUser = z.object({
@@ -69,6 +69,10 @@ export const zUpdateExperience = z.object({
 	lov: z.array(zLov),
 });
 
+export const zUpdateRoles = z.object({
+	roles: z.array(z.string())
+});
+
 export const zPatchExperience = z.object({
 	id: z.string(),
 	order: z.number(),
@@ -81,7 +85,6 @@ export const zPatchExperiences = z.object({
 
 export const zCreateExperience = z.object({
 	userId: z.string(),
-	order: z.number(),
 	title: z.string(),
 	role: z.string(),
 	yearStart: z.number().min(0).max(new Date().getFullYear()),

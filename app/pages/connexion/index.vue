@@ -1,37 +1,65 @@
 <script lang="ts" setup>
 import { Password } from "primevue";
 import type { LoggedInUser } from "~~/server/DB/DTOs";
-import { grecaptchaToken, onPassword, state, submit } from "./script";
+import {
+  getErrorTooltip,
+  grecaptchaToken,
+  onPassword,
+  state,
+  submit,
+  isSubmitable,
+} from "./script";
 import { getLabelHinted } from "~/utils/common/misc";
-
-const loggedUser = ref<LoggedInUser | null>(null);
-const captchaRef = ref<{ reset: () => void }>();
-const route = useRoute();
-const { url } = route.query;
-const setCaptchaToken = (event: string) => {
-  grecaptchaToken.value = event;
-};
-onMounted(async () => {
-  loggedUser.value = await $fetch("/api/connexion/iam/", { method: "get" });
-});
 definePageMeta({
   layout: "no-auth",
 });
+
+const loggedUser = ref<LoggedInUser | null>(null);
+const submitable = ref(true);
+const captchaRef = ref<{ reset: () => void }>();
+const route = useRoute();
+const setCaptchaToken = (event: string) => {
+  grecaptchaToken.value = event;
+};
+
+const { url } = route.query;
+const urlPath = `${url}`;
+
+onMounted(async () => {
+  const user = await $fetch("/api/connexion/iam/", { method: "get" });
+  if (url && user) {
+    console.log('***',urlPath,'***')
+    await navigateTo(`${urlPath}`);
+    return;
+  }
+
+  loggedUser.value = user;
+});
+
+const setSubmitable = (hasError: boolean, errors: ValidationError[]) => {
+  setTimeout(() => {
+    submitable.value = isSubmitable(hasError, errors);
+    console.log(submitable.value)
+  }, 500);
+};
 
 const isLogged = computed(() => {
   return loggedUser.value;
 });
 
 const onSucessSign = async () => {
+  const user = await $fetch("/api/connexion/iam/", { method: "get" });
+  useState("user").value = user;
+
   if (url) {
-    navigateTo(`${url}`);
+    navigateTo(url as string);
+    return;
   }
-  captchaRef.value?.reset();
-  loggedUser.value = await $fetch("/api/connexion/iam/", { method: "get" });
+  loggedUser.value = user;
 };
 
 const goToCreate = () => {
-  return url ? `/create?url=${url}` : "/create";
+  return urlPath ? `/create?url=${urlPath}` : "/create";
 };
 </script>
 <template>
@@ -46,7 +74,13 @@ const goToCreate = () => {
             <h5 class="py-3">Email & Password</h5>
 
             <div class="flex flex-column gap-3">
-              <form @submit.prevent="submit(onError, prevalidate(), onSucessSign)">
+              <form
+                @submit.prevent="
+                  submit(onError, prevalidate(), onSucessSign, () => {
+                    setSubmitable(hasError, errors);
+                  })
+                "
+              >
                 <div class="row row-gap-5">
                   <div class="mx-auto col-md-8 row row-gap-5">
                     <FieldChecked
@@ -66,7 +100,9 @@ const goToCreate = () => {
                               field: 'mailAddress',
                               value: state.mailAddress,
                             },
-                            cb: () => onField('mailAddress'),
+                            cb: () => {
+                              onField('mailAddress');
+                            },
                           })
                         "
                         type="text"
@@ -117,9 +153,9 @@ const goToCreate = () => {
                           <div>
                             <Button
                               v-tooltip.top="hasError ? 'You have errors to check' : ''"
-                              :type="!hasError ? 'submit' : 'button'"
+                              :type="submitable ? 'submit' : 'button'"
                               :aria-busy="state.isLoading"
-                              :severity="hasError ? 'danger' : 'primary'"
+                              :severity="submitable ? 'primary' : 'danger'"
                               >Log in
                             </Button>
                           </div>
@@ -143,8 +179,10 @@ const goToCreate = () => {
           </div>
           <div class="col flex flex-col">
             <h5 class="py-3">Continue with</h5>
-            <div id="social-field-group"
-              class="w-2/3 lg:w-full mx-auto py-3 grow content-center text-center border" role='bloc-field'
+            <div
+              id="social-field-group"
+              class="w-2/3 lg:w-full mx-auto py-3 grow content-center text-center border"
+              role="bloc-field"
             >
               <div class="col-md-12">
                 <GoogleSignInButton @signin="onSucessSign"></GoogleSignInButton>

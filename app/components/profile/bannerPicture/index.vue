@@ -27,13 +27,16 @@ const {
   cancel,
 } = usePreviewImage({ src, state: banner, fileupload, toast, id });
 
-const props = defineProps<{ editable?: boolean }>();
+const { editable, noOverlay } = defineProps<{
+  editable?: boolean;
+  noOverlay?: Boolean;
+}>();
 </script>
 <template>
   <div class="profile-picture banner-image relative">
     <img :src="previewImage" :style="changeStyleOfPreviewImage" />
-    <div class="banner-overlay" />
-    <template v-if="props.editable">
+    <div class="banner-overlay" v-if="!noOverlay" />
+    <template v-if="editable">
       <div class="send-button">
         <Button
           v-if="shouldDisplaySendButton"

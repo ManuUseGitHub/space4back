@@ -2,6 +2,9 @@
 @use "prismjs/themes/prism-tomorrow.css";
 @use "flag-icons/css/flag-icons.min.css";
 @use "./themes.scss";
+@use "./buttons.scss";
+@use "./fonts.scss";
+@use "maze-verticalseparators.scss";
 
 #banner {
     background: black;
@@ -30,6 +33,7 @@
 }
 
 .edit-button {
+    z-index: 1;
     color: white;
     right: 0.3em;
     top: 0.3em;
@@ -38,6 +42,15 @@
 
 .info-pane {
     background-color: var(--back-color);
+}
+
+.info-pane-revert {
+    background-color: var(--dark-pane);
+}
+
+.info-pane-revert,
+.info-pane-revert p .pi {
+    color: var(--color-dark-pane);
 }
 
 .icon-button {
@@ -125,6 +138,11 @@
     padding: 0;
 }
 
+.p-dialog {
+    max-height: 100%;
+    overflow: auto;
+}
+
 .error-item {
 
     .p-inputgroupaddon,
@@ -198,7 +216,7 @@
 
     .p-divider-solid.p-divider-vertical:before {
         border-inline-start-color: var(--hr-border-color);
-        opacity:.3;
+        opacity: .3;
     }
 
     .incard {
@@ -389,4 +407,20 @@ svg.gender-icon {
 .popuplike-main {
     border-left: thin dotted;
     padding: 0 1em;
+}
+
+.min-50vh {
+    min-height: 50vh;
+}
+
+.pushedButton:active {
+    transform: translate(2px, 2px);
+}
+
+.v-hr {
+    color: inherit;
+    border: 0;
+    border-color: var(--hr-border-color) !important;
+    border-right: var(--bs-border-width) solid;
+    opacity: 0.25;
 }

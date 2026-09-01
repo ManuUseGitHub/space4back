@@ -13,4 +13,26 @@ export enum FIELDS {
 	PROFESSIONAL_GOAL = "professionalGoal",
 	REPEAT_PASS = "repeatPass",
 	RE_CAPTCHA = "reCaptcha",
+	EMPLOYER = "employer",
+	CLIENT = "client",
+	ROLE = "role",
+	PROJECT = "project",
+	PROJECT_DESCRIPTION = "projectDescription",
+	MONTH_START = "monthStart",
+	MONTH_END = "monthEnd",
+	CATEGORIES = "categories",
+}
+
+export enum ROLES {
+	ADMIN = 'admin',
+	USER = "user",
+	SUPER_ADMIN = "superadmin",
+	MANAGER = "manager",
+	MANAGE1 = "1s manage",
+	MANAGE2 = "2s manage",
+	MANAGE3 = "3s manage",
+	MANAGE4 = "4s manage",
+	MANAGE5 = "5s manage",
+	MANAGE6 = "6s manage",
+	SUPLIER = "suplier"
 }

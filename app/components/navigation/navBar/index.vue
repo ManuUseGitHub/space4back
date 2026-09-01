@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import type { LoggedInUser } from "~~/server/DB/DTOs";
-
+const colorMode = useColorMode();
+const route = useRoute();
 const items = ref([
   {
     label: "Home",
@@ -9,19 +10,38 @@ const items = ref([
     to: "/home",
   },
   {
-    label: "Projects",
-    icon: "pi pi-search",
-    badge: 3,
+    label: "",
+    icon: icons.pSun,
+    command: () => {
+      colorMode.preference = "light";
+    },
+  },
+  {
+    label: "",
+    icon: icons.pMoon,
+    command: () => {
+      colorMode.preference = "dark";
+    },
+  },
+  {
+    condition: () => {
+      return isAdmin.value;
+    },
+    label: "Manage",
+    icon: icons.pWrench,
+    badge: 0,
     items: [
       {
-        label: "Core",
-        icon: "pi pi-bolt",
+        label: "Users",
+        icon: icons.pUser,
         shortcut: "⌘+S",
+        to: "/manage/users",
       },
       {
-        label: "Blocks",
-        icon: "pi pi-server",
+        label: "Skills",
+        icon: icons.pStar,
         shortcut: "⌘+B",
+        to: "/manage/skills",
       },
       {
         separator: true,
@@ -34,7 +54,6 @@ const items = ref([
     ],
   },
 ]);
-
 const renderComponent = ref(true);
 const forceRerender = async () => {
   // Remove MyComponent from the DOM
@@ -60,16 +79,25 @@ const userMenu = ref([
   { label: "Logout", icon: "pi pi-sign-out", command: () => handleLogout() },
 ]);
 
-const route = useRoute();
 const login = { label: "Login", icon: "pi pi-user", to: `/connexion?url=${route.path}` };
 
 const user = ref<LoggedInUser>();
 const id = ref<string>();
+const roles = ref<string[]>([]);
 const userId = computed(() => {
   return id.value;
 });
 
+const isAdmin = computed(() => {
+  return roles.value && roles.value.length && roles.value!.includes("admin");
+});
 onMounted(() => loadProfile());
+onMounted(async () => {
+  const user = await $fetch("/api/connexion/iam/");
+  if (user != null) {
+    roles.value = user.role;
+  }
+});
 
 const loadProfile = async () => {
   user.value = await $fetch("/api/connexion/iam/");
@@ -85,10 +113,21 @@ const loadProfile = async () => {
   <div class="sticky-menubar">
     <Menubar :model="items">
       <template #start class="flex-1">
-        <img class="h-8!" src="/img/luniversdemmlogotilt.png" />
+        <img
+          v-if="colorMode.preference == 'light'"
+          src="/img/bougs-b-cookie.png"
+          alt=""
+          class="h-8!"
+        />
+        <img else src="/img/bougs-b.png" alt="" class="h-8!" />
       </template>
       <template #item="{ item, props, root }">
-        <NavLink :props="props" :item="item" :root="root" />
+        <NavLink
+          v-if="item.condition ? item.condition() : true"
+          :props="props"
+          :item="item"
+          :root="root"
+        />
       </template>
       <template #end>
         <div class="flex items-center gap-2 p-menubar-root-list h-8">

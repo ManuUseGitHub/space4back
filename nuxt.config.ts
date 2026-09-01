@@ -2,8 +2,7 @@ import tailwindcss from "@tailwindcss/vite";
 import Aura from "@primeuix/themes/aura";
 import { logIt } from "./server/utils/logger";
 
-import { aliasRoute, removeScriptFiles } from "./routeUtils";
-const isTest = process.env.APP_ENV == "test";
+import { aliasRoute, removeScriptFiles } from "./server/utils/routeUtils";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -71,12 +70,7 @@ export default defineNuxtConfig({
 		"primeicons/primeicons.css",
 	], //, "@picocss/pico"],
 	compatibilityDate: "2025-07-15",
-	modules: [
-		"@primevue/nuxt-module",
-		"@nuxt/ui",
-		"@nuxt/test-utils/module",
-		"nuxt-svgo",
-	],
+	modules: ["@primevue/nuxt-module", "@nuxt/ui", "@nuxt/test-utils/module"],
 	devtools: {
 		vscode: {},
 		enabled: false,

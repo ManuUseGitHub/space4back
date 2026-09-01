@@ -11,7 +11,7 @@ export const conclude = async <T>(
 		console.error(error);
 	}
 ) => {
-	let message = "...";
+	let message: any = "...";
 	await promise
 		.then((data) => {
 			message = JSON.stringify(successCB(data));

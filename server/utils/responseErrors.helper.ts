@@ -1,5 +1,7 @@
 import { H3Event, EventHandlerRequest } from "h3";
 import { StatusCodes } from "http-status-codes";
+import { lens } from "qlcodes";
+import { success } from "zod";
 
 export const createInvalidDataError = (
 	event: H3Event<EventHandlerRequest>,
@@ -27,9 +29,21 @@ export const createIdIsRequiredError = (
 };
 
 export const dataBaseError = (error: any) => {
-	console.error(error);
+	let copy = JSON.parse(JSON.stringify(error));
+	if (copy.code) {
+		copy.code = lens(copy.code);
+	}
+	logIt(copy, "error");
 	throw createError({
 		statusCode: 400,
 		statusMessage: "database error ...",
 	});
+};
+
+export const logDataBaseError = (error: any) => {
+	if (error.code) {
+		error.ql = lens(error.code);
+		error.code = undefined;
+	}
+	logIt(error, "error");
 };

@@ -1,106 +1,151 @@
 :root {
-    --text-color: #222;
-    --back-color: #fdfdfd;
-    --bs-body-color: #fffafa;
-    --bs-body-color-transp: #fffafa00;
-    --lighter-back-color: rgb(255, 242, 242);
-    --p-panel-color: var(--text-color);
+    /* Brand */
     --p-primary-color: rgb(63, 98, 203);
     --p-primary-600: rgb(63, 98, 203);
-    --p-button-primary-background: dodgerBlue;
-    --p-button-primary-border-color: darkBlue;
+
+    --p-secondary-color: rgb(75, 85, 99);
+    --p-secondary-600: rgb(75, 85, 99);
+
+    /* Buttons */
     --p-button-primary-color: rgb(221, 232, 245);
+    --p-button-secondary-color: rgb(234, 238, 244);
 
-    --p-button-primary-hover-background: cornflowerBlue;
-    --p-button-primary-hover-border-color: dodgerBlue;
-
-    --split-background-color-1: #ac9ad2;
-    --split-background-color-2: #6294d1;
-    --field-background-color: #fafafa;
-    --field-border-color: #e0e0e072;
-
-    --hr-border-color: #c1c1c1;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-color: #9a9a9a;
-        --back-color: #222;
-        --bs-body-color: #222;
-        --bs-body-color-transp: #22222200;
-        --lighter-back-color: lighten(#222, 90%);
-
-        --dark-mode-text: rgb(188, 188, 189);
-        --p-inputtext-color: var(--dark-mode-text);
-        --p-listbox-color: var(--dark-mode-text);
-        --p-textarea-color: var(--dark-mode-text);
-        --p-select-color: var(--dark-mode-text);
-        --p-togglebutton-checked-color: var(--dark-mode-text);
-        --p-button-primary-background: rgb(86, 117, 147);
-        --p-button-primary-border-color: rgb(0, 51, 92);
-        --p-panel-color: var(--text-color);
-        --p-button-primary-color: rgb(50, 87, 132);
-        --p-button-primary-color: rgb(221, 232, 245);
-
-        --split-background-color-1: #212138;
-        --split-background-color-2: #002b63;
-        --field-background-color: #1d1e21;
-        --field-border-color: #121212;
-
-        --hr-border-color: #000;
-    }
+    /* Layout */
+    --color-dark-pane: white;
 }
 
 html.light {
+    /* Core */
     --text-color: #222;
     --back-color: #fdfdfd;
+    --lighter-back-color: #fff2f2;
+    --selected-background: dodgerblue;
+    --border-color: rgba(211, 211, 211, 0.516);
+    --odd-back-color: #fff2f2;
+
+    /* Bootstrap */
     --bs-body-color: #fffafa;
     --bs-body-color-transp: #fffafa00;
-    --lighter-back-color: rgb(255, 242, 242);
+
+    /* Prime */
     --p-panel-color: var(--text-color);
-    --p-primary-color: rgb(63, 98, 203);
-    --p-primary-600: rgb(63, 98, 203);
-    --p-button-primary-background: dodgerBlue;
-    --p-button-primary-border-color: darkBlue;
-    --p-button-primary-color: rgb(221, 232, 245);
+    --p-panel-header-color: var(--text-color);
+    --p-content-background: var(--back-color);
+    --p-content-color: var(--text-color);
 
-    --p-button-primary-hover-background: cornflowerBlue;
-    --p-button-primary-hover-border-color: dodgerBlue;
+    /* Buttons */
+    --p-button-primary-background: dodgerblue;
+    --p-button-primary-border-color: darkblue;
+    --p-button-primary-hover-background: cornflowerblue;
+    --p-button-primary-hover-border-color: dodgerblue;
+    --p-button-primary-hover-color: darkblue ;
+    --p-button-primary-active-color:white;
 
-    --split-background-color-1: #ac9ad2;
-    --split-background-color-2: #6294d1;
+    --p-button-secondary-background: dodgerblue;
+    --p-button-secondary-border-color: rgb(2, 2, 23);
+    --p-button-secondary-hover-background: rgb(231, 234, 237);
+    --p-button-secondary-hover-border-color: rgb(98, 98, 98);
+    --p-button-secondary-hover-color: rgb(43, 43, 43);
+    --p-button-secondary-active-color: lightgrey;
+
+    /* Toggle Buttons */
+    --p-togglebutton-background: var(--back-color);
+    --p-togglebutton-border-color: var(--border-color);
+    --p-togglebutton-checked-background: var(--back-color);
+    --p-togglebutton-checked-border-color: var(--border-color);
+
+    /* Toggle Button checked */
+    --p-togglebutton-content-checked-background: var(--selected-background);
+
+    /* Dialog*/
+    --p-dialog-background: var(--back-color);
+
+    /* DataTable */
+    --p-datatable-border-color: var(--border-color);
+
+    /* Forms */
     --field-background-color: #fafafa;
     --field-border-color: #e0e0e072;
 
+    /* Select */
+    --p-select-background: var(--back-color);
+    --p-select-color: var(--text-color);
+
+    /* Split panels */
+    --split-background-color-1: #ac9ad2;
+    --split-background-color-2: #6294d1;
+
+    /* Misc */
     --hr-border-color: #c1c1c1;
+    --dark-pane: #b5a4d8;
 }
 
 html.dark {
+    /* Core */
     --text-color: #b9b9b9;
     --back-color: #222;
+    --lighter-back-color: #3a3a3a;
+    --selected-background: #3f62cb; // rgb(79, 73, 119);
+    --border-color: #a0a0a077;
+    --odd-back-color: #131313;
+
+    /* Bootstrap */
     --bs-body-color: #1e2a40;
     --bs-body-color-transp: #1e2a4000;
-    --lighter-back-color: lighten(#222, 90%);
 
+    /* Prime text */
     --dark-mode-text: rgb(158, 158, 205);
     --p-inputtext-color: var(--dark-mode-text);
     --p-listbox-color: var(--dark-mode-text);
     --p-textarea-color: var(--dark-mode-text);
     --p-select-color: var(--dark-mode-text);
+
     --p-togglebutton-checked-color: var(--dark-mode-text);
+
+    /* Prime layout */
+    --p-panel-color: var(--text-color);
+    --p-panel-header-color: var(--text-color);
+    --p-content-background: var(--back-color);
+    --p-content-color: var(--text-color);
+
+    /* Buttons */
     --p-button-primary-background: rgb(86, 117, 147);
     --p-button-primary-border-color: rgb(0, 51, 92);
-    --p-panel-color: var(--text-color);
-    --p-button-primary-color: rgb(221, 232, 245);
-    --p-button-primary-hover-background: rgb(255, 255, 255);
+    --p-button-primary-hover-background: #ffffff;
 
-    --split-background-color-1: #212138;
-    --split-background-color-2: #002b63;
+    /* Toggle Buttons */
+    --p-togglebutton-background: var(--back-color);
+    --p-togglebutton-border-color: var(--border-color);
+    --p-togglebutton-checked-background: var(--back-color);
+    --p-togglebutton-checked-border-color: var(--border-color);
+
+    /* Toggle Button checked */
+    --p-togglebutton-content-checked-background: var(--selected-background);
+
+    /* Dialog*/
+    --p-dialog-background: var(--back-color);
+
+    /* DataTable */
+    --p-datatable-border-color: var(--border-color);
+
+    /* Forms */
     --field-background-color: #1d1e21;
     --field-border-color: #121212;
 
-    --hr-border-color: #000;
+    /* Select */
+    --p-select-background: var(--back-color);
+    --p-select-color: var(--text-color);
 
+    /* Split panels */
+    --split-background-color-1: #212138;
+    --split-background-color-2: #002b63;
+
+    /* Misc */
+    --hr-border-color: #767676;
+    --dark-pane: #252426;
+}
+
+html.dark {
     .card {
         label {
             color: #5c5c5c;
@@ -147,39 +192,6 @@ span {
 .p-divider-content {
     background-color: var(--back-color);
     color: var(--text-color);
-}
-
-button[severity="primary"],
-button[data-p-severity="primary"] {
-    background: var(--p-primary-600) !important;
-
-    &:hover {
-        background: var(--p-button-primary-hover-background) !important;
-        color: var(--p-button-primary-hover-text-color);
-        border-color: var(--p-button-primary-hover-border-color);
-
-        span {
-            color: var(--p-button-primary-hover-text-color);
-        }
-
-    }
-
-    &:hover {
-        background: var(--p-button-primary-hover-background) !important;
-        color: var(--p-button-primary-hover-text-color);
-        border-color: var(--p-button-primary-hover-border-color);
-
-        span {
-            color: var(--p-button-primary-hover-text-color);
-        }
-    }
-
-
-    color: var(--p-button-primary-color);
-
-    span {
-        color: var(--p-button-primary-color);
-    }
 }
 
 .split-background {

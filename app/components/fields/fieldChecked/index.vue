@@ -1,16 +1,17 @@
 <script setup lang="ts">
-
 const props = defineProps<{
-  icon: string;
+  icon?: string;
   errors: { path: string[]; message: string }[];
   field: string;
-  label: string;
+  label?: string;
   containerClass?: string;
   alternative?: boolean;
   poptip?: string;
   required?: boolean;
+  iconButton?: boolean;
+  severity?: string;
 }>();
-const emit = defineEmits(["validation"]);
+const emit = defineEmits(["validation", "toggle"]);
 const hasError = () => {
   const { errors, field } = props;
   return errors.find((x) => x.path[0] == field);
@@ -54,21 +55,37 @@ const togglePopTip = (event: any) => {
   pop.value.toggle(event);
 };
 
-const { icon } = props;
+const toggle = () => {
+  emit("toggle");
+};
+
+const displayData = computed(() => {
+  return getFieldDisplayData(props, props.field);
+});
 </script>
 <template>
   <div :class="`${containerClass ? containerClass + ' ' : ''}relative ${validityClass}`">
-    <div class="flex">
+    <div class="d-flex flex-1">
       <InputGroup>
-        <InputGroupAddon class="relative w-14 min-h-14">
-          <span :class="icon"></span>
+        <Button
+          v-if="iconButton"
+          class="w-14! min-h-14"
+          :severity="severity"
+          @click="toggle()"
+        >
+          <span :class="displayData.icon"></span>
+          <span v-if="required" class="required-mark">*</span>
+        </Button>
+        <InputGroupAddon v-else class="relative w-14 min-h-14">
+          <span :class="displayData.icon"></span>
           <span v-if="required" class="required-mark">*</span>
         </InputGroupAddon>
         <slot name="addonleft" @value="onValueChanged"></slot>
+        <slot name="before" @value="onValueChanged"></slot>
         <FloatLabel variant="on" role="field" :data-field="field" :required>
           <slot name="main" @value="onValueChanged"></slot>
           <slot @value="onValueChanged"></slot>
-          <label :for="field">{{ label }}</label></FloatLabel
+          <label :for="field">{{ displayData.label }}</label></FloatLabel
         >
         <slot name="addonright" @value="onValueChanged"></slot>
       </InputGroup>

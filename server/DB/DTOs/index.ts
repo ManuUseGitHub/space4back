@@ -110,6 +110,25 @@ export type ExperienceDTO = {
 	lov: LovCollection[];
 };
 
+export  type SectorDTO = {
+	id: number;
+	name: string;
+	description: string;
+	comment?: string;
+	professions : ProfessionDTO[]
+}
+
+export type SectoredProfessionsDTO = {
+	sector: SectorDTO,
+	professions : ProfessionDTO[]
+}
+
+export type ProfessionDTO = {
+	id : number,
+	name : string,
+	description: string
+}
+
 export type ExperiencesToPatch = {
 	id: string;
 	favorite: boolean;

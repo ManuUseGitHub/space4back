@@ -26,7 +26,7 @@ const { user } = props;
               {{ user.mailAddress }}
             </div>
             <div class="text-center">
-              <SignOutButton @signout="$emit('signout')"></SignOutButton>
+              <SignedActions @signout="$emit('signout')" :userId="user.id"></SignedActions>
             </div>
           </div>
         </div>

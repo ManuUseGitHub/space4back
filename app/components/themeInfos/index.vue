@@ -33,12 +33,11 @@ const getPreferedTheme = computed(() => {
 });
 </script>
 <template>
-  <div class="p-2">
+  <div class="relative">
     <slot></slot>
     <h3>Theming</h3>
     <span>Your settings concerning colorations for the course of the daylight</span>
-  </div>
-  <div class="h-full p-2">
+    <hr />
     <h5>Prefered color scheme</h5>
     <div class="border p-3 mb-3 text-center">
       <p class="m-1">{{ getSchemeLabel }}</p>

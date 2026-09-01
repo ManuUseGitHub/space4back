@@ -17,7 +17,7 @@ import type { ZodSafeParseSuccess } from "zod";
 import { AppDataSource } from "~~/server/DB/data-source.js";
 import { User } from "~~/server/DB/entity/User.js";
 import { Preferences } from "~~/server/DB/entity/Preferences";
-import { System } from "~~/server/DB/entity/System";
+import { sanitizeObjectFrom, updateSystem } from "~~/server/utils/dsource";
 
 export default defineEventHandler(async (event) => {
 	const result = await initializeDataSourceValid(event, zUpdateUser);
@@ -60,41 +60,3 @@ const updatePreferences = async (
 		sanitizeObjectFrom(result.data, boundedPreferences!)
 	);
 };
-
-const updateSystem = async (
-	result: ZodSafeParseSuccess<WriteUserPreferencesDTO>
-) => {
-	const bounded = await findBoundedToUser(System, result.data.id);
-	const sanitized: SystemEntity = sanitizeObjectFrom(
-		result.data,
-		bounded!
-	) as any;
-	sanitized.dateUpdate = new Date();
-	if (bounded) {
-		await AppDataSource.getRepository(System).update(
-			{
-				id: bounded?.id,
-			},
-			sanitized
-		);
-	} else {
-		await AppDataSource.getRepository(System).save({
-			userId: result.data.id,
-			dateUpdate: new Date(),
-		});
-	}
-};
-
-export function sanitizeObjectFrom<T extends Object>(
-	input: Record<string, any>,
-	oldVersion: T
-) {
-	const result: { [x: string]: any } = {};
-	const keys = Object.keys(oldVersion);
-	keys.forEach((key) => {
-		if (key != "id") {
-			result[key] = input[key];
-		}
-	});
-	return result;
-}

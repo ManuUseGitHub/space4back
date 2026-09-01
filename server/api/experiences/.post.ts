@@ -1,9 +1,11 @@
 import { AppDataSource } from "~~/server/DB/data-source";
-import { StateModifyExperienceDTO } from "~~/server/DB/DTOs";
+
 import { Experience } from "~~/server/DB/entity/Experience";
 import type { ExperienceEntity } from "~~/server/DB/entity/interfaces";
 import { zCreateExperience } from "~~/server/utils/validators/zods";
 import { v4 as uuidV4 } from "uuid";
+import type { StateModifyExperienceDTO } from "~~/server/DB/DTOs";
+import { getUserExperiencesNextOrder } from "~~/server/utils/dsource";
 
 export default defineEventHandler(async (event) => {
 	const result = await initializeDataSourceValid(event, zCreateExperience);
@@ -11,6 +13,7 @@ export default defineEventHandler(async (event) => {
 	if (result.success) {
 		const newVersion: ExperienceEntity = {
 			...result.data,
+			order:await getUserExperiencesNextOrder(result.data.userId),
 			id: uuidV4(),
 		} as any;
 

@@ -1,45 +1,100 @@
 <script setup lang="ts">
-setup({});
-import { useToast } from "primevue/usetoast";
-const toast = useToast();
-import { setup, getTasks, getUsers, getDirectUsers } from "./script";
-const { data: tasks, status, error } = await getTasks();
-const { data: users } = await getUsers();
-const userList = ref(users);
-const isLoading = ref(false);
+import type { LoggedInUser } from "~~/server/DB/DTOs";
 
-const deleteUser = async (id: string) => {
-  isLoading.value = true;
-  const result = await $fetch("/api/user/" + id, {
-    method: "DELETE",
-  }).catch((e) => {
-    toastError(toast, e.errorMessage);
-  });
-  if (result) {
-    toastSuccess(toast, `${result}`);
-    getDirectUsers().then((data) => {
-      userList.value = data;
-    });
-  }
+const colorMode = useColorMode();
+const appliedThem = computed(() => colorMode.preference);
 
-  isLoading.value = false;
+const user = ref<LoggedInUser>();
+const id = ref<string>();
+onMounted(() => loadProfile());
+onMounted(async () => {
+  const user = await $fetch("/api/connexion/iam/");
+});
+
+const loadProfile = async () => {
+  user.value = await $fetch("/api/connexion/iam/");
+  id.value = user.value?.id;
 };
-function navigate(id: string) {
-  return navigateTo({
-    path: "/u/" + id,
-  });
-}
 </script>
 <template>
-  <div>
-    <article v-if="status === 'pending'" aria-busy="true"></article>
-    <div class="error" v-else-if="status === 'error'">{{ error?.statusMessage }}</div>
-   
-    <article v-for="user in userList" :key="user.id">
-      <h2>
-        <Button @click="navigate(user.id!)"> {{ user.firstName }}</Button>
-        <button class="small-button" rounded @click="deleteUser(user.id!)">x</button>
-      </h2>
-    </article>
+  <div id="back" class="d-flex justify-center items-center h-lvh">
+    <div class="d-flex bg-transparent! border p-5 rounded-4xl!">
+      <div class="col lg:w-4xl xl:max-w-1/2">
+        <div v-if="!user">
+          <h1 class="text-5xl! fnt-typo-round-bold">Welcome t🍪:</h1>
+          <br />
+        </div>
+
+        <img v-if="appliedThem == 'light'" src="/img/bougs-cookie-logo.png" alt="" />
+        <img v-else-if="appliedThem == 'dark'" src="/img/bougs-logo-b.png" alt="" />
+        <img class="h-6 inline" src="/img/luniversdemmlogotilt.png" alt="" /> by
+        Luniversdemm
+        <hr />
+        <h3>The place to show the market what an incredible boug you are !</h3>
+        <hr />
+        <br />
+        <h3 class="fnt-typo-round">Discover</h3>
+        <div class="d-flex gap-3">
+          <NuxtLink :to="'/mission'">
+            <Button severity="primary" class="p-3 rounded-3xl! pushedButton"
+              >Our mission <span :class="icons.pSparkles"></span>
+            </Button>
+          </NuxtLink>
+          <NuxtLink :to="'#sectors'">
+            <Button severity="primary" class="p-3 rounded-3xl! pushedButton"
+              >Activity sectors</Button
+            >
+          </NuxtLink>
+        </div>
+      </div>
+      <div class="col max-w-fit">
+        <div class="border-r border h-full w-0 mx-5"></div>
+      </div>
+      <div class="col mx-auto flex-col max-w-fit d-flex justify-center" v-if="user">
+        <div>
+          <LandingProfile :user="user"></LandingProfile>
+        </div>
+      </div>
+      <div v-else class="col mx-auto flex-col max-w-fit d-flex justify-center">
+        <div class="col text-left">
+          <h1 class="text-5xl! fnt-typo-round-bold">No account yet?</h1>
+          <NuxtLink :to="'/create'">
+            <Button severity="primary" class="p-3 rounded-3xl! pushedButton">
+              Sign up
+            </Button>
+          </NuxtLink>
+          <br />
+          <hr />
+          <h3 class="max-w-lg">
+            Members have access to private spaces, keep preferences, creation of their
+            custom portfolio and <span :class="icons.pPlus"></span
+            ><span :class="icons.pPlus"></span>
+          </h3>
+          <hr />
+        </div>
+        <div class="col text-left">
+          <h1 class="text-5xl! max-w-lg fnt-typo-round-bold">
+            This is not my first time here
+          </h1>
+          <NuxtLink :to="'/connexion?url=/home'">
+            <Button severity="primary" class="p-3 rounded-3xl! pushedButton">
+              Sign in
+            </Button>
+          </NuxtLink>
+          <br />
+          <hr />
+          <h3 class="max-w-lg">This is alwais a pleasure having you here</h3>
+          <hr />
+        </div>
+      </div>
+    </div>
   </div>
+  <Sectors id="sectors"></Sectors>
 </template>
+<style>
+html.dark {
+  #back {
+    background-color: #333;
+  }
+}
+</style>

@@ -1,16 +1,21 @@
 <script setup lang="ts">
 import "primeicons/primeicons.css";
 import { ref, computed } from "vue";
-import { useToast } from "primevue/usetoast";
 import { compose, v } from "./script";
 import type { UserWithExperiencesDTO } from "~~/server/DB/DTOs";
-
+import auth from "~/middleware/auth";
+definePageMeta({
+  middleware: auth,
+});
 const route = useRoute();
 const id = route.params.id;
 const data: any = await $fetch("/api/experiences/" + id);
 const rawData = parseDates(data) as UserWithExperiencesDTO;
-const toast = useToast();
+const isSame = ref<Boolean>();
 
+onMounted(async () => {
+  isSame.value = await $fetch("/api/connexion/same", { method: "post", body: { id } });
+});
 const experienceRef = ref();
 const isPatchListIIsFilled = computed(() => {
   return compose.value.patchL.length != 0;
@@ -34,6 +39,7 @@ v.setup(rawData);
     <div class="row">
       <div class="col-md-12 relative info-pane">
         <ExperienceListInfos
+          v-if="isSame"
           ref="experienceRef"
           @patch="v.onPatch"
           @swapup="v.onSwapUp"

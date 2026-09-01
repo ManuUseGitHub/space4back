@@ -2,7 +2,11 @@
 const hasError = computed(() => {
   return errors.value.length > 0;
 });
-defineProps<{ spine: string; icon?: string }>();
+const { isContained } = defineProps<{
+  spine: string;
+  icon?: string;
+  isContained?: boolean;
+}>();
 const errors = ref([] as ValidationError[]);
 const state = ref({
   showError: false,
@@ -57,6 +61,12 @@ const actionButtonArea = computed(() => {
   return actionButtonAreaHeight.value || 0;
 });
 
+const getWrapperClassNames = () => {
+  return isContained?.valueOf()
+    ? ""
+    : "container col-xxl-10 col-md-11 p-0 m-0 px-md-2 py-md-5 m-md-auto";
+};
+
 onMounted(() => {
   setTimeout(() => {
     const element = document.getElementById("actionButtonArea");
@@ -67,7 +77,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div class="container col-xxl-10 col-md-11 p-0 w-full m-0 px-md-2 py-md-5 m-md-auto">
+  <div class="w-full" :class="getWrapperClassNames()">
     <div class="relative">
       <ErrorPanel
         :errors

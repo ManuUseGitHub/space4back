@@ -15,16 +15,23 @@ export const createLogger = (logFile: string) => {
 	log4js.configure({
 		appenders: {
 			console: { type: "console" },
+			out: { type: "stdout" },
 			file: {
 				type: "file",
 				filename: logFile,
 				maxLogSize: 1048576,
 				backups: 3,
+				compress: false,
 			},
 		},
 		categories: {
-			default: { appenders: ["console", "file"], level: "info" },
+			default: {
+				appenders: ["console", "out", "file"],
+				level: "info",
+			},
 		},
+		// 🔴 IMPORTANT FOR CPANEL
+		disableClustering: true,
 	});
 
 	return log4js.getLogger();

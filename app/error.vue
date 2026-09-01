@@ -39,7 +39,7 @@ const goHome = () => clearError({ redirect: "/home" });
           </div>
           <div>
             Or shall you
-            <Button @click="goHome">returning home</Button> ?
+            <Button @click="goHome">return home</Button> ?
           </div>
         </div>
       </div>
@@ -50,6 +50,7 @@ const goHome = () => clearError({ redirect: "/home" });
 .full-h-img {
   height: 100vh;
 }
+
 .bg-opacity-60 {
   background-color: #ffffff77;
 }
