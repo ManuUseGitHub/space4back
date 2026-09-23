@@ -92,3 +92,9 @@ export type TokenProperties = {
 	action: string;
 	createTime: Date;
 };
+
+export type CsrfResponse = {
+    headerName: string;
+    parameterName: string;
+    token: string;
+};

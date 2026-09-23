@@ -79,7 +79,15 @@ const userMenu = ref([
   { label: "Logout", icon: "pi pi-sign-out", command: () => handleLogout() },
 ]);
 
-const login = { label: "Login", icon: "pi pi-user", to: `/connexion?url=${route.path}` };
+const login = {
+  label: "Connect",
+  icon: "pi pi-user",
+  to: useExternalUrlResolver(
+    `/syngularity/connexion?url=/${["bougs", route.path]
+      .join("/")
+      .replaceAll(/\/+/g, "/")}`
+  ),
+};
 
 const user = ref<LoggedInUser>();
 const id = ref<string>();

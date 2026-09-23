@@ -9,16 +9,13 @@ const user = ref<LoggedInUser>();
 const id = ref<string>();
 onMounted(() => loadProfile());
 onMounted(async () => {
-  const user = await $fetch("/api/connexion/iam/");
-});
-
-const displaySignedin = async () => {
-    const session: any = await useSsoSession();
-
-    const user: any = await $fetch(`/userinfo/user-info/u/${session.id}`, {
+  const session: any = await useSsoSession();
+    const user = await $fetch(`/userinfo/user-info/u/${session.id}`, {
       credentials: "include",
     });
-};
+
+    console.log(user)
+});
 
 const loadProfile = async () => {
   user.value = await $fetch("/api/connexion/iam/");
