@@ -7,8 +7,8 @@
     "build": "nuxt build ",
     "build:cpanel": "./predeploy.sh",
     "build:cpanel-unzip": "rm -rf dist ; rm -f dist.zip ; nuxt build --verbose; npm i --omit=dev --force ; mkdir -p dist ; cp -R .output dist/output ; cp server.js dist/server.js",
-    "dev": "nuxt dev --silence-deprecation true",
-    "dev:test": "nuxt dev --dotenv .env.test --port 8001",
+    "dev": "nuxt dev --dotenv .env --silence-deprecation --port 8001",
+    "dev:test": "nuxt dev --dotenv .env.test --port 8091",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },

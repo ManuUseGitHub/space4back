@@ -64,6 +64,14 @@ export default defineNuxtConfig({
 			);
 		},
 	},
+	routeRules: {
+        "/sso/**": {
+            proxy: "http://localhost:7401/api/**"
+        },
+        "/userinfo/**": {
+            proxy: "http://localhost:7601/api/**"
+        }
+    },
 	css: [
 		"~/assets/scss/style.scss",
 		"~/assets/css/main.css",
