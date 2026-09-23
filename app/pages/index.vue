@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useColorMode } from "~/composables/usePreferences";
 import type { LoggedInUser } from "~~/server/DB/DTOs";
 
 const colorMode = useColorMode();
@@ -10,6 +11,14 @@ onMounted(() => loadProfile());
 onMounted(async () => {
   const user = await $fetch("/api/connexion/iam/");
 });
+
+const displaySignedin = async () => {
+    const session: any = await useSsoSession();
+
+    const user: any = await $fetch(`/userinfo/user-info/u/${session.id}`, {
+      credentials: "include",
+    });
+};
 
 const loadProfile = async () => {
   user.value = await $fetch("/api/connexion/iam/");
