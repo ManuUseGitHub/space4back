@@ -1,14 +1,13 @@
-import { User } from "~~/server/DB/entity/User.js";
-import { findBy } from "~~/server/utils/request.helper";
+import { UserImage } from "~~/server/DB/entity/UserImage";
 
 export default defineEventHandler(async (event) => {
 	const id = createIdIsRequiredError(event.context.params?.userid);
 	initializeDataSource(event);
 	const { photo, photoMimeType, serviceImageUrl } = {
-		...(await findBy(User, { id }, [
-			"user.photoMimeType",
-			"user.photo",
-			"user.serviceImageUrl",
+		...(await findBy(UserImage, { id }, [
+			"userimage.mediaMimeType",
+			"userimage.media",
+			"userimage.serviceImageUrl",
 		])),
 	};
 	return { photo, photoMimeType, serviceImageUrl };

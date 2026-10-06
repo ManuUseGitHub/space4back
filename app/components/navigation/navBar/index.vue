@@ -1,120 +1,37 @@
 <script lang="ts" setup>
 import { ref } from "vue";
-import type { LoggedInUser } from "~~/server/DB/DTOs";
+import { applyProfile, forceRerender, getUserMenuComposition, loadProfile, menuItems } from "./script";
 const colorMode = useColorMode();
 const route = useRoute();
-const items = ref([
-  {
-    label: "Home",
-    icon: "pi pi-home",
-    to: "/home",
-  },
-  {
-    label: "",
-    icon: icons.pSun,
-    command: () => {
-      colorMode.preference = "light";
-    },
-  },
-  {
-    label: "",
-    icon: icons.pMoon,
-    command: () => {
-      colorMode.preference = "dark";
-    },
-  },
-  {
-    condition: () => {
-      return isAdmin.value;
-    },
-    label: "Manage",
-    icon: icons.pWrench,
-    badge: 0,
-    items: [
-      {
-        label: "Users",
-        icon: icons.pUser,
-        shortcut: "⌘+S",
-        to: "/manage/users",
-      },
-      {
-        label: "Skills",
-        icon: icons.pStar,
-        shortcut: "⌘+B",
-        to: "/manage/skills",
-      },
-      {
-        separator: true,
-      },
-      {
-        label: "UI Kit",
-        icon: "pi pi-pencil",
-        shortcut: "⌘+U",
-      },
-    ],
-  },
-]);
+const principal = useCurrentUser();
+const roles = ref<string[]>([]);
 const renderComponent = ref(true);
-const forceRerender = async () => {
-  // Remove MyComponent from the DOM
-  renderComponent.value = false;
+const userMenuRef = ref();
+const userMenu = ref(getUserMenuComposition(() => {handleLogout()}));
 
-  // Wait for the change to get flushed to the DOM
-  await nextTick();
-
-  // Add the component back in
-  renderComponent.value = true;
-};
 const handleLogout = async () => {
   await signout();
-  await loadProfile();
+  await loadProfile(principal, userMenu);
   location.reload();
-  setTimeout(forceRerender, 3000);
+  setTimeout(() => forceRerender(renderComponent), 3000);
 };
-const userMenuRef = ref();
-const userMenu = ref([
-  { label: "Profile", icon: "pi pi-user", to: "/profile" },
-  { label: "Settings", icon: "pi pi-cog", to: "/settings" },
-  { separator: true },
-  { label: "Logout", icon: "pi pi-sign-out", command: () => handleLogout() },
-]);
-
+const loginUrl = `/syngularity/connexion?url=/${useSegments("bougs", route.path)}`;
 const login = {
   label: "Connect",
   icon: "pi pi-user",
-  to: useExternalUrlResolver(
-    `/syngularity/connexion?url=/${["bougs", route.path]
-      .join("/")
-      .replaceAll(/\/+/g, "/")}`
-  ),
+  to: useExternalUrlResolver(loginUrl),
 };
 
-const user = ref<LoggedInUser>();
-const id = ref<string>();
-const roles = ref<string[]>([]);
 const userId = computed(() => {
-  return id.value;
+  return principal.value.userId;
 });
 
 const isAdmin = computed(() => {
   return roles.value && roles.value.length && roles.value!.includes("admin");
 });
-onMounted(() => loadProfile());
-onMounted(async () => {
-  const user = await $fetch("/api/connexion/iam/");
-  if (user != null) {
-    roles.value = user.role;
-  }
-});
+const items = ref(menuItems(colorMode, isAdmin));
 
-const loadProfile = async () => {
-  user.value = await $fetch("/api/connexion/iam/");
-  id.value = user.value?.id;
-  const menuItem = userMenu.value.find((m) => /profile/i.test(m.label!));
-  if (menuItem) {
-    menuItem.to = `/u/${id.value}`;
-  }
-};
+onMounted(() => applyProfile(principal, roles, userMenu));
 </script>
 
 <template v-if="renderComponent">
@@ -139,8 +56,8 @@ const loadProfile = async () => {
       </template>
       <template #end>
         <div class="flex items-center gap-2 p-menubar-root-list h-8">
-          <template v-if="user">
-            <span> {{ user?.firstName }}</span>
+          <template v-if="principal">
+            <span> {{ principal.firstName }}</span>
 
             <!-- Dropdown menu -->
             <Menu ref="userMenuRef" :model="userMenu" popup>

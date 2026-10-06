@@ -28,11 +28,12 @@ export const initializeDataSource = async (
 	if (!AppDataSource.isInitialized) {
 		await AppDataSource.initialize();
 	}
+	const body = await readBody(event);
 	const log: any = {
-		issued: await readBody(event),
+		issued: body
 	};
-	logIt(JSON.stringify(log, null, 2), "info");
-	return await readBody(event);
+	//logIt(JSON.stringify(log, null, 2), "info");
+	return body;
 };
 
 export const initializeDataSourceValid = async <T extends ZodObject>(

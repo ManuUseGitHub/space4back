@@ -25,7 +25,7 @@ export default defineEventHandler(async (event) => {
 		throw createError({ statusCode: 404, statusMessage: "User not found" });
 	}
 
-	user.banner = await compressImage(fileBuffer, file.mimetype, 1000000);
+	user.banner = await compressImage(fileBuffer, file.mimetype, 10,0.66);
 	user.bannerMimeType = file.mimetype; // "image/jpeg" or "image/png"
 	await userRepo.save(user);
 

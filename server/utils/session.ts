@@ -15,15 +15,37 @@ export const setSessionCookie = (event: any, sessionToken: string) => {
 };
 
 export const deleteSessionCookie = (event: any) => {
-	deleteCookie(event, "session", {
-		httpOnly: true,
-		secure: isProd,
-		sameSite: isProd ? "lax" : "lax",
-		domain: isProd ? ".luniversdemm.store" : "localhost",
-		path: "/",
-	});
+	event.context.session = null;
 };
 
 export const getSessionCookie = (event: any) => {
 	return getCookie(event, "session");
+};
+
+export const getCSRF = async (target: string) => {
+    return (await $fetch(`/${target}/csrf`, {
+        method: "GET",
+        credentials: "include"
+    })) as CsrfResponse;
+};
+
+export const getCurrentSession = async (event:any) => {
+    if (event.context.session !== undefined) {
+        return event.context.session;
+    }
+
+    try {
+        const session = await $fetch("/sso/session", {
+            headers: {
+                cookie: getHeader(event, "cookie") ?? ""
+            }
+        });
+
+        event.context.session = session;
+
+        return session;
+    } catch {
+        event.context.session = null;
+        return null;
+    }
 };

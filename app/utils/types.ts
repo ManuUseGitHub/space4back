@@ -83,18 +83,3 @@ export type ErrorCB = (
 		message: string;
 	}[]
 ) => void;
-export type TokenProperties = {
-	valid: boolean;
-	invalidReason: string;
-	hostname: string;
-	androidPackageName: string;
-	iosBundleId: any;
-	action: string;
-	createTime: Date;
-};
-
-export type CsrfResponse = {
-    headerName: string;
-    parameterName: string;
-    token: string;
-};

@@ -14,7 +14,7 @@ export default defineEventHandler(async (event) => {
 		const config = useRuntimeConfig().public.firebaseConfig;
 		const app = getApps().length ? getApps()[0] : initializeApp(config);
 		const adminAuth = getAdminAuth(app);
-		logIt(result)
+		//logIt(result)
 		await adminAuth.verifyIdToken(result.data.idToken);
 
 		const data = await readBody(event);

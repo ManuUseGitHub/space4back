@@ -199,3 +199,18 @@ export type SyncAccount = {
 	phoneNumber?: string;
 	photoURL: string;
 };
+
+export type UserInfo = {
+	// userinfo
+	userId: string;
+	firstName: string;
+	lastName: string;
+	mailAddress: string;
+	gender?:string;
+	phoneNumber?: string;
+	photoURL?: string;
+
+	// bougs info
+	id?: string;
+	role?: string;
+};

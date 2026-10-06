@@ -8,12 +8,12 @@ const toast = useToast();
 const props = defineProps<{ editable?: boolean; id?: string }>();
 console.log(props)
 const { id } = route.params;
-const data = await $fetch("/api/photo/" + (props.id || id));
+const data = await $fetch("/api/photo/S/" + (props.id || id));
 
-const userPreferences = data as UserProfilePictureDTO;
+const userPreferences = data as any;
 
-userPreferences.photo = userPreferences.photo
-  ? imageFromBuffer(userPreferences.photo)
+userPreferences.photo = userPreferences.mediaS
+  ? imageFromBuffer(userPreferences.mediaS)
   : "";
 
 const photo = ref(userPreferences);

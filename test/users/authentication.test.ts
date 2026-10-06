@@ -49,7 +49,7 @@ test("syncing to an existing email address Updates the user", async () => {
 
 	const id = JSON.parse(saved).id;
 	const updated = await $fetch("/api/user/" + id);
-	const updatedPhoto: any = await $fetch("/api/photo/" + id);
+	const updatedPhoto: any = await $fetch("/api/photo/norm/" + id);
 	expect(updatedPhoto.photoMimeType).toBe("url");
 });
 
@@ -87,7 +87,7 @@ test("syncing existing email address removes the hashed password since it is not
 		method: "post",
 		body: { mailAddress: MAIL },
 	});
-	await $fetch("/api/photo/" + id);
+	await $fetch("/api/photo/norm/" + id);
 	expect(updated[0].hashedPassword).toBeNull();
 });
 

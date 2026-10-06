@@ -1,6 +1,10 @@
-import { signOut } from "firebase/auth";
 export const signout = async () => {
-	const { $auth } = useNuxtApp();
-	await $fetch("/api/connexion/logout", { method: "POST" });
-	await signOut($auth);
+    const csrf = await useCSRF("sso");
+    await $fetch("/api/session/logout", {
+        method: "POST",
+        credentials: "include",
+        headers: {
+        "X-XSRF-TOKEN": csrf.token
+    }
+    });
 };
