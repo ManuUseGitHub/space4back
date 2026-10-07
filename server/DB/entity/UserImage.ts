@@ -1,5 +1,5 @@
 import { EntitySchema } from "typeorm";
-import { UserImageEntity } from "./interfaces";
+import { USE, UserImageEntity } from "./interfaces";
 
 export const UserImage = new EntitySchema<UserImageEntity>({
     name: "userimage",
@@ -18,6 +18,7 @@ export const UserImage = new EntitySchema<UserImageEntity>({
         mediaM: { type: "bytea", nullable: true },
         mediaS: { type: "bytea", nullable: true },
         mediaMimeType: { type: String, nullable: true },
+        use: { type: "enum", enum: USE, nullable: true },
         size: { type: Number, nullable: true },
         url: { type: String, nullable: true },
         postDate: { type: Date, nullable: true },

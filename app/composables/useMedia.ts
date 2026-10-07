@@ -1,17 +1,30 @@
-import { computed } from "vue";
-import { imageFromBuffer } from "~/utils/common/misc";
-import type { UserProfilePictureDTO } from "~~/server/DB/DTOs";
-const DEFAULT_IMAGE = "/img/photo-1585676737728-432f58d5fdba.jpeg";
+export const useMedia = async (DEFAULT_IMAGE: string, url: string, userId?: string | string[]) => {
+    const route = useRoute();
+    const id = userId || route.params.id;
+    const toast = useToast();
+
+    return usePreviewImage({
+        src: ref<string | ArrayBuffer | null>(),
+        DEFAULT_IMAGE: DEFAULT_IMAGE,
+        media: ref(await mediaFromData(url.replace(/\[ID\]/, `${id}`))),
+        fileupload: ref(),
+        toast,
+        id
+    });
+};
+
 export function usePreviewImage({
     src,
-    state,
+    DEFAULT_IMAGE,
+    media,
     fileupload,
     toast,
     id
 }: {
-    src: Ref;
-    state: Ref<UserProfilePictureDTO, UserProfilePictureDTO>;
-    fileupload: Ref;
+    src: Ref<any, any>;
+    DEFAULT_IMAGE: string;
+    media: Ref<FetchImage, FetchImage>;
+    fileupload: Ref<any, any>;
     toast: ReturnType<typeof useToast>;
     id: string | string[] | undefined;
 }) {
@@ -23,7 +36,7 @@ export function usePreviewImage({
             toast.add({
                 severity: "warn",
                 summary: "No file",
-                detail: "Please select a photo first."
+                detail: "Please select a banner first."
             });
             return;
         }
@@ -32,7 +45,7 @@ export function usePreviewImage({
         formData.append("file", fileupload.value.files[0]);
 
         try {
-            const res = await $fetch(`/api/photo/${id}`, {
+            const res = await $fetch(`/api/banner/${id}`, {
                 method: "POST",
                 body: formData
             });
@@ -45,10 +58,8 @@ export function usePreviewImage({
             });
 
             src.value = null;
-
-            const { photo, photoMimeType } = res.photoBundle;
-            state.value.photoMimeType = photoMimeType;
-            state.value.photo = imageFromBuffer(photo); // backend should return the uploaded image URL
+            media.value.mediaMimeType = res.mediaBundle.mediaMimeType;
+            media.value.media = imageFromBuffer(res.mediaBundle.media); // backend should return the uploaded image URL
         } catch (err) {
             toast.add({
                 severity: "error",
@@ -57,11 +68,14 @@ export function usePreviewImage({
             });
         }
     };
-    const hasPhoto = computed(() => !!state.value.photo);
 
-    const previewImage = computed(() =>
-        !src.value && !state.value.photo ? defaultImageOrService(state) : pendingImageOrPersistedImage(state, src)
-    );
+    const previewImage = computed(() => {
+        return !src.value && !media.value.media
+            ? DEFAULT_IMAGE
+            : src.value != null
+            ? src.value
+            : `data:${media.value.mediaMimeType || "image/jpeg"};base64,${media.value.media}`;
+    });
 
     const shouldDisplaySendButton = computed(() => src.value != null);
 
@@ -84,23 +98,8 @@ export function usePreviewImage({
         onFileSelect,
         upload,
         cancel,
-        hasPhoto,
         previewImage,
         shouldDisplaySendButton,
         changeStyleOfPreviewImage
     };
-}
-function defaultImageOrService(state: globalThis.Ref<UserProfilePictureDTO, UserProfilePictureDTO>): any {
-    return state.value.photoMimeType == "url" && state.value.serviceImageUrl
-        ? state.value.serviceImageUrl
-        : DEFAULT_IMAGE;
-}
-
-function pendingImageOrPersistedImage(
-    state: globalThis.Ref<UserProfilePictureDTO, UserProfilePictureDTO>,
-    src: globalThis.Ref<any, any>
-): any {
-    return src.value != null
-        ? src.value
-        : `data:${state.value.photoMimeType || "image/jpeg"};base64,${state.value.photo}`;
 }

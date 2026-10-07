@@ -38,17 +38,12 @@ export interface LoggedInUser {
 
 export type UserPreferencesDTO = {} & WriteUserPreferencesDTO &
 	UserProfilePictureDTO &
-	UserProfileBannerPictureDTO;
+	FetchImageDTO;
 
 export type UserProfilePictureDTO = {
 	photo?: any;
 	photoMimeType?: string;
 	serviceImageUrl?: string;
-};
-
-export type UserProfileBannerPictureDTO = {
-	banner?: any;
-	bannerMimeType?: string;
 };
 
 export type WriteUserPreferencesDTO = {
@@ -214,3 +209,25 @@ export type UserInfo = {
 	id?: string;
 	role?: string;
 };
+
+export interface UpdateImage {
+    id: string;
+    userId: string;
+    mediaXXL: Buffer<ArrayBufferLike>;
+    mediaL: Buffer<ArrayBufferLike>;
+    mediaM: Buffer<ArrayBufferLike>;
+    mediaS: Buffer<ArrayBufferLike>;
+    mediaMimeType: any;
+    size: null;
+    url: null;
+    postDate: null;
+    valid: boolean;
+}
+
+export type FetchImageDTO = {
+		media: any,
+		mediaMimeType: string,
+		size?: number,
+		url?: string,
+		postDate?: Date
+}

@@ -1,22 +1,7 @@
 <script lang="ts" setup>
-import type { UserProfileBannerPictureDTO } from "~~/server/DB/DTOs";
-import { usePreviewImage } from "./script";
-import { imageFromBuffer } from "~/utils/common/misc";
 
-const route = useRoute();
-const toast = useToast();
-const { id } = route.params;
-const data = await $fetch("/api/banner/" + id);
-
-const userPreferences = data as UserProfileBannerPictureDTO;
-
-userPreferences.banner = userPreferences.banner
-  ? imageFromBuffer(userPreferences.banner)
-  : "";
-
-const banner = ref(userPreferences);
-const fileupload = ref();
-const src = ref<string | ArrayBuffer | null>();
+const DEFAULT_IMAGE =
+  "/img/vecteezy_architecture-and-interior-concept-empty-room-and-wood-panels_31147772.jpg";
 
 const {
   changeStyleOfPreviewImage,
@@ -25,7 +10,7 @@ const {
   onFileSelect,
   upload,
   cancel,
-} = usePreviewImage({ src, state: banner, fileupload, toast, id });
+} = await useMedia(DEFAULT_IMAGE, "/api/medias/[ID]/BANNER-S");
 
 const { editable, noOverlay } = defineProps<{
   editable?: boolean;

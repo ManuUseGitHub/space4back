@@ -1,24 +1,10 @@
 <script lang="ts" setup>
-import type { UserProfilePictureDTO } from "~~/server/DB/DTOs";
-import { usePreviewImage } from "./script";
-import { imageFromBuffer } from "~/utils/common/misc";
 
-const route = useRoute();
-const toast = useToast();
+
 const props = defineProps<{ editable?: boolean; id?: string }>();
-console.log(props)
-const { id } = route.params;
-const data = await $fetch("/api/photo/S/" + (props.id || id));
 
-const userPreferences = data as any;
-
-userPreferences.photo = userPreferences.mediaS
-  ? imageFromBuffer(userPreferences.mediaS)
-  : "";
-
-const photo = ref(userPreferences);
-const fileupload = ref();
-const src = ref<string | ArrayBuffer | null>();
+const DEFAULT_IMAGE =
+  "/img/photo-1585676737728-432f58d5fdba.jpeg";
 
 const {
   changeStyleOfPreviewImage,
@@ -27,7 +13,8 @@ const {
   onFileSelect,
   upload,
   cancel,
-} = usePreviewImage({ src, state: photo, fileupload, toast, id });
+} = await useMedia(DEFAULT_IMAGE, `/api/medias/[ID]/PROFILE-S`, props.id);
+
 </script>
 <template>
   <div class="profile-picture no-flex relative p-1">

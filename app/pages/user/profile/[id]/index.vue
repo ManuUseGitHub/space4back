@@ -36,9 +36,11 @@ const personRef = ref();
 const themingRef = ref();
 
 onMounted(async () => {
-  isSame.value = await $fetch("/api/connexion/same", { method: "post", body: { id } });
-  isVisitor.value = !(!asVisitor && isSame.value);
-  resolved.value = true;
+  $fetch("/api/connexion/same", { method: "post", body: { id } }).then(value => {
+    isSame.value = value;
+    isVisitor.value = !(!asVisitor && value);
+    resolved.value = true;
+  });
 });
 const openPerson = () => {
   personRef.value.open();

@@ -28,6 +28,12 @@ export interface UserEntity {
     experiences: ExperienceEntity[];
     skills: SkillEntity[];
 }
+export enum USE {
+    PHOTO,
+    BANNER,
+    PROFILE,
+    VIDEO
+}
 export interface UserImageEntity {
     id: string;
     userId: string;
@@ -35,6 +41,7 @@ export interface UserImageEntity {
     mediaL: Buffer<ArrayBufferLike>;
     mediaM?: Buffer<ArrayBufferLike>;
     mediaS?: Buffer<ArrayBufferLike>;
+    use?: USE;
     size?: number;
     url?: string;
     mediaMimeType?: string;

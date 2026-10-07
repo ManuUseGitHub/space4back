@@ -1,14 +1,14 @@
 import { imageFromBuffer } from "~/utils/common/misc";
-import type { UserProfilePictureDTO } from "~~/server/DB/DTOs";
 const DEFAULT_IMAGE = "/img/unknown-picture.svg";
 export async function usePreviewImage(id?: string) {
-    const meta: UserProfilePictureDTO = id ? await $fetch("/api/photo/norm/" + id) : {};
-    meta.photo = meta.photo ? imageFromBuffer(meta.photo) : "";
+    const photo : FetchImage = await $fetch(`/api/medias/${id}/PROFILE-S`)
+    const meta:FetchImage = id ? photo : {} as any ;
+    meta.media = meta.media ? imageFromBuffer(meta.media) : "";
 
-    return !meta.photo
+    return !meta.media
         ? defaultImageOrService(meta)
-        : `data:${meta.photoMimeType || "image/jpeg"};base64,${meta.photo}`;
+        : `data:${meta.mediaMimeType || "image/jpeg"};base64,${meta.media}`;
 }
-function defaultImageOrService(meta: UserProfilePictureDTO): any {
-    return meta.photoMimeType == "url" && meta.serviceImageUrl ? meta.serviceImageUrl : DEFAULT_IMAGE;
+function defaultImageOrService(meta: FetchImage): any {
+    return meta.mediaMimeType == "url" && meta.url ? meta.url : DEFAULT_IMAGE;
 }

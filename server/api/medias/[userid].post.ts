@@ -3,6 +3,8 @@ import fs from "fs/promises";
 import { defineEventHandler } from "h3";
 import { v4 as uuidv4 } from "uuid";
 import { AppDataSource } from "~~/server/DB/data-source.js";
+import { UpdateImage } from "~~/server/DB/DTOs";
+import { USE, UserImageEntity } from "~~/server/DB/entity/interfaces";
 import { User } from "~~/server/DB/entity/User.js";
 import { UserImage } from "~~/server/DB/entity/UserImage.js";
 import { compressImage } from "~~/server/utils/imageCompress";
@@ -28,8 +30,10 @@ export default defineEventHandler(async event => {
         throw createError({ statusCode: 404, statusMessage: "User not found" });
     }
 
-    user.photo = await compressImage(fileBuffer, file.mimetype, 10);
-    const image: UserImage = {
+    const media = await compressImage(fileBuffer, file.mimetype, 10);
+    const mediaMimeType:string = file.mimetype;
+    
+    userImageRepo.save({
         id: uuidv4(),
         userId: user.id,
         mediaXXL: await compressImage(fileBuffer, file.mimetype, 10),
@@ -37,17 +41,15 @@ export default defineEventHandler(async event => {
         mediaM: await compressImage(fileBuffer, file.mimetype, 2),
         mediaS: await compressImage(fileBuffer, file.mimetype, 1),
         mediaMimeType: file.mimetype,
-        size: null,
-        url: null,
-        postDate: null,
+        use: USE.PROFILE,
+        size: undefined,
+        url: undefined,
+        postDate: new Date(),
         valid: true
-    };
-    userImageRepo.save(image);
-    user.photoMimeType = file.mimetype; // "image/jpeg" or "image/png"
-    await userRepo.save(user);
+    });
 
     return {
         success: true,
-        photoBundle: { photo: user.photo, photoMimeType: user.photoMimeType }
+        mediaBundle: { media, mediaMimeType }
     };
 });

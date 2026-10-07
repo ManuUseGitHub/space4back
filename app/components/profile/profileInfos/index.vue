@@ -31,8 +31,6 @@ onMounted(async () => {
   isSame.value = await $fetch("/api/connexion/same", { method: "post", body: { id } });
   isVisitor.value = Boolean(asVisitor || !isSame.value);
 });
-
-
 </script>
 <template>
   <div class="d-flex">
@@ -105,8 +103,7 @@ onMounted(async () => {
 
       <SectionTitle :title="'IV'" :topic="'experiences and projects'">
         <div v-if="!isVisitor">
-          <UserExperienceListInfos :user-id="id">
-          </UserExperienceListInfos>
+          <UserExperienceListInfos :user-id="id"> </UserExperienceListInfos>
         </div>
         <div v-else>
           <ExperienceBrowse :user-id="id"> </ExperienceBrowse>
