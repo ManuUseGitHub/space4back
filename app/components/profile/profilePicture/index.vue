@@ -1,11 +1,9 @@
 <script lang="ts" setup>
-
-
 const props = defineProps<{ editable?: boolean; id?: string }>();
 
-const DEFAULT_IMAGE =
-  "/img/photo-1585676737728-432f58d5fdba.jpeg";
+const DEFAULT_IMAGE = "/img/photo-1585676737728-432f58d5fdba.jpeg";
 
+const fileupload = ref();
 const {
   changeStyleOfPreviewImage,
   previewImage,
@@ -13,8 +11,7 @@ const {
   onFileSelect,
   upload,
   cancel,
-} = await useMedia(DEFAULT_IMAGE, `/api/medias/[ID]/PROFILE-S`, props.id);
-
+} = await useMedia(DEFAULT_IMAGE, fileupload, `/api/medias/[ID]/f/PROFILE-S`, props.id);
 </script>
 <template>
   <div class="profile-picture no-flex relative p-1">
@@ -25,7 +22,11 @@ const {
           v-if="shouldDisplaySendButton"
           icon="pi pi-send"
           rounded
-          @click="upload"
+          @click="
+            () => {
+              upload('PROFILE');
+            }
+          "
           severity="secondary"
         />
       </div>

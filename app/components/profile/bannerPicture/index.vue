@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-
 const DEFAULT_IMAGE =
   "/img/vecteezy_architecture-and-interior-concept-empty-room-and-wood-panels_31147772.jpg";
 
+const fileupload = ref();
 const {
   changeStyleOfPreviewImage,
   previewImage,
@@ -10,7 +10,7 @@ const {
   onFileSelect,
   upload,
   cancel,
-} = await useMedia(DEFAULT_IMAGE, "/api/medias/[ID]/BANNER-S");
+} = await useMedia(DEFAULT_IMAGE,fileupload, "/api/medias/[ID]/f/BANNER-S");
 
 const { editable, noOverlay } = defineProps<{
   editable?: boolean;
@@ -27,7 +27,7 @@ const { editable, noOverlay } = defineProps<{
           v-if="shouldDisplaySendButton"
           icon="pi pi-send"
           rounded
-          @click="upload"
+          @click="() => {upload('BANNER')}"
           severity="secondary"
         />
       </div>

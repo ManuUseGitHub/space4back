@@ -70,6 +70,9 @@ export default defineNuxtConfig({
         },
         "/userinfo/**": {
             proxy: "http://localhost:7601/api/**"
+        },
+		"/xpressme/**": {
+            proxy: "http://localhost:7602/api/**"
         }
     },
 	css: [

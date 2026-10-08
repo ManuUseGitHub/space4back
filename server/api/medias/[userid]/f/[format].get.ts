@@ -2,11 +2,9 @@ import { H3Event, EventHandlerRequest } from "h3";
 import { FetchImageDTO } from "~~/server/DB/DTOs";
 import { USE } from "~~/server/DB/entity/interfaces";
 import { User } from "~~/server/DB/entity/User.js";
+import { parseUse } from "~~/server/utils/medias.helper";
 import { findBy } from "~~/server/utils/request.helper";
 
-const parseUse = (use: any) => {
-    return USE[use] as any as USE;
-};
 export default defineEventHandler(async event => {
     const id = createIdIsRequiredError(event.context.params?.userid);
     const format = (event.context.params?.format || "-").split("-");
